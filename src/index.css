@@ -78,7 +78,7 @@ body {
     position: relative;
     width: calc(100% - 120px);
     padding: 0 15px;
-    margin: 0 45px;
+    margin: 0 auto;
 }
 
 .container-header {
@@ -143,7 +143,6 @@ body {
 
 
 .container-header-image {
-    overflow: hidden;
 }
 .container-header-image img {
     margin-top: -45px;
@@ -154,6 +153,7 @@ body {
 }
 
 .about {
+    overflow: hidden;
     padding-bottom: 90px;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
 }
