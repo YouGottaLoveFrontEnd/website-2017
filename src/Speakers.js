@@ -35,7 +35,7 @@ class Speakers extends Component {
 
 	    return (
 	      <div className="speakers">
-	      	<div className="container">
+	      	<div className="container container-fluid">
 		      	<div className="container-header speakers-header">
 		      		<span>1 <i>Amazing Talks</i></span>
 		      		<h1>Speakers</h1>

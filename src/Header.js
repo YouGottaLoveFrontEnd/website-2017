@@ -9,17 +9,17 @@ class Header extends Component {
     return (
       <header className="header">
 	      <div className="header-title">
-	      	<div className="container">
+	      	<div className="container-fluid">
 				<Link to="/">You Gotta Love Frontend Conference</Link>
 	      	</div>
 	      </div>
 	      <div className="header-description">
-	      	<div className="container">
+	      	<div className="container-fluid">
 	      		The largest conference in the middle east, Made by developers for developers 
 	      	</div>
 	      </div>
 	      <div className="header-date-location">
-	      	<div className="container">
+	      	<div className="container-fluid">
 	      		<span><strong>30-31 October</strong>, Camari Tel Aviv</span>
 	      		<BuyTicketsButton/>
 	      	</div>

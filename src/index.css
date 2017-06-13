@@ -16,8 +16,7 @@ body {
     background-color: #3A47E4;
     //border-bottom: 1px solid #05CF9D;
 }
-
-.header .container {
+.header .container-fluid {
     border-left: 1px solid #05CF9D;
     border-right: 1px solid #05CF9D;
 }
@@ -28,10 +27,15 @@ body {
     font-weight: 100;
     line-height: 44px;
 }
+.header-title .container-fluid {
+    padding-top: 45px;
+}
+
 
 .header-title a {
     color: #FFF;
     text-decoration: none;
+    line-height: 44px;
 }
 
 .header-title .container {
@@ -70,7 +74,16 @@ body {
     padding: 0 15px;
 }
 
-.container-header {}
+.container-fluid {
+    position: relative;
+    width: calc(100% - 120px);
+    padding: 0 15px;
+    margin: 0 45px;
+}
+
+.container-header {
+    
+}
 
 .container-header span {
     transform: translate(0, 10px);
@@ -128,6 +141,10 @@ body {
     margin-top: 45px;
 }
 
+
+.container-header-image {
+    overflow: hidden;
+}
 .container-header-image img {
     margin-top: -45px;
 }
@@ -164,12 +181,15 @@ body {
     border: 0 none;
     cursor: pointer;
 }
+.buy-tickets:hover {
+    background-color: #05CF9D;
+}
 
 .speakers-list {}
 
 .speaker {
     display: flex;
-    margin-bottom: 90px;
+    margin-bottom: 135px;
     height: 450px;
     position: relative;
 }
@@ -204,6 +224,7 @@ body {
 
 .speaker-info {
     padding-left: 150px;
+    flex: 1 auto;
 }
 
 .speaker h2 {
@@ -236,6 +257,7 @@ body {
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
+    max-width: 400px;
 }
 
 .speaker:nth-child(2n) {
@@ -248,6 +270,10 @@ body {
     left: auto;
 }
 
+.speaker:nth-child(2n) .speaker-info {
+    padding-left: 90px;
+}
+
 .footer {
     padding-top: 100px;
     color: #3A47E4;
@@ -258,6 +284,9 @@ body {
     font-weight: 300;
     color: #3A47E4;
     text-decoration: none;
+}
+.footer a:hover {
+    //color: #05CF9D;
 }
 
 .footer p {
