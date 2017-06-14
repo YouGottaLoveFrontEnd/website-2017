@@ -30,7 +30,7 @@ class Footer extends Component {
       			</div>
 	      	</div>
       		<div className="footer-flexbox">
-      			<div className="created-by">Designed by <a href="http://wixstudio.com/" target="_blank">WixStudio</a>, Coded by <a href="https://github.com/paveliko" target="_blank">Pavel Rapoport</a></div>
+      			<div className="created-by"><span>Designed by <a href="http://wixstudio.com/" target="_blank">WixStudio</a>,</span> <span>Coded by <a href="https://github.com/paveliko" target="_blank">Pavel Rapoport</a></span></div>
       			<div>
       				<a href="mailto:hello@yougottalovefrontend.com">hello@yougottalovefrontend.com</a>
       				<SocialIcons/>
