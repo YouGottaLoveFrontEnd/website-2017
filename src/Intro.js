@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import IntroStage from './IntroStage';
+import './Intro.css';
 
 class Intro extends Component {
 
@@ -24,6 +25,7 @@ class Intro extends Component {
     	this.setCanvasSize(window.innerWidth, 585);
 
     	this.introStage.bind();
+        
     }
 
 

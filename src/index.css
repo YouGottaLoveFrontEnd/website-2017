@@ -11,63 +11,6 @@ body {
     background-color: #3A47E4;
 }
 
-.header {
-    height: 181px;
-    background-color: #3A47E4;
-    //border-bottom: 1px solid #05CF9D;
-}
-
-.header .container-fluid {
-    border-left: 1px solid #05CF9D;
-    border-right: 1px solid #05CF9D;
-}
-
-.header-title {
-    border-bottom: 1px solid #05CF9D;
-    font-size: 22px;
-    font-weight: 100;
-    line-height: 44px;
-}
-
-.header-title .container-fluid {
-    padding-top: 45px;
-}
-
-.header-title a {
-    color: #FFF;
-    text-decoration: none;
-    line-height: 44px;
-}
-
-.header-title .container {
-    height: 45px;
-    padding-top: 45px;
-}
-
-.header-description {
-    border-bottom: 1px solid #05CF9D;
-    font-weight: 100;
-    line-height: 45px;
-    height: 44px;
-}
-
-.header-date-location {
-    border-bottom: 1px solid #05CF9D;
-    line-height: 45px;
-    font-weight: 100;
-    height: 44px;
-}
-
-.header-date-location .buy-tickets {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.header-date-location strong {
-    font-weight: 600;
-}
-
 .container {
     position: relative;
     max-width: 1200px;
@@ -146,8 +89,25 @@ body {
     margin-top: -45px;
 }
 
-.intro {
-    //height: 540px;
+@media (max-width:480px) {
+    .container-header p {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .container-header-info {
+        padding: 22px 0 40px 0;
+    }
+    .container-header-info .buy-tickets {
+        margin-top: 22px;
+    }
+    .container-header-flexbox {
+        flex-direction: column;
+    }
+    .container-header-image img {
+        margin-top: 0;
+        width: 100%;
+    }
 }
 
 .about {
@@ -156,13 +116,10 @@ body {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
 }
 
-.speakers {
-    padding-bottom: 83px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
-}
-
-.speakers-header {
-    padding: 0 0 80px;
+@media (max-width:480px) {
+    .about .container-fluid {
+        width: calc(100% - 90px);
+    }
 }
 
 .buy-tickets {
@@ -184,32 +141,6 @@ body {
     background-color: #05CF9D;
 }
 
-.speakers-list {}
-
-.speaker {
-    display: flex;
-    margin-bottom: 135px;
-    height: 450px;
-    position: relative;
-}
-
-.speaker .social-icons {
-    flex-direction: column;
-    position: absolute;
-    top: -7px;
-    left: -45px;
-}
-
-.speaker .social-icons a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.speaker img {
-    min-width: 450px;
-    min-height: 450px;
-}
-
 .drop-shadow {
     -webkit-box-shadow: 40px 17px 30px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 40px 17px 30px 0px rgba(0, 0, 0, 0.15);
@@ -220,58 +151,6 @@ body {
     -webkit-box-shadow: 15px 9px 20px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 15px 9px 20px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 15px 9px 20px 0px rgba(0, 0, 0, 0.15);
-}
-
-.speaker-info {
-    padding-left: 150px;
-    flex: 1 auto;
-}
-
-.speaker h2 {
-    padding: 0;
-    margin: 0;
-    font-size: 45px;
-    font-weight: 300;
-    padding: 0 0 45px 90px;
-    line-height: 45px;
-}
-
-.speaker h2 .speaker-first-name,
-.speaker h2 .speaker-last-name {
-    display: block;
-    line-height: 45px;
-}
-
-.speaker-position,
-.speaker-company {
-    line-height: 22px;
-    font-size: 14px;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 100;
-}
-
-.speaker-description {
-    font-family: "Libre Baskerville";
-    font-style: italic;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    max-width: 400px;
-}
-
-.speaker:nth-child(2n) {
-    -webkit-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-}
-
-.speaker:nth-child(2n) .social-icons {
-    right: -45px;
-    left: auto;
-}
-
-.speaker:nth-child(2n) .speaker-info {
-    padding-left: 90px;
 }
 
 .subscribe {
@@ -297,115 +176,4 @@ body {
     background-color: #05CF9D;
     letter-spacing: 2px;
     padding: 8px 15px;
-}
-
-.footer .social-icons {
-    float: right;
-}
-
-.social-icons {
-    display: flex;
-}
-
-.social-icons a {
-    display: inline-block;
-    padding: 5px;
-}
-
-.social-icons a i {
-    font-size: 20px;
-}
-
-.footer {
-    padding-top: 100px;
-    color: #3A47E4;
-    padding-bottom: 90px;
-}
-
-.footer a {
-    font-weight: 300;
-    color: #3A47E4;
-    text-decoration: none;
-}
-
-.footer a:hover {}
-
-.footer p {
-    line-height: 200%;
-    font-weight: 300;
-}
-
-.created-by a {
-    font-weight: 600;
-}
-
-.footer-flexbox {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.footer-flexbox strong {
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 3px;
-    display: inline-block;
-}
-
-.footer-flexbox:first-child {
-    border-bottom: 1px solid #3A47E4;
-    padding-bottom: 45px;
-}
-
-.footer-flexbox > div {
-    width: 50%;
-    flex: 1 auto;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    //justify-content: space-around;
-    //align-items: stretch;
-    max-width: 420px;
-    padding-top: 15px;
-}
-
-.footer-links a {
-    min-width: 140px;
-    flex: 1 auto;
-    display: inline-block;
-    text-decoration: none;
-    color: #3A47E4;
-    padding: 5px 0;
-}
-
-@media (max-width:480px) {
-    .footer {
-        padding: 45px 0 0;
-        color: #3A47E4;
-    }
-    .footer .container {
-        margin: 0 30px;
-    }
-    .footer-flexbox {
-        flex-direction: column;
-    }
-    .footer-flexbox > div {
-        width: 100%;
-        margin-bottom: 45px;
-    }
-    .footer-flexbox:first-child {
-        padding-bottom: 0;
-    }
-    .created-by {
-        margin-bottom: 15px !important;
-    }
-    .created-by span {
-        display: inline-block;
-        line-height: 30px;
-    }
-    .footer .social-icons {
-        margin: 10px 0 0 -5px;
-        float: none;
-    }
 }

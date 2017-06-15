@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-	      <div className="container">
+	      <div className="container container-fluid">
 	      	<div className="container-header">
 	      		<span>2 <i>Awesome Spaces</i></span>
 	      		<h1>The Venue</h1>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Speaker from './Speaker';
 import BuyTicketsButton from './BuyTicketsButton';
+import './Speakers.css';
 
 class Speakers extends Component {
 

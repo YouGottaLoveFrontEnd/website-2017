@@ -1,0 +1,12 @@
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 5px;
+}
+
+.social-icons a i {
+    font-size: 20px;
+}
