@@ -21,12 +21,12 @@ class Footer extends Component {
       			<div>
       				<strong>Find your way</strong>
       				<div className="footer-links">
-						<Link to="/">Home</Link>
-						<Link to="/about">About</Link>
-						<Link to="/speakers">Speakers</Link>
-						<Link to="/details">Details</Link>
-						<Link to="/sponsors">Sponsors</Link>
-						<a href="http://2016.yougottalovefrontend.com/" target="_blank">YGLF 2016</a>
+    						<Link to="/website-2017">Home</Link>
+    						<Link to="/website-2017/about">About</Link>
+    						<Link to="/website-2017/speakers">Speakers</Link>
+    						<Link to="/website-2017/details">Details</Link>
+    						<Link to="/website-2017/sponsors">Sponsors</Link>
+    						<a href="http://2016.yougottalovefrontend.com/" target="_blank">YGLF 2016</a>
       				</div>
       			</div>
 	      	</div>
