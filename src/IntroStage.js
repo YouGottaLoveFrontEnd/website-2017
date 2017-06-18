@@ -12,7 +12,7 @@ class IntroStage {
 
         //createjs.Touch.enable(this.stage, false, true);
         createjs.Ticker.addEventListener('tick', this.stage);
-        createjs.Ticker.setFPS(10);
+        createjs.Ticker.setFPS(60);
 
         this.letterSize = 45;
         this.isMobile = window.innerWidth < 768;
@@ -28,6 +28,8 @@ class IntroStage {
     }
 
     bind() {
+
+        this.container.removeAllChildren();
 
         let currentPositionY = 0;
 
@@ -70,7 +72,6 @@ class IntroStage {
             this.bottomLines.push(dinamicLine);
             this.height = y;
         }
-
 
         this.letterY = this.createLetter('Y');
         // this.letterY.regX = this.letterY.getMeasuredWidth() / 2;

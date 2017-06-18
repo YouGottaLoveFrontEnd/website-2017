@@ -1,23 +1,41 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import SocialIcon from './SocialIcons';
 import './SocialIcons.css';
+
 
 class SocialIcons extends Component {
 
+
+  constructor(props) {
+    
+    super(props);
+
+  }
+
+  getClassByType(type) {
+
+    let className = 'fa fa-' + type;
+
+    return className;
+
+  }
+
   render() {
-    return (
-      <div className="social-icons">
-        <a href="#">
-          <i className="fa fa-instagram"/>
-        </a>
-        <a href="#">
-          <i className="fa fa-twitter"/>
-        </a>
-        <a href="#">
-          <i className="fa fa-facebook"/>
-        </a>
-      </div>
-    );
+
+    let icons = [];
+
+    for (var i = 0; i < this.props.data.length; i++) {
+
+      let iconData = this.props.data[i];
+      
+      let icon = (<a key={iconData.url} href={iconData.url}><i className={this.getClassByType(iconData.type)}/></a>);
+
+      icons.push(icon);
+
+    }
+
+    return (<div className="social-icons">{icons}</div>);
+
   }
 }
 

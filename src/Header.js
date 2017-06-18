@@ -24,7 +24,7 @@ class Header extends Component {
 		      </div>
 		      <div className="header-description">
 		      	<div className="container-fluid">
-		      		The largest conference in the middle east, Made by developers for developers 
+		      		The largest conference in the middle east, built by developers for developers
 		      	</div>
 		      </div>
 		      <div className="header-date-location">

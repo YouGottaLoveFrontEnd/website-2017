@@ -12,7 +12,7 @@ class About extends Component {
 	      		<h1>The Venue</h1>
 	      		<div className="container-header-flexbox">
 		      		<div className="container-header-info">
-			      		<p>For the first year of YGLF, we chose to make the Cameri Theater our home. It has a really beautiful lobby, a sunny balcony, and a cool theatre hall to host our lectures. It’s also bang in the middle of Tel Aviv, and accessible by public transportation.</p>
+			      		<p>This year the conference will take place, once again, at the elegant Cameri Theathre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. The Cameri holds over dozens of yearly productions, inlcuding a touring company. Classical and modern will meet under an urban wrap, for another unforgettable conference.</p>
 			      		<h3>The Cameri Theatre of Tel Aviv</h3>
 			      		<p>Sderot Sha'ul HaMelech 19, Tel Aviv-Yafo, Israel</p>
 			      	</div>

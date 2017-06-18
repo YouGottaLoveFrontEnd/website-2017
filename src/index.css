@@ -127,7 +127,7 @@ body {
     font-weight: 600;
     line-height: 45px;
     height: 45px;
-    padding: 0 20px;
+    padding: 0 0;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -135,10 +135,13 @@ body {
     color: #3A47E4;
     border: 0 none;
     cursor: pointer;
+    width: 155px;
+    text-align: center;
 }
 
 .buy-tickets:hover {
     background-color: #05CF9D;
+    color: #FFF;
 }
 
 .drop-shadow {
@@ -161,6 +164,7 @@ body {
 
 .subscribe input,
 .subscribe button {
+    border-radius: 0;
     border: 1px solid #3A47E4;
     color: #3A47E4;
 }
@@ -168,6 +172,7 @@ body {
 .subscribe input {
     padding: 8px;
     min-width: 215px;
+    margin: 0;
 }
 
 .subscribe button {
@@ -176,4 +181,5 @@ body {
     background-color: #05CF9D;
     letter-spacing: 2px;
     padding: 8px 15px;
+    margin: 0;
 }

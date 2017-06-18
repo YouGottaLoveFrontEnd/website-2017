@@ -7,14 +7,20 @@ class Intro extends Component {
 
 
     constructor(props) {
+        
         super(props);
+
         this.canvas = null;
+
     }
 
     componentDidMount() {
+
         this.canvas = ReactDOM.findDOMNode(this.refs.canvas);
+        
         this.introStage = new IntroStage(this.canvas);
-    	this.resize();
+    	
+        this.resize();
 
         window.addEventListener('resize', this.resize.bind(this));
 
@@ -25,7 +31,7 @@ class Intro extends Component {
     	this.setCanvasSize(window.innerWidth, 585);
 
     	this.introStage.bind();
-        
+
     }
 
 

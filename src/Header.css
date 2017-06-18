@@ -89,11 +89,11 @@
         border-top: 1px solid #05CF9D;
         text-align: center;
     }
-    .header-date-location button {
+    .header-date-location .buy-tickets {
+        display: block;
         top: 124px !important;
         left: 50%;
-        right: 50%;
-        margin-left: -74px;
+        transform:translateX(-50%);
     }
     .header-description {
         position: absolute;

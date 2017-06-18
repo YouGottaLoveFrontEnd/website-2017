@@ -15,7 +15,7 @@ class Speaker extends Component {
 
     	return (
 	      <div className="speaker">
-	      	<SocialIcons/>
+	      	<SocialIcons data={this.props.speaker.social_icons}/>
 	      	<img src={this.props.speaker.image_src} className="drop-shadow" style={imgStyle}/>
 	      	<div className="speaker-info">
 		      	<h2><span className="speaker-first-name">{this.props.speaker.first_name}</span> <span className="speaker-last-name">{this.props.speaker.last_name}</span></h2>
