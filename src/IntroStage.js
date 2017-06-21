@@ -12,7 +12,7 @@ class IntroStage {
 
         //createjs.Touch.enable(this.stage, false, true);
         createjs.Ticker.addEventListener('tick', this.stage);
-        createjs.Ticker.setFPS(60);
+        createjs.Ticker.setFPS(30);
 
         this.letterSize = 45;
         this.isMobile = window.innerWidth < 768;
@@ -25,11 +25,34 @@ class IntroStage {
         this.container.y = 45;
 
         this.stage.addChild(this.container);
+
+    }
+
+    test() {
+
+        let dinamicLine = new DynamicLine(0, 200, 1400, 200);
+
+        dinamicLine.setPoint(1, 200, 200);
+        
+        dinamicLine.setPoint(2, 500, 50);
+        dinamicLine.setPoint(3, 600, 70);
+        dinamicLine.setPoint(4, 800, 250);
+        dinamicLine.setPoint(5, 1000, 300);
+
+        dinamicLine.setPoint(6, 1200, 200);
+
+        dinamicLine.drawPoints(this.container);
+
+        this.container.addChild(dinamicLine.shape);
+
     }
 
     bind() {
 
+        window.removeEventListener('devicemotion', this.deviceMotionHandler.bind(this), false);
+
         this.container.removeAllChildren();
+
 
         let currentPositionY = 0;
 
@@ -48,71 +71,29 @@ class IntroStage {
         for (let i = 0; i < lines; i++) {
             let y = i * lineMargin;
             let dinamicLine = new DynamicLine(0, y, this.width, y);
-            dinamicLine.setPoint(1, this.width / 4, y);
-            dinamicLine.setPoint(2, this.width / 3, y);
-            dinamicLine.setPoint(3, this.width / 2, y);
-            dinamicLine.setPoint(4, this.width / 1.5, y);
-            dinamicLine.drawPoints(this.container);
-            this.container.addChild(dinamicLine.shape);
+            // dinamicLine.setPoint(1, 200, y - 50);
+            // dinamicLine.setPoint(2, 400, y + 50);
+            // dinamicLine.setPoint(3, this.width / 2, y);
+            // dinamicLine.setPoint(4, this.width / 1.5, y);
+            dinamicLine.drawPoints();
+            this.container.addChild(dinamicLine.container);
             this.topLines.push(dinamicLine);
             currentPositionY = y;
         }
 
         currentPositionY += margin;
+        
+        // this.letterY = this.createImageLetter('letter-Y.svg');
+        // this.container.addChild(this.letterY);
 
-        for (let i = 0; i < lines; i++) {
-            let y = (i * lineMargin) + currentPositionY;
-            let dinamicLine = new DynamicLine(0, y, this.width, y);
-            dinamicLine.setPoint(1, this.width / 4, y);
-            dinamicLine.setPoint(2, this.width / 3, y);
-            dinamicLine.setPoint(3, this.width / 2, y);
-            dinamicLine.setPoint(4, this.width / 1.5, y);
-            dinamicLine.drawPoints(this.container);
-            this.container.addChild(dinamicLine.shape);
-            this.bottomLines.push(dinamicLine);
-            this.height = y;
-        }
+        // this.letterL = this.createImageLetter('letter-G.svg');
+        // this.container.addChild(this.letterL);
 
-        this.letterY = this.createLetter('Y');
-        // this.letterY.regX = this.letterY.getMeasuredWidth() / 2;
-        // this.letterY.regY = this.letterY.getMeasuredHeight() / 2;
-        this.letterY.x = this.letterY.startX = centerX - this.letterSize / 2;
-        this.letterY.y = this.letterY.startY = centerY - this.letterSize / 2;
-        this.pointY = this.createPoint(this.letterY.x, this.letterY.y);
-        // this.pointY.regX = this.letterY.regX;
-        // this.pointY.regY = this.letterY.regY;
-        this.container.addChild(this.letterY);
-        this.container.addChild(this.pointY);
+        // this.letterG = this.createImageLetter('letter-L.svg');
+        // this.container.addChild(this.letterG);
 
-        this.letterG = this.createLetter('G');
-        // this.letterG.regX = this.letterG.getMeasuredWidth() / 2;
-        // this.letterG.regY = this.letterG.getMeasuredHeight() / 2;
-        this.letterG.x = this.letterG.startX = centerX + this.letterSize / 2;
-        this.letterG.y = this.letterG.startY = centerY - this.letterSize / 2;
-        this.container.addChild(this.letterG);
-
-        this.letterL = this.createLetter('L');
-        this.letterL.regX = this.letterL.getMeasuredWidth() / 2;
-        this.letterL.regY = this.letterL.getMeasuredHeight() / 2;
-        this.letterL.x = this.letterL.startX = centerX - this.letterSize / 2;
-        this.letterL.y = this.letterL.startY = centerY + this.letterSize / 2;
-        this.container.addChild(this.letterL);
-
-        this.letterF = this.createLetter('F');
-        this.letterF.regX = this.letterF.getMeasuredWidth() / 2;
-        this.letterF.regY = this.letterF.getMeasuredHeight() / 2;
-        this.letterF.x = this.letterF.startX = centerX + this.letterSize / 2;
-        this.letterF.y = this.letterF.startY = centerY + this.letterSize / 2;
-        this.container.addChild(this.letterF);
-
-        //this.letterF.cache(0, 0, this.letterF.getMeasuredWidth(), this.letterF.getMeasuredHeight())
-
-        // this.letterF.alpha = 1;
-
-        // createjs.Tween.get(this.letterF)
-        //     .to({ x: this.letterF.x + 100 }, 500)
-        //     .call(function() {});
-
+        // this.letterF = this.createImageLetter('letter-F.svg');
+        // this.container.addChild(this.letterF);
 
         this.infoContainer = new createjs.Container();
         this.container.addChild(this.infoContainer);
@@ -138,9 +119,6 @@ class IntroStage {
 
         let checkMinMax = function (letter) {
             
-            console.log(letter.startX - letter.x);
-
-
             if ((letter.startX - letter.x) < min) letter.x = letter.startX - min;
             if ((letter.startX - letter.x) > max) letter.x = letter.startX - max;
             if ((letter.startY - letter.y) < min) letter.y = letter.startY - min;
@@ -156,8 +134,8 @@ class IntroStage {
 
         let info = new createjs.Text('X:' + round(x) + ', Y:' + round(y) + ', Z: ' + round(z));
 
-        this.letterY.x += x * Math.random();
-        this.letterY.y -= y * Math.random();
+        // this.letterY.x += x * Math.random();
+        // this.letterY.y -= y * Math.random();
         
         this.letterG.x += x * Math.random();
         this.letterG.y -= y * Math.random();
@@ -169,20 +147,20 @@ class IntroStage {
         this.letterF.y -= y * Math.random();
 
 
-        checkMinMax(this.letterY);
+        //checkMinMax(this.letterY);
         checkMinMax(this.letterG);
         checkMinMax(this.letterL);
         checkMinMax(this.letterF);
 
-        this.pointY.x = this.letterY.x - this.centerX + this.letterSize * 0.22;
-        this.pointY.y = this.letterY.y - this.centerY + this.letterSize * 0.37;
+        //this.pointY.x = this.letterY.x - this.centerX + this.letterSize * 0.22;
+        //this.pointY.y = this.letterY.y - this.centerY + this.letterSize * 0.37;
 
         let _this = this;
 
-        // this.topLines.forEach(function (line) {
-        //     //line.setPoint1(_this.pointY.x, _this.pointY.y);
-        //     line.drawPoints(_this.container);
-        // })
+        this.topLines.forEach(function (line) {
+            //line.setPoint(1, _this.pointY.x, _this.pointY.y);
+            //line.drawPoints();
+        })
 
         //this.letterF.y += acceleration.y;
 
@@ -207,6 +185,11 @@ class IntroStage {
         letter.font = '300 ' + this.letterSize + 'px sofia-pro';
         letter.regX = letter.getMeasuredWidth() / 2;
         letter.regY = letter.getMeasuredHeight() / 2;
+        return letter;
+    }
+
+    createImageLetter(path) {
+        let letter = new createjs.Bitmap(path);
         return letter;
     }
 

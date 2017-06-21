@@ -43,11 +43,14 @@
     flex: 1 auto;
 }
 
+.footer-flexbox > div:nth-child(2n)  {
+    padding-left: 40px;
+}
+
+
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    //justify-content: space-around;
-    //align-items: stretch;
     max-width: 420px;
     padding-top: 15px;
 }
@@ -89,6 +92,11 @@
     .footer-flexbox:first-child {
         padding-bottom: 0;
     }
+
+    .footer-flexbox > div:nth-child(2n)  {
+        padding-left: 0;
+    }
+
     .created-by {
         margin-bottom: 15px !important;
     }

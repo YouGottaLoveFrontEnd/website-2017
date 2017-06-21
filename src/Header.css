@@ -19,7 +19,7 @@
 }
 
 .header-title .container-fluid {
-    padding-top: 45px;
+    padding-top: 20px;
 }
 
 .header-title a {
@@ -82,6 +82,12 @@
     .header-title a span {
         display: inline-block;
     }
+    
+    .header-date-location .container-fluid,
+    .header-title .container-fluid {
+        width: calc(100% - 30px) !important;
+    }
+
     .header-date-location {
         position: absolute;
         bottom: 180px;
@@ -107,5 +113,6 @@
         margin-right: 30px !important;
         margin-left: 30px !important;
         width: calc(100% - 60px) !important;
+        padding: 0 !important;
     }
 }

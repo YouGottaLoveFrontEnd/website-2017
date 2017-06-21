@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 body {
     margin: 0;
     padding: 0;
@@ -13,25 +14,27 @@ body {
 
 .container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .container-fluid {
     position: relative;
-    width: calc(100% - 120px);
+    width: calc(100% - 200px);
     padding: 0 15px;
     margin: 0 auto;
 }
 
-.container-header {}
+.container-header {
+    padding-top: 45px;
+}
 
 .container-header span {
-    transform: translate(0, 10px);
     display: inline-block;
     height: 45px;
     font-weight: 600;
+    transform: translate(5px, 8px);
 }
 
 .container-header span i {
@@ -40,18 +43,19 @@ body {
     font-weight: 400;
     display: inline-block;
     margin-left: 10px;
-    padding-left: 10px;
+    padding-left: 15px;
     border-left: 1px solid #FFF;
     letter-spacing: 2px;
 }
 
 .container-header h1 {
     padding: 0;
-    margin: 0;
+    margin: 3px;
     color: #05CF9D;
     font-size: 45px;
     line-height: 45px;
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: .95px;
 }
 
 .container-header h3 {
@@ -63,40 +67,97 @@ body {
 
 .container-header p {
     margin: 0;
-    width: 570px;
-    font-size: 20px;
-    font-family: "sofia-pro";
+    width: 520px;
+    font-size: 17px;
     font-weight: 100;
-    line-height: 30px;
+    font-family: "sofia-pro";
+    line-height: 36px;
     margin-bottom: 10px;
+    letter-spacing: 0.53px;
 }
 
 .container-header-flexbox {
     display: flex;
 }
 
+.container-header-flexbox .container-header-info {
+    width: 520px;
+}
+
+.container-header-flexbox .container-header-info p {
+    width: 420px;
+    margin-bottom: 65px;
+}
+
+.container-header-flexbox .container-header-info p.main {
+    margin-bottom: 60px;
+}
+
+.container-header-flexbox .container-header-info p.address {
+    margin-bottom: 45px;
+}
+
+.container-header-flexbox .container-header-info h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container-header-flexbox .container-header-info a {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.17px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    color: #FFF;
+    padding: 13px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container-header-flexbox .container-header-info a:hover {
+    color: #05CF9D;
+    border-bottom: 1px solid #05CF9D;
+}
+
 .container-header-info {
-    padding: 65px 0 10px 100px;
+    padding: 58px 0 10px 120px;
 }
 
 .container-header-info .buy-tickets {
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
-.container-header-image {}
+.container-header-image {
+    padding-left: 60px;
+}
 
 .container-header-image img {
     margin-top: -45px;
 }
 
 @media (max-width:480px) {
+    .container-header-flexbox .container-header-info {
+        width: 100%;
+    }
+    .container-header-flexbox .container-header-info p {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .container-header {
+        padding: 0 0 50px;
+    }
     .container-header p {
         width: 100%;
         font-size: 16px;
+        font-weight: 300;
         margin-bottom: 0;
     }
     .container-header-info {
-        padding: 22px 0 40px 0;
+        padding: 13px 0 40px 0;
     }
     .container-header-info .buy-tickets {
         margin-top: 22px;

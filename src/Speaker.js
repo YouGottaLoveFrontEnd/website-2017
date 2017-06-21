@@ -6,11 +6,12 @@ class Speaker extends Component {
 
     render() {
 
-    	let imageWidth = window.innerWidth > 480 ? 480 : window.innerWidth - 120;
+    	let imageWidth = window.innerWidth > 480 ? 440 : window.innerWidth - 90;
+    	let imageHeight = window.innerWidth > 480 ? 495 : window.innerWidth - 90;
 
     	const imgStyle = {
     		width: imageWidth,
-    		height: imageWidth
+    		height: imageHeight
     	}
 
     	return (

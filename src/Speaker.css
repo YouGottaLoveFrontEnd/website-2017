@@ -1,6 +1,6 @@
 .speaker {
     display: flex;
-    margin-bottom: 135px;
+    margin-bottom: 180px;
     height: 450px;
     position: relative;
 }
@@ -8,29 +8,37 @@
 .speaker .social-icons {
     flex-direction: column;
     position: absolute;
-    top: -7px;
+    top: 6px;
     left: -45px;
 }
 
 .speaker .social-icons a {
     text-decoration: none;
     color: #FFF;
+    height: 35px;
+    cursor: pointer;
+}
+.speaker .social-icons a:hover i {
+    color: #05CF9D;
 }
 
-.speaker img {}
+.speaker img {
+    width: 450px;
+    height: 450px;
+}
 
 .speaker-info {
-    padding-left: 150px;
+    padding-left: 160px;
     flex: 1;
 }
 
 .speaker h2 {
-    padding: 0;
     margin: 0;
     font-size: 45px;
-    font-weight: 300;
-    padding: 0 0 45px 90px;
+    font-weight: 400;
+    padding: 5px 0 40px 120px;
     line-height: 45px;
+    letter-spacing: .95px;
 }
 
 .speaker h2 .speaker-first-name,
@@ -46,14 +54,16 @@
     text-transform: uppercase;
     display: block;
     font-weight: 100;
+    letter-spacing: 1.35px;
 }
 
 .speaker-description {
+    padding-top: 8px;
     font-family: "Libre Baskerville";
-    font-style: italic;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    //font-weight: 300;
+    font-size: 15px !important;
+    line-height: 34px;
     max-width: 400px;
 }
 
@@ -67,9 +77,20 @@
     left: auto;
 }
 
-.speaker:nth-child(2n) .speaker-info {
-    padding-left: 90px;
+.speaker:nth-child(2n) h2 {
+    padding-left: 0;
+    margin-left: -120px;
 }
+.speaker:nth-child(2n) .speaker-info {
+    padding-left: 240px;
+}
+
+.speaker:nth-child(2n) .speaker-description {
+    max-width: 480px;
+    padding-right: 60px;
+}
+
+
 
 @media (max-width:480px) {
     .speaker {

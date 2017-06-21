@@ -23,6 +23,7 @@ class Intro extends Component {
         this.resize();
 
         window.addEventListener('resize', this.resize.bind(this));
+        window.addEventListener('orientationchange', this.resize.bind(this));
 
     }
 
@@ -30,7 +31,8 @@ class Intro extends Component {
 
     	this.setCanvasSize(window.innerWidth, 585);
 
-    	this.introStage.bind();
+        //this.introStage.test();
+    	//this.introStage.bind();
 
     }
 

@@ -5,38 +5,54 @@ import './Header.css';
 
 class Header extends Component {
 
-    	
-  render() {
+    constructor(props) {
 
-  	let height = window.innerWidth > 480 ?  181 : window.innerHeight;
+        super(props);
 
-	const style = {
-		height: height
-	}
+        this.style = {
+            height: 0
+        }
 
-    return (
-      <header className="header">
-	      <div className="header-wrapper" style={style}>
-		      <div className="header-title">
-		      	<div className="container-fluid">
-					<Link to="/"><span>You Gotta Love</span> <span>Frontend Conference</span></Link>
-		      	</div>
+        this.resize();
+
+        window.addEventListener('resize', this.resize.bind(this));
+
+    }
+
+    resize() {
+
+        let height = window.innerWidth > 480 ? 181 : window.innerHeight;
+
+        this.style = {
+            height: height
+        }
+        
+    }
+
+    render() {
+        return (
+			<header className="header">
+		      <div className="header-wrapper" style={this.style}>
+			      <div className="header-title">
+			      	<div className="container-fluid">
+						<Link to="/"><span>You Gotta Love</span> <span>Frontend Conference</span></Link>
+			      	</div>
+			      </div>
+			      <div className="header-description">
+			      	<div className="container-fluid">
+			      		The largest conference in the middle east, built by developers for developers
+			      	</div>
+			      </div>
+			      <div className="header-date-location">
+			      	<div className="container-fluid">
+			      		<span><strong>30-31 October</strong>, Camari Tel Aviv</span>
+			      		<BuyTicketsButton/>
+			      	</div>
+			      </div>
 		      </div>
-		      <div className="header-description">
-		      	<div className="container-fluid">
-		      		The largest conference in the middle east, built by developers for developers
-		      	</div>
-		      </div>
-		      <div className="header-date-location">
-		      	<div className="container-fluid">
-		      		<span><strong>30-31 October</strong>, Camari Tel Aviv</span>
-		      		<BuyTicketsButton/>
-		      	</div>
-		      </div>
-	      </div>
-      </header>
-    );
-  }
+	      	</header>
+        );
+    }
 }
 
 export default Header;
