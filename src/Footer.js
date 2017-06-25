@@ -29,7 +29,7 @@ class Footer extends Component {
                   <strong>Subscribe</strong>
                   <p>Exciting things ahead,<br/>  stay tuned for more information.</p>
                   <div className="subscribe">
-                <input type="text" />
+                <input type="text" placeholder="Enter Your email address" />
                 <button>OK</button>
                   </div>
                 </div>

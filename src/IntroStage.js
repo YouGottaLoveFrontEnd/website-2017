@@ -6,7 +6,6 @@ class IntroStage {
 
     constructor(canvas) {
 
-
         this.canvas = canvas;
         this.stage = new createjs.Stage(canvas);
         this.stage.scaleX = this.stage.scaleY = 2; //window.devicePixelRatio;
@@ -14,11 +13,11 @@ class IntroStage {
 
         //createjs.Touch.enable(this.stage, false, true);
         createjs.Ticker.addEventListener('tick', this.stage);
-        createjs.Ticker.setFPS(60);
+        //createjs.Ticker.setFPS(60);
 
         this.isMobile = window.innerWidth < 768;
-        this.scale = this.isMobile ? 0.333 : 1;
-        this.lineMargin = this.isMobile ? 15 : 45;
+        this.scale = this.isMobile ? 0.44 : 1;
+        this.lineMargin = this.isMobile ? 20 : 45;
         this.width = window.innerWidth;
         this.height = canvas.height;
 
@@ -47,7 +46,7 @@ class IntroStage {
 
         let currentPositionY = 0;
 
-        const lines = 7;
+        const lines = this.isMobile ? 6 : 7;
 
         for (let i = 0; i < lines; i++) {
             let y = i * this.lineMargin;
@@ -74,8 +73,8 @@ class IntroStage {
             imageSrc: 'letter-Y.svg',
             x: this.centerX,
             y: this.centerY * 3,
-            offsetX: -80 * this.scale,
-            offsetY: -85 * this.scale,
+            offsetX: -90 * this.scale,
+            offsetY: -95 * this.scale,
             isTop: true,
             points: [{
                 x: -200 * this.scale,
@@ -93,7 +92,7 @@ class IntroStage {
             x: this.centerX,
             y: this.centerY * 3,
             offsetX: 80 * this.scale,
-            offsetY: -85 * this.scale,
+            offsetY: -95 * this.scale,
             isTop: true,
             points: [{
                 x: 70 * this.scale,
@@ -108,17 +107,17 @@ class IntroStage {
             x: this.centerX,
             y: this.centerY * 3,
             offsetX: -80 * this.scale,
-            offsetY: 85 * this.scale,
+            offsetY: 95 * this.scale,
             isTop: false,
             points: [{
                 x: -200 * this.scale,
                 y: 0
             }, {
                 x: 0,
-                y: 146 * this.scale
+                y: 135 * this.scale
             }, {
                 x: 70 * this.scale,
-                y: 146 * this.scale
+                y: 135 * this.scale
             }]
         }, {
             char: 'F',
@@ -126,11 +125,11 @@ class IntroStage {
             x: this.centerX,
             y: this.centerY * 3,
             offsetX: 80 * this.scale,
-            offsetY: 85 * this.scale,
+            offsetY: 95 * this.scale,
             isTop: false,
             points: [{
                 x: 20 * this.scale,
-                y: 146 * this.scale
+                y: 135 * this.scale
             }, {
                 x: 340 * this.scale,
                 y: 0

@@ -211,6 +211,7 @@ body {
 
 .subscribe input,
 .subscribe button {
+    font-family: "sofia-pro";
     border-radius: 0;
     border: 1px solid #3A47E4;
     color: #3A47E4;
@@ -221,6 +222,10 @@ body {
     padding: 8px;
     min-width: 215px;
     margin: 0;
+    font-weight: 300; 
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
 }
 
 .subscribe button {
@@ -235,5 +240,6 @@ body {
 }
 
 .subscribe button:hover {
-    background-color:
+    background-color: #3A47E4;
+    color: #FFF;
 }

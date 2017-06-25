@@ -14,8 +14,10 @@
 .header-title {
     border-bottom: 1px solid #05CF9D;
     font-size: 22px;
-    font-weight: 100;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
     width: 100%;
+    letter-spacing: 0.07px;
 }
 
 .header-title .container-fluid {
@@ -35,16 +37,20 @@
 
 .header-description {
     border-bottom: 1px solid #05CF9D;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 45px;
     height: 44px;
+    letter-spacing: 0.3px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .header-date-location {
     border-bottom: 1px solid #05CF9D;
     line-height: 45px;
-    font-weight: 100;
+    font-weight: 300;
     height: 44px;
+    letter-spacing: 0.07px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .header-date-location .buy-tickets {
@@ -55,6 +61,7 @@
 
 .header-date-location strong {
     font-weight: 600;
+    -webkit-font-smoothing: antialiased;
 }
 
 @media (max-width:480px) {

@@ -65,6 +65,10 @@
     margin-bottom: 3px;
 }
 
+.footer a:hover {
+    color: #05CF9D;
+}
+
 .footer .social-icons {
     float: right;
     margin-top: -5px;
