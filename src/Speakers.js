@@ -15,7 +15,7 @@ class Speakers extends Component {
             position: 'Director of Engineering',
             company: 'NoRedInk',
             description: 'Richard is the author of “Elm in Action” from Manning Publications, and the instructor for the Frontend Masters 2-Day Elm Workshop. When he’s not writing about Elm, teaching Elm, speaking about Elm, or co-hosting the San Francisco Elm meetup, he likes to take a break from his job at NoRedInk (where front-end programmers spend almost almost all their coding time writing production Elm code) by kicking back and working on some of his open-source Elm projects.',
-            image_src: 'guy.png',
+            image_src: '/richard_feldman.jpg',
             social_icons: [{
                 type: 'twitter',
                 url: 'https://twitter.com/rtfeldman'
@@ -32,7 +32,7 @@ class Speakers extends Component {
             position: 'Web Technologies Consultant',
             company: 'sarahdrasnerdesign.com',
             description: 'Sarah is an award-winning Speaker, Consultant, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given a Frontend Masters workshop on Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).',
-            image_src: 'asian.png',
+            image_src: '/sara_drasner.jpg',
             social_icons: [{
                 type: 'twitter',
                 url: 'https://twitter.com/sarah_edo'
@@ -49,7 +49,7 @@ class Speakers extends Component {
             position: 'Developer',
             company: 'NPM',
             description: 'Ashley Williams wears a lot of hats, both literally and professionally. She is currently a services engineer at npm, Inc, the package manager for JavaScript and the Node.js ecosystem. She also represents the Individual Membership on the Node.js Foundation Board of Directors. Previously a backend and services engineer at Mozilla, and a web engineer and educator at Bocoup, Ashley has a long history of designing, developing, and teaching systems and systems architecture.',
-            image_src: 'black.png',
+            image_src: '/ashley_williams.jpg',
             social_icons: [{
                 type: 'twitter',
                 url: 'https://twitter.com/ag_dubs'

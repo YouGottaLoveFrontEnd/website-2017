@@ -18,13 +18,13 @@
     height: 35px;
     cursor: pointer;
 }
+
 .speaker .social-icons a:hover i {
     color: #05CF9D;
 }
 
 .speaker img {
-    width: 450px;
-    height: 450px;
+    border: 1px solid #05CF9D;
 }
 
 .speaker-info {
@@ -34,11 +34,12 @@
 
 .speaker h2 {
     margin: 0;
+    padding: 2px 0 42px 120px;
     font-size: 45px;
     font-weight: 400;
-    padding: 5px 0 40px 120px;
     line-height: 45px;
     letter-spacing: .95px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .speaker h2 .speaker-first-name,
@@ -54,17 +55,17 @@
     text-transform: uppercase;
     display: block;
     font-weight: 100;
-    letter-spacing: 1.35px;
+    letter-spacing: 2px;
 }
 
 .speaker-description {
     padding-top: 8px;
-    font-family: "Libre Baskerville";
-    -webkit-font-smoothing: antialiased;
-    //font-weight: 300;
-    font-size: 15px !important;
-    line-height: 34px;
     max-width: 400px;
+    font-size: 15px !important;
+    font-weight: 100;
+    font-family: "sofia-pro";
+    line-height: 33px;
+    letter-spacing: 0.9px;
 }
 
 .speaker:nth-child(2n) {
@@ -81,6 +82,7 @@
     padding-left: 0;
     margin-left: -120px;
 }
+
 .speaker:nth-child(2n) .speaker-info {
     padding-left: 240px;
 }
@@ -89,8 +91,6 @@
     max-width: 480px;
     padding-right: 60px;
 }
-
-
 
 @media (max-width:480px) {
     .speaker {
@@ -109,6 +109,9 @@
     .speaker h2 {
         padding: 0 0 2px 0;
         font-size: 30px;
+    }
+    .speaker:nth-child(2n) h2 {
+        margin-left: 0px;
     }
     .speaker h2 .speaker-first-name,
     .speaker h2 .speaker-last-name {

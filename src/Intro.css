@@ -1,9 +1,15 @@
 .intro {
-    height: 540px;
+    height: 674px;
+	border-bottom: 1px solid #05CF9D;
+}
+.intro canvas {
+	/*border-top: 1px solid #FFF;*/
+	//background-color: rgba(0,0,0,0.3);
 }
 
 @media (max-width:480px) {
     .intro {
-        padding-top: 50px;
+    	height: 224px;
+        padding-top: 20px;
     }
 }

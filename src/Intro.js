@@ -7,32 +7,40 @@ class Intro extends Component {
 
 
     constructor(props) {
-        
+
         super(props);
 
         this.canvas = null;
+        this.isMobile = window.innerWidth < 768;
 
+        window.Typekit.load({
+            async: true,
+            active: this.initIntro.bind(this)
+        })
     }
 
     componentDidMount() {
 
         this.canvas = ReactDOM.findDOMNode(this.refs.canvas);
-        
+
         this.introStage = new IntroStage(this.canvas);
-    	
-        this.resize();
 
         window.addEventListener('resize', this.resize.bind(this));
+
         window.addEventListener('orientationchange', this.resize.bind(this));
 
     }
 
+    initIntro() {
+        this.resize();
+        this.introStage.bind();
+    }
+
     resize() {
 
-    	this.setCanvasSize(window.innerWidth, 585);
+        this.setCanvasSize(window.innerWidth, this.isMobile ? 224 : 674);
 
         //this.introStage.test();
-    	//this.introStage.bind();
 
     }
 
@@ -46,9 +54,9 @@ class Intro extends Component {
 
     render() {
         return (
-			<div className="intro">
-				<canvas ref="canvas"></canvas>
-			</div>
+            <div className="intro">
+                <canvas ref="canvas"></canvas>
+            </div>
         );
     }
 }

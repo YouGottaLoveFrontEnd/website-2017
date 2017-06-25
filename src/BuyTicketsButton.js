@@ -4,7 +4,7 @@ class BuyTicketsButton extends Component {
 
     render() {
 
-	    return (<button className="buy-tickets drop-shadow-small">Buy Tickets</button>);
+	    return (<a href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121" className="buy-tickets drop-shadow-small">Buy Tickets</a>);
 
     }
 

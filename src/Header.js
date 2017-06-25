@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import BuyTicketsButton from './BuyTicketsButton';
 import { Link } from 'react-router-dom'
 import './Header.css';
@@ -9,30 +10,31 @@ class Header extends Component {
 
         super(props);
 
-        this.style = {
-            height: 0
-        }
-
-        this.resize();
-
-        window.addEventListener('resize', this.resize.bind(this));
-
     }
 
     resize() {
 
-        let height = window.innerWidth > 480 ? 181 : window.innerHeight;
+        let height = window.innerWidth > 480 ? 154 : window.innerHeight;
+    	
 
-        this.style = {
-            height: height
-        }
+        this.headerWrapper.style.height = height + 'px';
         
+    }
+
+    componentDidMount() {
+
+        this.headerWrapper = ReactDOM.findDOMNode(this.refs.headerWrapper);
+
+        this.resize();
+
+        window.addEventListener('resize', this.resize.bind(this));
+    	
     }
 
     render() {
         return (
 			<header className="header">
-		      <div className="header-wrapper" style={this.style}>
+		      <div className="header-wrapper" ref="headerWrapper">
 			      <div className="header-title">
 			      	<div className="container-fluid">
 						<Link to="/"><span>You Gotta Love</span> <span>Frontend Conference</span></Link>
