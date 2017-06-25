@@ -16,6 +16,7 @@ class Header extends Component {
 
         let height = window.innerWidth > 480 ? 154 : window.innerHeight;
     	
+
         this.headerWrapper.style.height = height + 'px';
         
     }
@@ -36,7 +37,7 @@ class Header extends Component {
 		      <div className="header-wrapper" ref="headerWrapper">
 			      <div className="header-title">
 			      	<div className="container-fluid">
-						<Link to="/website-2017"><span>You Gotta Love</span> <span>Frontend Conference</span></Link>
+						<Link to="/"><span>You Gotta Love</span> <span>Frontend Conference</span></Link>
 			      	</div>
 			      </div>
 			      <div className="header-description">
