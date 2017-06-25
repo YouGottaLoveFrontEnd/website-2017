@@ -14,7 +14,7 @@ class IntroStage {
 
         //createjs.Touch.enable(this.stage, false, true);
         createjs.Ticker.addEventListener('tick', this.stage);
-        //createjs.Ticker.setFPS(60);
+        createjs.Ticker.setFPS(60);
 
         this.isMobile = window.innerWidth < 768;
         this.scale = this.isMobile ? 0.333 : 1;

@@ -36,7 +36,7 @@ class Footer extends Component {
                 <div>
                   <strong>Find your way</strong>
                   <div className="footer-links">
-                    <Link to="/">Home</Link>
+                    <Link to="#">Home</Link>
                     <a href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121">Tickets</a>
                     <a href="http://2016.yougottalovefrontend.com/" target="_blank">YGLF 2016</a>
                   </div>
