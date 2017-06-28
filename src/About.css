@@ -18,7 +18,27 @@
 }
 
 @media (max-width:480px) {
+    .about .container-header-flexbox {
+        flex-direction: column-reverse;
+    }
     .about .container-fluid {
         width: calc(100% - 90px);
+    }
+    .about .container-header-image {
+        padding-top: 39px;
+        position: static;
+        width: calc(100% + 92px) !important;
+        margin-left: -46px;
+        flex: 0;
+    }
+    .about .container-header-image-wrapper {
+        height: auto !important;
+    }
+    .about .container-header-image img {
+        width: 100% !important;
+    }
+
+    .about .container-header-image-wrapper {
+        position: static;
     }
 }

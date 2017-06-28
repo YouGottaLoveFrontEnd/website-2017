@@ -1,0 +1,94 @@
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    width: 282px;
+}
+
+.subscribe input,
+.subscribe button {
+    font-family: "sofia-pro";
+    border-radius: 0;
+    border: 1px solid #3A47E4;
+    color: #3A47E4;
+    font-size: 13px;
+}
+
+.subscribe input {
+    padding: 8px;
+    width: 233px;
+    margin: 0;
+    font-weight: 300; 
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+    border-right: 0 none;
+}
+
+.subscribe button {
+    color: #3A47E4;
+    background-color: #05CF9D;
+    letter-spacing: 2px;
+    padding: 8px 15px;
+    margin: 0;
+    font-weight: 900;
+    cursor: pointer;
+    width: 49px;
+}
+
+.subscribe button i {
+    font-size: 14px;
+    display: none;
+}
+
+.subscribe button span {
+}
+
+.subscribe button:hover {
+    background-color: #3A47E4;
+    color: #FFF;
+}
+
+.subscribe.animate input {
+    -webkit-animation: animateInputWidth 0.5s ease-out;
+    animation: animateInputWidth 0.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.subscribe.animate button {
+    -webkit-animation: animateButtonWidth 0.5s ease-out;
+    animation: animateButtonWidth 0.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background-color: #3A47E4;
+    color: #FFF;
+}
+.subscribe.animate:not(.success) button span {
+    display: none;
+}
+.subscribe.animate:not(.success) button i {
+    display: inline-block;
+}
+
+
+@-webkit-keyframes animateButtonWidth {
+    0% {
+        width: 49px;
+    }
+    100% {
+        width: 282px;
+
+    }
+}
+
+@-webkit-keyframes animateInputWidth {
+    0% {
+        width: 282px;
+        border: 1px solid #3A47E4;
+    }
+    100% {
+        width: 0px;
+        border: 0px solid #3A47E4;
+        padding: 0;
+    }
+}

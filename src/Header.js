@@ -47,7 +47,7 @@ class Header extends Component {
 			      </div>
 			      <div className="header-date-location">
 			      	<div className="container-fluid">
-			      		<span><strong>30-31 October</strong>, Camari Tel Aviv</span>
+			      		<span><strong>30-31 October 2017</strong>, <span className="place">The Cameri Theatre | </span>Tel Aviv ISRAEL</span>
 			      		<BuyTicketsButton/>
 			      	</div>
 			      </div>

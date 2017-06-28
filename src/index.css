@@ -96,6 +96,7 @@ body {
 .container-header-flexbox .container-header-info p {
     width: 420px;
     margin-bottom: 35px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container-header-flexbox .container-header-info p.main {
@@ -203,43 +204,3 @@ body {
     box-shadow: 15px 9px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.subscribe input,
-.subscribe button {
-    font-family: "sofia-pro";
-    border-radius: 0;
-    border: 1px solid #3A47E4;
-    color: #3A47E4;
-    font-size: 13px;
-}
-
-.subscribe input {
-    padding: 8px;
-    min-width: 215px;
-    margin: 0;
-    font-weight: 300; 
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    outline: 0;
-}
-
-.subscribe button {
-    color: #3A47E4;
-    border-left: 0 none;
-    background-color: #05CF9D;
-    letter-spacing: 2px;
-    padding: 8px 15px;
-    margin: 0;
-    font-weight: 900;
-    cursor: pointer;
-}
-
-.subscribe button:hover {
-    background-color: #3A47E4;
-    color: #FFF;
-}

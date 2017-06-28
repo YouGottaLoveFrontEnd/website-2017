@@ -102,6 +102,10 @@
         border-top: 1px solid #05CF9D;
         text-align: center;
     }
+    .header-date-location .place {
+        display: none;
+    }
+
     .header-date-location .buy-tickets {
         display: block;
         top: 124px !important;

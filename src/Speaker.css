@@ -38,7 +38,7 @@
     font-size: 45px;
     font-weight: 400;
     line-height: 45px;
-    letter-spacing: .95px;
+    letter-spacing: 2px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -54,8 +54,9 @@
     font-size: 14px;
     text-transform: uppercase;
     display: block;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .speaker-description {
@@ -66,6 +67,7 @@
     font-family: "sofia-pro";
     line-height: 33px;
     letter-spacing: 0.9px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .speaker:nth-child(2n) {

@@ -9,14 +9,14 @@ class IntroStage {
         this.canvas = canvas;
         this.stage = new createjs.Stage(canvas);
         this.stage.scaleX = this.stage.scaleY = 2; //window.devicePixelRatio;
+        this.isMobile = window.innerWidth < 768;
         //this.stage.enableMouseOver(30);
 
         //createjs.Touch.enable(this.stage, false, true);
         createjs.Ticker.addEventListener('tick', this.stage);
-        //createjs.Ticker.setFPS(60);
+        if (this.isMobile) createjs.Ticker.setFPS(60);
 
-        this.isMobile = window.innerWidth < 768;
-        this.scale = this.isMobile ? 0.44 : 1;
+        this.scale = this.isMobile ? 0.33 : 1;
         this.lineMargin = this.isMobile ? 20 : 45;
         this.width = window.innerWidth;
         this.height = canvas.height;
@@ -67,14 +67,15 @@ class IntroStage {
             dinamicLine.drawPoints();
         }
 
+        let  mobileFix = 1.5;
 
         this.letters = [{
             char: 'Y',
             imageSrc: 'letter-Y.svg',
             x: this.centerX,
             y: this.centerY * 3,
-            offsetX: -90 * this.scale,
-            offsetY: -95 * this.scale,
+            offsetX: -200 * this.scale, // offsetX: -90 * this.scale,
+            offsetY: -20 * this.scale, // offsetY: -95 * this.scale,
             isTop: true,
             points: [{
                 x: -200 * this.scale,
@@ -91,8 +92,8 @@ class IntroStage {
             imageSrc: 'letter-G.svg',
             x: this.centerX,
             y: this.centerY * 3,
-            offsetX: 80 * this.scale,
-            offsetY: -95 * this.scale,
+            offsetX: 110 * this.scale,
+            offsetY: -55 * this.scale,
             isTop: true,
             points: [{
                 x: 70 * this.scale,
@@ -106,8 +107,8 @@ class IntroStage {
             imageSrc: 'letter-L.svg',
             x: this.centerX,
             y: this.centerY * 3,
-            offsetX: -80 * this.scale,
-            offsetY: 95 * this.scale,
+            offsetX: -60 * this.scale,
+            offsetY: 75 * this.scale,
             isTop: false,
             points: [{
                 x: -200 * this.scale,
@@ -124,8 +125,8 @@ class IntroStage {
             imageSrc: 'letter-F.svg',
             x: this.centerX,
             y: this.centerY * 3,
-            offsetX: 80 * this.scale,
-            offsetY: 95 * this.scale,
+            offsetX: 110 * this.scale,
+            offsetY: 135 * this.scale,
             isTop: false,
             points: [{
                 x: 20 * this.scale,
@@ -158,9 +159,11 @@ class IntroStage {
         this.container.addChild(container);
         letter.loaded = true;
         if (this.isAllLettersLoaded()) {
-            if (this.isMobile) window.addEventListener('devicemotion', this.deviceMotionHandler.bind(this), false);
+            //if (this.isMobile) window.addEventListener('devicemotion', this.deviceMotionHandler.bind(this), false);
             if (!this.isMobile) this.canvas.addEventListener('mousemove', this.mouseMoveHandler.bind(this), false);
             if (!this.isMobile) this.staticBind();
+            this.staticBind();
+
         }
     }
 
@@ -178,19 +181,22 @@ class IntroStage {
 
         letter.width = img.naturalWidth;
         letter.height = img.naturalHeight;
+        
+        if (!this.isMobile) letter.shadow = new createjs.Shadow('rgba(0,0,0,0.2)', 15, 20, 30);
 
-        let rect = new createjs.Shape();
-        rect.graphics.beginFill('red');
-        rect.graphics.drawRect(0, 0, letter.width, letter.height);
-        rect.graphics.endFill();
-        rect.alpha = 0.2;
+        
 
         let container = new createjs.Container();
-
         container.regX = (letter.width / 2)  * this.scale;
         container.regY = (letter.height / 2) * this.scale;
-
-        //container.addChild(rect);
+        
+        // let rect = new createjs.Shape();
+        // rect.graphics.beginFill('red');
+        // rect.graphics.drawRect(0, 0, letter.width, letter.height);
+        // rect.graphics.endFill();
+        // rect.alpha = 0.2;
+        
+        // container.addChild(rect);
         container.addChild(letter);
 
         container.scaleX = 
@@ -209,28 +215,40 @@ class IntroStage {
     staticBind() {
         this.setPositions((letter) => {
             letter.displayObject.x = letter.displayObject.startX + letter.offsetX;
-            letter.displayObject.y = letter.displayObject.startY + letter.offsetY;
+            letter.displayObject.y = letter.displayObject.startY + letter.offsetY - (this.isMobile ? 140 : 0);
         });
 
     }
 
     mouseMoveHandler(event) {
 
+        // let x = event.clientX + letter.offsetX;
+        // let y = event.clientY - 227 + window.scrollY + letter.offsetY;
+
+
         this.setPositions((letter) => {
-            let x = event.clientX + letter.offsetX;
-            let y = event.clientY - 227 + window.scrollY + letter.offsetY;
-            letter.displayObject.x = x;
-            letter.displayObject.y = y;
+            letter.displayObject.x = (window.innerWidth / 2) + letter.offsetX;
+            letter.displayObject.y = (window.innerHeight / 4) + letter.offsetY;
         });
     }
 
     deviceMotionHandler(event) {
 
         let speed = 0.1;
+        let x;
+        let y;
+        let z;
 
-        let x = event.accelerationIncludingGravity.x * speed;
-        let y = event.accelerationIncludingGravity.y * speed;
-        let z = event.accelerationIncludingGravity.z * speed;
+        if (event) {
+
+            x = event.accelerationIncludingGravity.x * speed;
+            y = event.accelerationIncludingGravity.y * speed;
+            z = event.accelerationIncludingGravity.z * speed;
+               
+        } else {
+            x = 0;
+            y = 0;
+        }
 
         this.setPositions((letter) => {
             if (!letter.isFirst) {
@@ -257,7 +275,10 @@ class IntroStage {
     }
 
     setPositions(func) {
-        this.topLines.forEach((line) => {
+        
+        let lineMargin = this.isMobile ? 5 : 10;
+
+        this.topLines.forEach((line, lineIndex) => {
             let pointIndex = 0;
             this.letters.forEach((letter) => {
                 if (letter.isTop) {
@@ -266,8 +287,8 @@ class IntroStage {
                     letter.points.forEach((point) => {
                         let pointX = letter.displayObject.x - letter.displayObject.regX + point.x;
                         let pointY = letter.displayObject.y - letter.displayObject.regY + point.y;
+                        pointY -= ((this.topLines.length - lineIndex) * lineMargin)
                         pointY = pointY > line.startPoint.y ? line.startPoint.y : pointY;
-
                         if (pointIndex === 0) {
                             line.setPoint(pointIndex + 1, letter.displayObject.x - letter.displayObject.regX + point.x, line.startPoint.y);
                         } else if (pointIndex === 4) {
@@ -281,7 +302,7 @@ class IntroStage {
             });
             line.drawPoints();
         });
-        this.bottomLines.forEach((line) => {
+        this.bottomLines.forEach((line, lineIndex) => {
             let pointIndex = 0;
             this.letters.forEach((letter) => {
                 if (!letter.isTop) {
@@ -290,8 +311,8 @@ class IntroStage {
                     letter.points.forEach((point) => {
                         let pointX = letter.displayObject.x - letter.displayObject.regX + point.x;
                         let pointY = letter.displayObject.y - letter.displayObject.regY + point.y;
+                        pointY += ((lineIndex + 1) * lineMargin)
                         pointY = pointY < line.startPoint.y ? line.startPoint.y : pointY;
-
                         if (pointIndex === 0) {
                             line.setPoint(pointIndex + 1, letter.displayObject.x - letter.displayObject.regX + point.x, line.startPoint.y);
                         } else if (pointIndex === 4) {
@@ -300,6 +321,7 @@ class IntroStage {
                             line.setPoint(pointIndex + 1, pointX, pointY);
                         }
                         pointIndex++;
+
                     });
                 }
                 line.drawPoints();

@@ -9,9 +9,13 @@ class About extends Component {
 
         super(props);
 
+        this.isMobile = window.innerWidth < 768;
+
     }
 
     resize() {
+
+        debugger
 
     	let width = (window.innerWidth / 2);
 
@@ -31,11 +35,12 @@ class About extends Component {
 
         this.wrapper = ReactDOM.findDOMNode(this.refs.wrapper);
         this.image = ReactDOM.findDOMNode(this.refs.image);
-        this.image.onload = this.resize.bind(this);
-        
-        this.resize();
 
-        window.addEventListener('resize', this.resize.bind(this));
+        if (!this.isMobile) {
+            this.image.onload = this.resize.bind(this);
+            this.resize();
+            window.addEventListener('resize', this.resize.bind(this));   
+        }
     }
 
     render() {
@@ -47,7 +52,7 @@ class About extends Component {
 		      		<h1>The Venue</h1>
 		      		<div className="container-header-flexbox">
 			      		<div className="container-header-info">
-				      		<p className="main">This year the conference will take place, once again, at the elegant Cameri Theatre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. The Cameri holds over dozens of yearly productions, inlcuding a touring company. Classical and modern will meet under an urban wrap, for another unforgettable conference.</p>
+				      		<p className="main">This year the conference will take place, once again, at the elegant Cameri Theatre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. Classical and modern will meet under an urban wrap, for another unforgettable conference.</p>
 				      		<h3>The Cameri Theatre of Tel Aviv</h3>
 				      		<p className="address">Sderot Sha'ul HaMelech 19, Tel Aviv-Yafo, Israel</p>
 				      		<a className="directions" href="#">Get directions</a>

@@ -23,6 +23,14 @@ class Speaker extends Component {
 
 	setImageSize() {
 
+		// let width;
+
+		// if (window.innerWidth > 1200) {
+		// 	width = 438;
+		// } else if (window.innerWidth > 480 && window.innerWidth < 1200) {
+		// 	width = 438;
+		// } 
+
 		let width = window.innerWidth > 480 ? 438 : window.innerWidth - 90;
     	let height = window.innerWidth > 480 ? 493 : window.innerWidth - 90;
     	let imageSize = {
@@ -37,7 +45,7 @@ class Speaker extends Component {
 	componentDidMount() {
 		
         this.setImageSize();
-        
+
 	}
 
     render() {

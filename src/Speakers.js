@@ -14,7 +14,7 @@ class Speakers extends Component {
             last_name: 'Feldman',
             position: 'Director of Engineering',
             company: 'NoRedInk',
-            description: 'Richard is the author of “Elm in Action” from Manning Publications, and the instructor for the Frontend Masters 2-Day Elm Workshop. When he’s not writing about Elm, teaching Elm, speaking about Elm, or co-hosting the San Francisco Elm meetup, he likes to take a break from his job at NoRedInk (where front-end programmers spend almost almost all their coding time writing production Elm code) by kicking back and working on some of his open-source Elm projects.',
+            description: 'Richard is the author of “Elm in Action” from Manning Publications, and the instructor for the Frontend Masters 2-Day Elm Workshop. When he’s not writing about Elm, teaching Elm, speaking about Elm, or co-hosting the San Francisco Elm meetup, he likes to take a break from his job at NoRedInk (where front-end programmers spend almost all their coding time writing production Elm code) by kicking back and working on some of his open-source Elm projects.',
             image_src: 'richard_feldman.jpg',
             social_icons: [{
                 type: 'twitter',
@@ -31,7 +31,7 @@ class Speakers extends Component {
             last_name: 'Drasner',
             position: 'Web Technologies Consultant',
             company: 'sarahdrasnerdesign.com',
-            description: 'Sarah is an award-winning Speaker, Consultant, and Staff Writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given a Frontend Masters workshop on Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).',
+            description: 'Sarah is an award-winning speaker, consultant, and staff writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given a Frontend Masters workshop on Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).',
             image_src: 'sara_drasner.jpg',
             social_icons: [{
                 type: 'twitter',

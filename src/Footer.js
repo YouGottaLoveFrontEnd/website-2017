@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import SocialIcons from './SocialIcons';
+import Subscribe from './Subscribe';
+
 import './Footer.css';
 
 class Footer extends Component {
@@ -28,16 +30,13 @@ class Footer extends Component {
                 <div>
                   <strong>Subscribe</strong>
                   <p>Exciting things ahead,<br/>  stay tuned for more information.</p>
-                  <div className="subscribe">
-                <input type="text" placeholder="Enter Your email address" />
-                <button>OK</button>
-                  </div>
+                  <Subscribe />
                 </div>
                 <div>
                   <strong>Find your way</strong>
                   <div className="footer-links">
                     <Link to="#">Home</Link>
-                    <a href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121">Tickets</a>
+                    <a href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121" target="_blank">Tickets</a>
                     <a href="http://2016.yougottalovefrontend.com/" target="_blank">YGLF 2016</a>
                   </div>
                 </div>
