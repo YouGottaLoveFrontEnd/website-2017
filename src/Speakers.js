@@ -29,9 +29,9 @@ class Speakers extends Component {
         }, {
             first_name: 'Sarah',
             last_name: 'Drasner',
-            position: 'Web Technologies Consultant',
+            position: 'Speaker, Consultant & Staff Writer',
             company: 'sarahdrasnerdesign.com',
-            description: 'Sarah is an award-winning speaker, consultant, and staff writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given a Frontend Masters workshop on Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).',
+            description: 'Sarah is an award-winning speaker, consultant and staff writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given a Frontend Masters workshop on Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).',
             image_src: 'sara_drasner.jpg',
             social_icons: [{
                 type: 'twitter',

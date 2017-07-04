@@ -5,12 +5,6 @@ import './Subscribe.css';
 
 class Subscribe extends Component {
 
-    constructor(props) {
-
-        super(props);
-
-    }
-
     subscribe() {
 
         this.subscribeBox = ReactDOM.findDOMNode(this.refs.subscribeBox);

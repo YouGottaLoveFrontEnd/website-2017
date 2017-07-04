@@ -6,11 +6,6 @@ import './Header.css';
 
 class Header extends Component {
 
-    constructor(props) {
-
-        super(props);
-
-    }
 
     resize() {
 
@@ -28,7 +23,7 @@ class Header extends Component {
         this.resize();
 
         window.addEventListener('resize', this.resize.bind(this));
-    	
+
     }
 
     render() {
@@ -47,7 +42,7 @@ class Header extends Component {
 			      </div>
 			      <div className="header-date-location">
 			      	<div className="container-fluid">
-			      		<span><strong>30-31 October 2017</strong>, <span className="place">The Cameri Theatre | </span>Tel Aviv ISRAEL</span>
+			      		<span><strong>30-31 October 2017</strong>, <span className="place">The Cameri Theatre | </span>Tel Aviv Israel</span>
 			      		<BuyTicketsButton/>
 			      	</div>
 			      </div>

@@ -108,7 +108,7 @@
 
     .header-date-location .buy-tickets {
         display: block;
-        top: 124px !important;
+        top: 145px !important;
         left: 50%;
         transform:translateX(-50%);
     }

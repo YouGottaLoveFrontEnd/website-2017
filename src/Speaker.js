@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import SocialIcons from './SocialIcons';
 import './Speaker.css';
 
@@ -23,16 +22,18 @@ class Speaker extends Component {
 
 	setImageSize() {
 
-		// let width;
+		let width = 438;
 
-		// if (window.innerWidth > 1200) {
-		// 	width = 438;
-		// } else if (window.innerWidth > 480 && window.innerWidth < 1200) {
-		// 	width = 438;
-		// } 
+		if (window.innerWidth > 1200) {
+			width = 438;
+		} else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+			width = 318;
+		} else if (window.innerWidth >= 460 && window.innerWidth < 768) {
+			width = 220;
+		} else if (window.innerWidth < 460) {
+			width = window.innerWidth - 90;
+		}
 
-		let width = window.innerWidth > 480 ? 438 : window.innerWidth - 90;
-    	let height = window.innerWidth > 480 ? 493 : window.innerWidth - 90;
     	let imageSize = {
     		width: width,
     		height: width / (440 / 495)
@@ -51,8 +52,8 @@ class Speaker extends Component {
     render() {
     	return (
 	      <div className="speaker">
+	      	<img src={this.props.speaker.image_src} className="drop-shadow" style={this.state.imageSize} alt={this.props.speaker.first_name + ' ' + this.props.speaker.last_name}/>
 	      	<SocialIcons data={this.props.speaker.social_icons}/>
-	      	<img src={this.props.speaker.image_src} className="drop-shadow" style={this.state.imageSize}/>
 	      	<div className="speaker-info">
 		      	<h2><span className="speaker-first-name">{this.props.speaker.first_name}</span> <span className="speaker-last-name">{this.props.speaker.last_name}</span></h2>
 		      	<span className="speaker-position">{this.props.speaker.position}</span>

@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
-import SocialIcon from './SocialIcons';
 import './SocialIcons.css';
 
 
 class SocialIcons extends Component {
-
-
-  constructor(props) {
-    
-    super(props);
-
-  }
 
   getClassByType(type) {
 

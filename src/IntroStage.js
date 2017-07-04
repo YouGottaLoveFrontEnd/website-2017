@@ -8,9 +8,10 @@ class IntroStage {
 
         this.canvas = canvas;
         this.stage = new createjs.Stage(canvas);
+        this.stage.alpha = 0;
         this.stage.scaleX = this.stage.scaleY = 2; //window.devicePixelRatio;
         this.isMobile = window.innerWidth < 768;
-        //this.stage.enableMouseOver(30);
+        if (!this.isMobile) this.stage.enableMouseOver(30);
 
         //createjs.Touch.enable(this.stage, false, true);
         createjs.Ticker.addEventListener('tick', this.stage);
@@ -38,11 +39,11 @@ class IntroStage {
 
 
     bind() {
+        
+        this.container.removeAllChildren();
 
         if (this.isMobile) window.removeEventListener('devicemotion', this.deviceMotionHandler.bind(this), false);
-        if (!this.isMobile) this.canvas.removeEventListener('mousemove', this.mouseMoveHandler.bind(this), false);
-
-        this.container.removeAllChildren();
+        //if (!this.isMobile) this.canvas.removeEventListener('mousemove', this.mouseMoveHandler.bind(this), false);
 
         let currentPositionY = 0;
 
@@ -67,7 +68,6 @@ class IntroStage {
             dinamicLine.drawPoints();
         }
 
-        let  mobileFix = 1.5;
 
         this.letters = [{
             char: 'Y',
@@ -141,6 +141,8 @@ class IntroStage {
             this.loadLetterImage(letter);
         });
 
+        createjs.Tween.get(this.stage).to({ alpha: 1 }, 1000);
+
     }
 
     loadLetterImage(letter) {
@@ -160,7 +162,7 @@ class IntroStage {
         letter.loaded = true;
         if (this.isAllLettersLoaded()) {
             //if (this.isMobile) window.addEventListener('devicemotion', this.deviceMotionHandler.bind(this), false);
-            if (!this.isMobile) this.canvas.addEventListener('mousemove', this.mouseMoveHandler.bind(this), false);
+            //if (!this.isMobile) this.canvas.addEventListener('mousemove', this.mouseMoveHandler.bind(this), false);
             if (!this.isMobile) this.staticBind();
             this.staticBind();
 
@@ -181,26 +183,36 @@ class IntroStage {
 
         letter.width = img.naturalWidth;
         letter.height = img.naturalHeight;
-        
-        if (!this.isMobile) letter.shadow = new createjs.Shadow('rgba(0,0,0,0.2)', 15, 20, 30);
 
-        
+        if (!this.isMobile) letter.shadow = new createjs.Shadow('rgba(0,0,0,0.2)', 15, 20, 30); // 
 
         let container = new createjs.Container();
-        container.regX = (letter.width / 2)  * this.scale;
+        container.regX = (letter.width / 2) * this.scale;
         container.regY = (letter.height / 2) * this.scale;
-        
+
+        let circle = new createjs.Shape();
+        circle.graphics.beginFill('red');
+        circle.graphics.drawCircle(0, 0, letter.height);
+        circle.graphics.endFill();
+        circle.x = letter.width / 2;
+        circle.y = letter.height / 2;
+        circle.alpha = 0.2;
+
+
         // let rect = new createjs.Shape();
         // rect.graphics.beginFill('red');
         // rect.graphics.drawRect(0, 0, letter.width, letter.height);
         // rect.graphics.endFill();
         // rect.alpha = 0.2;
-        
+
         // container.addChild(rect);
+        //container.addChild(circle);
         container.addChild(letter);
 
-        container.scaleX = 
-        container.scaleY = this.scale;
+        container.scaleX =
+            container.scaleY = this.scale;
+
+        //container.addEventListener('mouseover', this.mouseoverLetterHandler.bind(this));
 
         return container;
 
@@ -213,23 +225,54 @@ class IntroStage {
     }
 
     staticBind() {
+        
+        // createjs.Tween.get(letter.displayObject).to({x:letter.displayObject.startX + letter.offsetX}, 500, createjs.Ease.linear);
+
+
         this.setPositions((letter) => {
             letter.displayObject.x = letter.displayObject.startX + letter.offsetX;
             letter.displayObject.y = letter.displayObject.startY + letter.offsetY - (this.isMobile ? 140 : 0);
         });
-
     }
+
+
+    mouseoverLetterHandler(event) {
+
+        function handleChange(event) {
+            console.log(event.target);
+        }
+
+        this.setPositions((letter) => {
+            if (!letter.displayObject.tweening) {
+
+            }
+            if (letter.displayObject.id === event.currentTarget.id) {
+                letter.displayObject.tweening = true;
+                createjs.Tween.get(letter.displayObject, {
+                        override: true
+                    })
+                    .to({
+                        x: letter.displayObject.x += 10
+                    }, 1000)
+                    .addEventListener('change', handleChange);
+            } else {
+                letter.displayObject.x = letter.displayObject.startX + letter.offsetX;
+                letter.displayObject.y = letter.displayObject.startY + letter.offsetY;
+            }
+        });
+    }
+
 
     mouseMoveHandler(event) {
 
         // let x = event.clientX + letter.offsetX;
         // let y = event.clientY - 227 + window.scrollY + letter.offsetY;
 
-
         this.setPositions((letter) => {
             letter.displayObject.x = (window.innerWidth / 2) + letter.offsetX;
             letter.displayObject.y = (window.innerHeight / 4) + letter.offsetY;
         });
+
     }
 
     deviceMotionHandler(event) {
@@ -237,14 +280,14 @@ class IntroStage {
         let speed = 0.1;
         let x;
         let y;
-        let z;
+        //let z;
 
         if (event) {
 
             x = event.accelerationIncludingGravity.x * speed;
             y = event.accelerationIncludingGravity.y * speed;
-            z = event.accelerationIncludingGravity.z * speed;
-               
+            //z = event.accelerationIncludingGravity.z * speed;
+
         } else {
             x = 0;
             y = 0;
@@ -254,7 +297,7 @@ class IntroStage {
             if (!letter.isFirst) {
                 letter.displayObject.x += letter.offsetX;
                 letter.displayObject.y += letter.offsetY;
-                letter.isFirst = true;            
+                letter.isFirst = true;
             }
             letter.displayObject.x += x;
             letter.displayObject.y -= y;
@@ -275,7 +318,7 @@ class IntroStage {
     }
 
     setPositions(func) {
-        
+
         let lineMargin = this.isMobile ? 5 : 10;
 
         this.topLines.forEach((line, lineIndex) => {

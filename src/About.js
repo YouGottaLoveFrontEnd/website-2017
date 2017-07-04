@@ -15,19 +15,10 @@ class About extends Component {
 
     resize() {
 
-        debugger
+        const width = window.innerWidth - this.wrapper.offsetParent.offsetLeft 
 
-    	let width = (window.innerWidth / 2);
+        if (!this.isMobile) this.wrapper.style.width =  width + 'px';
 
-    	//let imageRatio = this.image
-
-    	let imageWidth = (window.innerWidth / 2);
-    	let imageHeight = (window.innerWidth / 2);
-
-        this.wrapper.style.width =  width + 'px';
-
-        this.image.style.width = imageWidth + 'px';
-        this.image.style.height = imageHeight + 'px';
 
     }
 
@@ -59,7 +50,7 @@ class About extends Component {
 				      	</div>
 			      		<div className="container-header-image">
 			      			<div className="container-header-image-wrapper drop-shadow" ref="wrapper">
-				      			<img src="kamari.png" ref="image"/>
+				      			<img src="kamari.png" ref="image" alt="The Cameri Theatre of Tel Aviv" />
 				      		</div>
 			      		</div>
 		      		</div>
