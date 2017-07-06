@@ -64,7 +64,7 @@ class About extends Component {
                   ref="wrapper"
                 >
                   <img
-                    src="kamari.png"
+                    src="kameri.webp"
                     ref="image"
                     alt="The Cameri Theatre of Tel Aviv"
                   />
