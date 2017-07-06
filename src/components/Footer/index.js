@@ -42,7 +42,7 @@ class Footer extends Component {
               <div className="footer-links">
                 <Link to="/website-2017/">Home</Link>
                 <a
-                  href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121"
+                  href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121?aff=websitefooter"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
