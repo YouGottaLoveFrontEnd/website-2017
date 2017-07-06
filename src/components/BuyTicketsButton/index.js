@@ -4,7 +4,7 @@ const BuyTicketsButton = () => {
   return (
     <a
       target="_blank"
-      href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121"
+      href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121?aff=website"
       className="buy-tickets drop-shadow-small"
       rel="noopener noreferrer"
     >
