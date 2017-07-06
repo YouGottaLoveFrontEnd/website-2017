@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SocialIcons from './SocialIcons';
-import Subscribe from './Subscribe';
+import SocialIcons from '../SocialIcons';
+import Subscribe from '../Subscribe';
 
 import './Footer.css';
 

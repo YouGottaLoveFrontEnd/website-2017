@@ -1,4 +1,4 @@
-let createjs = window.createjs;
+const createjs = window.createjs;
 
 const showLines = false;
 

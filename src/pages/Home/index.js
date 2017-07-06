@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Speakers from './Speakers';
-import Intro from './Intro';
-import About from './About';
+import Intro from '../../components/Intro';
+import Speakers from '../../components/Speakers';
+import About from '../../components/About';
 
 class Home extends Component {
   render() {

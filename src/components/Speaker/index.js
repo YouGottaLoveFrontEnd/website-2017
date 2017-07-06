@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SocialIcons from './SocialIcons';
+import SocialIcons from '../SocialIcons';
 import './Speaker.css';
 
 class Speaker extends Component {

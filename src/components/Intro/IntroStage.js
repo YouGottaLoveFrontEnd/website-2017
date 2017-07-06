@@ -1,4 +1,4 @@
-import DynamicLine from './DynamicLine';
+import DynamicLine from '../DynamicLine';
 
 let createjs = window.createjs;
 

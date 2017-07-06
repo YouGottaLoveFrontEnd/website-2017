@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import BuyTicketsButton from './BuyTicketsButton';
+import BuyTicketsButton from '../BuyTicketsButton';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
@@ -40,7 +40,7 @@ class Header extends Component {
             <div className="container-fluid">
               <span>
                 <strong>30-31 October 2017</strong>,{' '}
-                <span className="place">The Cameri Theatre | </span>Tel Aviv
+                <span className="place">The Cameri Theatre | </span>Tel Aviv,
                 Israel
               </span>
               <BuyTicketsButton />
