@@ -13,6 +13,9 @@ class Intro extends Component {
         this.canvas = null;
         this.isMobile = window.innerWidth < 768;
 
+
+        this.resizeTimeout = null;
+
     }
 
     componentDidMount() {
@@ -26,22 +29,28 @@ class Intro extends Component {
             this.introWrapper.style.height = window.innerHeight + 'px';
         }
 
+        this.setCanvasSize(window.innerWidth, this.isMobile ? 224 : 674);
+
         window.addEventListener('resize', this.resize.bind(this));
 
-        window.addEventListener('orientationchange', this.resize.bind(this));
+        //window.addEventListener('orientationchange', this.resize.bind(this));
 
         this.initIntro();
 
     }
 
     initIntro() {
-        this.resize();
         this.introStage.bind();
     }
 
     resize() {
+        
+        window.clearTimeout(this.resizeTimeout);
 
-        this.setCanvasSize(window.innerWidth, this.isMobile ? 224 : 674);
+
+        this.resizeTimeout = window.setTimeout(() => {
+            window.location.reload();
+        }, 1000)
 
     }
 

@@ -46,7 +46,7 @@ class About extends Component {
 				      		<p className="main">This year the conference will take place, once again, at the elegant Cameri Theatre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. Classical and modern will meet under an urban wrap, for another unforgettable conference.</p>
 				      		<h3>The Cameri Theatre of Tel Aviv</h3>
 				      		<p className="address">Sderot Sha'ul HaMelech 19, Tel Aviv-Yafo, Israel</p>
-				      		<a className="directions" href="#">Get directions</a>
+				      		<a className="directions" href="https://www.google.com/maps/place/Cameri+Theater" target="_blank" rel="noopener noreferrer">Get directions</a>
 				      	</div>
 			      		<div className="container-header-image">
 			      			<div className="container-header-image-wrapper drop-shadow" ref="wrapper">
