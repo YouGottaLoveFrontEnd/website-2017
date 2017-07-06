@@ -8,18 +8,15 @@ import Sponsors from './Sponsors';
 import Details from './Details';
 import CodeOfConduct from './CodeOfConduct';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
-
   constructor(props) {
+    super(props);
 
-      super(props);
-    
-      window.Typekit.load({
-          async: true
-      })
-
+    window.Typekit.load({
+      async: true,
+    });
   }
 
   render() {
@@ -28,12 +25,15 @@ class App extends Component {
         <div className="app">
           <Header />
           <div className="app-body">
-            <Route exact path="/website-2017/" component={Home}/>
-            <Route path="/website-2017/about" component={About}/>
-            <Route path="/website-2017/speakers" component={Speakers}/>
-            <Route path="/website-2017/sponsors" component={Sponsors}/>
-            <Route path="/website-2017/details" component={Details}/>
-            <Route path="/website-2017/codeofconduct" component={CodeOfConduct}/>
+            <Route exact path="/website-2017/" component={Home} />
+            <Route path="/website-2017/about" component={About} />
+            <Route path="/website-2017/speakers" component={Speakers} />
+            <Route path="/website-2017/sponsors" component={Sponsors} />
+            <Route path="/website-2017/details" component={Details} />
+            <Route
+              path="/website-2017/codeofconduct"
+              component={CodeOfConduct}
+            />
           </div>
           <Footer />
         </div>

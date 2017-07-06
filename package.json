@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "node-sass-chokidar": "^0.0.2",
+    "prettier": "^1.5.2",
     "react-scripts": "1.0.7"
   },
   "scripts": {
@@ -19,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*.js' 'src/**/!(node_modules)/**/*.js'"
   }
 }

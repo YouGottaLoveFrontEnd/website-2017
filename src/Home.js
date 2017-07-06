@@ -4,15 +4,13 @@ import Intro from './Intro';
 import About from './About';
 
 class Home extends Component {
-
-
   render() {
-  	window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     return (
       <div className="home">
-      	<Intro/>
-      	<Speakers/>
-      	<About/>
+        <Intro />
+        <Speakers />
+        <About />
       </div>
     );
   }
