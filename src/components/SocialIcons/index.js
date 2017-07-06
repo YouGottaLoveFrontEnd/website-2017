@@ -1,34 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SocialIcons.css';
 
-class SocialIcons extends Component {
-  getClassByType(type) {
-    let className = 'fa fa-' + type;
+const getClassByType = type => `fa fa-${type}`;
 
-    return className;
-  }
-
-  render() {
-    let icons = [];
-
-    for (var i = 0; i < this.props.data.length; i++) {
-      let iconData = this.props.data[i];
-
-      let icon = (
-        <a key={iconData.url} href={iconData.url}>
-          <i className={this.getClassByType(iconData.type)} />
-        </a>
-      );
-
-      icons.push(icon);
-    }
-
-    return (
-      <div className="social-icons">
-        {icons}
-      </div>
-    );
-  }
-}
+const SocialIcons = ({ data }) => {
+  const icons = data.map(iconData =>
+    <a
+      key={iconData.url}
+      href={iconData.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={iconData.type}
+    >
+      <i className={getClassByType(iconData.type)} />
+    </a>
+  );
+  return (
+    <div className="social-icons">
+      {icons}
+    </div>
+  );
+};
 
 export default SocialIcons;

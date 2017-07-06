@@ -43,34 +43,31 @@ class Speaker extends Component {
   }
 
   render() {
+    const { speaker } = this.props;
     return (
       <div className="speaker">
         <img
-          src={this.props.speaker.image_src}
+          src={speaker.image_src}
           className="drop-shadow"
           style={this.state.imageSize}
-          alt={
-            this.props.speaker.first_name + ' ' + this.props.speaker.last_name
-          }
+          alt={`${speaker.first_name} ${speaker.last_name}`}
         />
-        <SocialIcons data={this.props.speaker.social_icons} />
+        <SocialIcons data={speaker.social_icons} />
         <div className="speaker-info">
           <h2>
             <span className="speaker-first-name">
-              {this.props.speaker.first_name}
+              {speaker.first_name}
             </span>{' '}
-            <span className="speaker-last-name">
-              {this.props.speaker.last_name}
-            </span>
+            <span className="speaker-last-name">{speaker.last_name}</span>
           </h2>
           <span className="speaker-position">
-            {this.props.speaker.position}
+            {speaker.position}
           </span>
           <span className="speaker-company">
-            {this.props.speaker.company}
+            {speaker.company}
           </span>
           <p className="speaker-description">
-            {this.props.speaker.description}
+            {speaker.description}
           </p>
         </div>
       </div>
