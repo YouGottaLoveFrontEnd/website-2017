@@ -6,7 +6,6 @@ import speakersData from '../../assets/data/speakers.json';
 
 class Speakers extends Component {
   render() {
-    console.log(speakersData);
     const speakers = speakersData.all.map(speaker =>
       <Speaker key={speaker.image_src} speaker={speaker} />
     );
