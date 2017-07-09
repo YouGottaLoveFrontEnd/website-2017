@@ -60,26 +60,26 @@ class LettersContainer {
 
         const tweebObject = {
           alpha: 1,
-          scaleX: 4.15,
-          scaleY: 4.15,
+          scaleX: 3.88,
+          scaleY: 3.88,
         };
 
         switch (letterText.text) {
           case 'Y':
-            tweebObject.x = this.isMobile ? 21 : 50;
-            tweebObject.y = this.isMobile ? -48 : -180;
+            tweebObject.x = this.isMobile ? 58 : 160;
+            tweebObject.y = this.isMobile ? -55 : -200;
             break;
           case 'G':
-            tweebObject.x = this.isMobile ? 120 : 350;
-            tweebObject.y = this.isMobile ? -60 : -215;
+            tweebObject.x = this.isMobile ? 110 : 300;
+            tweebObject.y = this.isMobile ? -55 : -195;
             break;
           case 'L':
-            tweebObject.x = this.isMobile ? 60 : 165;
-            tweebObject.y = this.isMobile ? -17 : -85;
+            tweebObject.x = this.isMobile ? 70 : 195;
+            tweebObject.y = this.isMobile ? 7 : -30;
             break;
           case 'F':
-            tweebObject.x = this.isMobile ? 120 : 350;
-            tweebObject.y = this.isMobile ? 5 : -28;
+            tweebObject.x = this.isMobile ? 120 : 320;
+            tweebObject.y = this.isMobile ? 7 : -30;
             break;
         }
 

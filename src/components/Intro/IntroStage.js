@@ -14,7 +14,7 @@ class IntroStage {
     createjs.Ticker.addEventListener('tick', this.stage);
     createjs.Ticker.setFPS(60);
 
-    this.scale = this.isMobile ? 0.33 : 1;
+    this.scale = this.isMobile ? 0.33 : .9;
     this.lineMargin = this.isMobile ? 20 : 45;
     this.width = window.innerWidth;
     this.height = canvas.height;
@@ -81,8 +81,8 @@ class IntroStage {
         imageSrc: 'letter-Y.svg',
         x: this.centerX,
         y: this.centerY * 3,
-        offsetX: -200 * this.scale, // offsetX: -90 * this.scale,
-        offsetY: -60 * this.scale, // offsetY: -95 * this.scale,
+        offsetX: -100 * this.scale, //-200 * this.scale, // offsetX: -90 * this.scale,
+        offsetY: -90 * this.scale, //-60 * this.scale, // offsetY: -95 * this.scale,
         isTop: true,
         points: [
           {
@@ -104,8 +104,8 @@ class IntroStage {
         imageSrc: 'letter-G.svg',
         x: this.centerX,
         y: this.centerY * 3,
-        offsetX: 110 * this.scale,
-        offsetY: -95 * this.scale,
+        offsetX: 68 * this.scale, // 110 * this.scale,
+        offsetY: -90 * this.scale, // -95 * this.scale,
         isTop: true,
         points: [
           {
@@ -123,8 +123,8 @@ class IntroStage {
         imageSrc: 'letter-L.svg',
         x: this.centerX,
         y: this.centerY * 3,
-        offsetX: -60 * this.scale,
-        offsetY: 35 * this.scale,
+        offsetX: -58 * this.scale, //-60 * this.scale,
+        offsetY: 95 * this.scale, //35 * this.scale,
         isTop: false,
         points: [
           {
@@ -146,8 +146,8 @@ class IntroStage {
         imageSrc: 'letter-F.svg',
         x: this.centerX,
         y: this.centerY * 3,
-        offsetX: 110 * this.scale,
-        offsetY: 95 * this.scale,
+        offsetX: 100 * this.scale, // 110 * this.scale,
+        offsetY: 95 * this.scale, // 95 * this.scale,
         isTop: false,
         points: [
           {
@@ -215,8 +215,7 @@ class IntroStage {
     letter.width = img.naturalWidth;
     letter.height = img.naturalHeight;
 
-    if (!this.isMobile)
-      letter.shadow = new createjs.Shadow('rgba(0,0,0,0.2)', 15, 20, 30); //
+    //if (!this.isMobile) letter.shadow = new createjs.Shadow('rgba(0,0,0,0.2)', 15, 20, 30); //
 
     let container = new createjs.Container();
     // container.regX = (letter.width / 2) * this.scale;
@@ -308,8 +307,8 @@ class IntroStage {
     let y = event.accelerationIncludingGravity.y * speed;
 
     this.setPositions(letter => {
-      letter.displayObject.x += x * Math.random();
-      letter.displayObject.y -= y * Math.random();
+      letter.displayObject.x += x; //  * Math.random()
+      letter.displayObject.y -= y; //  * Math.random()
     });
   }
 
@@ -322,13 +321,13 @@ class IntroStage {
     if (this.isMobile) {
       maxX = 50;
       minX = -50;
-      maxY = 180;
+      maxY = 166;
       minY = 125;
     } else {
       maxX = window.innerWidth / 4;
       minX = -(window.innerWidth / 4);
-      maxY = 100;
-      minY = -100;
+      maxY = 110;
+      minY = -84;
     }
 
     if (
