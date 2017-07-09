@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import IntroStage from './IntroStage';
+import IntroMovieClip from './IntroMovieClip';
 import './Intro.css';
 
 class Intro extends Component {
@@ -11,6 +12,13 @@ class Intro extends Component {
     this.isMobile = window.innerWidth < 768;
 
     this.resizeTimeout = null;
+
+
+    window.Typekit.load({
+      async: true,
+      active: this.initIntro.bind(this)
+    });
+
   }
 
   componentDidMount() {
@@ -28,11 +36,16 @@ class Intro extends Component {
 
     //window.addEventListener('orientationchange', this.resize.bind(this));
 
-    this.initIntro();
   }
 
   initIntro() {
-    this.introStage.bind();
+      const _this = this;
+      setTimeout(() => {
+          this.introMovieClip = new IntroMovieClip(this.introStage.stage, () => {
+            _this.introStage.bind()
+            _this.introMovieClip.remove()
+          });
+      });
   }
 
   resize() {

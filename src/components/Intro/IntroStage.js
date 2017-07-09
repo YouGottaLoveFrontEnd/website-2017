@@ -6,7 +6,6 @@ class IntroStage {
   constructor(canvas) {
     this.canvas = canvas;
     this.stage = new createjs.Stage(canvas);
-    this.stage.alpha = 0;
     this.stage.scaleX = this.stage.scaleY = 2; //window.devicePixelRatio;
     this.isMobile = window.innerWidth < 768;
     if (!this.isMobile) this.stage.enableMouseOver(30);
@@ -167,7 +166,6 @@ class IntroStage {
       this.loadLetterImage(letter);
     });
 
-    createjs.Tween.get(this.stage).to({ alpha: 1 }, 1000);
   }
 
   loadLetterImage(letter) {
@@ -184,6 +182,7 @@ class IntroStage {
     letter.displayObject.startY = letter.displayObject.y = letter.y;
     this.container.addChild(letter.displayObject);
     this.container.addChild(container);
+
     letter.loaded = true;
     if (this.isAllLettersLoaded()) {
       if (!this.isMobile) this.staticBind();

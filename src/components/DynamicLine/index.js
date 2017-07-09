@@ -4,29 +4,35 @@ const showLines = false;
 
 class DynamicLine {
   constructor(x1, y1, x2, y2) {
-    this.container = new createjs.Container();
 
-    this.startPoint = new createjs.Point(x1, y1 + 0.5);
-    this.point1 = new createjs.Point();
-    this.point2 = new createjs.Point();
-    this.point3 = new createjs.Point();
-    this.point4 = new createjs.Point();
-    this.point5 = new createjs.Point();
-    this.point6 = new createjs.Point();
-    this.endPoint = new createjs.Point(x2, y2 + 0.5);
+    this.container = new createjs.Container();
+    //this.container.alpha = 0;
+    this.container.regY = -.5;
+    
+    this.startPoint = new createjs.Point(x1, y1);
+    this.point1 = new createjs.Point(x1, y1);
+    this.point2 = new createjs.Point(x1, y1);
+    this.point3 = new createjs.Point(x1, y1);
+    this.point4 = new createjs.Point(x2, y2);
+    this.point5 = new createjs.Point(x2, y2);
+    this.point6 = new createjs.Point(x2, y2);
+    this.endPoint = new createjs.Point(x2, y2);
 
     return this;
   }
 
   drawPoints() {
+
     this.container.removeAllChildren();
+    
+    this.container.alpha = (this.container.alpha < 1) ? this.container.alpha += .01 : 1;
 
     this.graphics = new createjs.Graphics();
     this.graphics.clear();
     this.graphics.setStrokeStyle(1);
     this.graphics.beginStroke('#05CF9D');
 
-    this.shape = new createjs.Shape(this.graphics);
+    this.line = new createjs.Shape(this.graphics);
 
     // START
     this.graphics.lineTo(this.startPoint.x, this.startPoint.y);
@@ -127,10 +133,10 @@ class DynamicLine {
 
     // END
     this.graphics.lineTo(this.point5.x, this.point5.y);
-    this.graphics.lineTo(this.endPoint.x, this.endPoint.y + 0.5);
+    this.graphics.lineTo(this.endPoint.x, this.endPoint.y);
     //        this.createPoint(this.endPoint.x, this.endPoint.y, 'yellow');
 
-    this.container.addChild(this.shape);
+    this.container.addChild(this.line);
 
     // this.createPoint(this.point1.x, this.point1.y);
     // this.createPoint(this.point2.x, this.point2.y);
@@ -186,7 +192,7 @@ class DynamicLine {
   }
 
   setPoint(index, x, y) {
-    this['point' + index].setValues(x, y + 0.5);
+    this['point' + index].setValues(x, y);
   }
 }
 
