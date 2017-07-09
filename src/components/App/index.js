@@ -7,10 +7,6 @@ import CodeOfConduct from '../../pages/CodeOfConduct';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-  }
 
   render() {
     return (

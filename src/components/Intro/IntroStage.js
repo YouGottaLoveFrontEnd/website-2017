@@ -165,7 +165,6 @@ class IntroStage {
     this.eachLetter(letter => {
       this.loadLetterImage(letter);
     });
-
   }
 
   loadLetterImage(letter) {

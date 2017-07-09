@@ -13,12 +13,10 @@ class Intro extends Component {
 
     this.resizeTimeout = null;
 
-
     window.Typekit.load({
       async: true,
-      active: this.initIntro.bind(this)
+      active: this.initIntro.bind(this),
     });
-
   }
 
   componentDidMount() {
@@ -35,17 +33,16 @@ class Intro extends Component {
     window.addEventListener('resize', this.resize.bind(this));
 
     //window.addEventListener('orientationchange', this.resize.bind(this));
-
   }
 
   initIntro() {
-      const _this = this;
-      setTimeout(() => {
-          this.introMovieClip = new IntroMovieClip(this.introStage.stage, () => {
-            _this.introStage.bind()
-            _this.introMovieClip.remove()
-          });
+    const _this = this;
+    setTimeout(() => {
+      this.introMovieClip = new IntroMovieClip(this.introStage.stage, () => {
+        _this.introStage.bind();
+        _this.introMovieClip.remove();
       });
+    });
   }
 
   resize() {

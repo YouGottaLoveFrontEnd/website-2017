@@ -4,11 +4,10 @@ const showLines = false;
 
 class DynamicLine {
   constructor(x1, y1, x2, y2) {
-
     this.container = new createjs.Container();
     //this.container.alpha = 0;
-    this.container.regY = -.5;
-    
+    this.container.regY = -0.5;
+
     this.startPoint = new createjs.Point(x1, y1);
     this.point1 = new createjs.Point(x1, y1);
     this.point2 = new createjs.Point(x1, y1);
@@ -22,10 +21,10 @@ class DynamicLine {
   }
 
   drawPoints() {
-
     this.container.removeAllChildren();
-    
-    this.container.alpha = (this.container.alpha < 1) ? this.container.alpha += .01 : 1;
+
+    this.container.alpha =
+      this.container.alpha < 1 ? (this.container.alpha += 0.01) : 1;
 
     this.graphics = new createjs.Graphics();
     this.graphics.clear();
