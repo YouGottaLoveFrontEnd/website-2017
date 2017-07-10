@@ -14,7 +14,7 @@ class IntroStage {
     createjs.Ticker.addEventListener('tick', this.stage);
     createjs.Ticker.setFPS(60);
 
-    this.scale = this.isMobile ? 0.33 : .9;
+    this.scale = this.isMobile ? 0.33 : .85;
     this.lineMargin = this.isMobile ? 20 : 45;
     this.width = window.innerWidth;
     this.height = canvas.height;
@@ -87,15 +87,15 @@ class IntroStage {
         points: [
           {
             x: -200 * this.scale,
-            y: 0,
+            y: 0
           },
           {
             x: 0,
-            y: 0,
+            y: -20 * this.scale
           },
           {
             x: 126 * this.scale,
-            y: 0,
+            y: -30 * this.scale
           },
         ],
       },
@@ -110,10 +110,10 @@ class IntroStage {
         points: [
           {
             x: 70 * this.scale,
-            y: 0,
+            y: -10 * this.scale
           },
           {
-            x: 340 * this.scale,
+            x: 320 * this.scale,
             y: 0,
           },
         ],
@@ -129,15 +129,15 @@ class IntroStage {
         points: [
           {
             x: -200 * this.scale,
-            y: 0,
+            y: 0
           },
           {
-            x: 0,
-            y: 135 * this.scale,
+            x: 10 * this.scale,
+            y: 165 * this.scale
           },
           {
-            x: 70 * this.scale,
-            y: 135 * this.scale,
+            x: 90 * this.scale,
+            y: 145 * this.scale
           },
         ],
       },
@@ -152,11 +152,11 @@ class IntroStage {
         points: [
           {
             x: 20 * this.scale,
-            y: 135 * this.scale,
+            y: 155 * this.scale
           },
           {
-            x: 340 * this.scale,
-            y: 0,
+            x: 320 * this.scale,
+            y: 0
           },
         ],
       },
@@ -307,8 +307,8 @@ class IntroStage {
     let y = event.accelerationIncludingGravity.y * speed;
 
     this.setPositions(letter => {
-      letter.displayObject.x += x; //  * Math.random()
-      letter.displayObject.y -= y; //  * Math.random()
+      letter.displayObject.x += x * Math.random()
+      letter.displayObject.y -= y * Math.random()
     });
   }
 
@@ -321,8 +321,8 @@ class IntroStage {
     if (this.isMobile) {
       maxX = 50;
       minX = -50;
-      maxY = 166;
-      minY = 125;
+      maxY = 155;
+      minY = 135;
     } else {
       maxX = window.innerWidth / 4;
       minX = -(window.innerWidth / 4);
