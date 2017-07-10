@@ -3,11 +3,15 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Home from '../../pages/Home';
 import CodeOfConduct from '../../pages/CodeOfConduct';
+import FontLoader from '../../utils/FontLoader';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
-
+  constructor(props) {
+    super(props);
+    FontLoader.load();
+  } 
   render() {
     return (
       <Router>

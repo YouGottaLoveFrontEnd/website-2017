@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import IntroStage from './IntroStage';
 import IntroMovieClip from './IntroMovieClip';
+import FontLoader from '../../utils/FontLoader';
+
+
 import './Intro.css';
 
 class Intro extends Component {
@@ -13,10 +16,12 @@ class Intro extends Component {
 
     this.resizeTimeout = null;
 
-    window.Typekit.load({
-      async: true,
-      active: this.initIntro.bind(this),
-    });
+    if (FontLoader.loaded) {
+      this.initIntro();
+    } else {
+      FontLoader.addLoadCallback(this.initIntro.bind(this));
+    }
+
   }
 
   componentDidMount() {
