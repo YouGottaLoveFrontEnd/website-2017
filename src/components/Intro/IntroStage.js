@@ -326,7 +326,7 @@ class IntroStage {
     } else {
       maxX = window.innerWidth / 4;
       minX = -(window.innerWidth / 4);
-      maxY = 110;
+      maxY = 90;
       minY = -84;
     }
 
