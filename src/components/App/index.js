@@ -11,7 +11,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     FontLoader.load();
-  } 
+  }
   render() {
     return (
       <Router>

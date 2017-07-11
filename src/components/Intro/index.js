@@ -4,7 +4,6 @@ import IntroStage from './IntroStage';
 import IntroMovieClip from './IntroMovieClip';
 import FontLoader from '../../utils/FontLoader';
 
-
 import './Intro.css';
 
 class Intro extends Component {
@@ -21,7 +20,6 @@ class Intro extends Component {
     } else {
       FontLoader.addLoadCallback(this.initIntro.bind(this));
     }
-
   }
 
   componentDidMount() {
@@ -37,7 +35,6 @@ class Intro extends Component {
 
     window.addEventListener('resize', this.resize.bind(this));
     window.addEventListener('orientationchange', this.resize.bind(this));
-
   }
 
   initIntro() {
@@ -51,9 +48,7 @@ class Intro extends Component {
   }
 
   resize() {
-
     this.setCanvasSize(window.innerWidth, this.isMobile ? 224 : 674);
-    
   }
 
   setCanvasSize(width, height) {
