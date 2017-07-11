@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Intro from '../../components/Intro';
-import Speakers from '../../components/Speakers';
 import About from '../../components/About';
+import Speakers from '../../components/Speakers';
+import Workshops from '../../components/Workshops';
 
 class Home extends Component {
   render() {
@@ -11,6 +12,7 @@ class Home extends Component {
         <Intro />
         <Speakers />
         <About />
+        <Workshops />
       </div>
     );
   }

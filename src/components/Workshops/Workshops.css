@@ -1,20 +1,4 @@
-.speakers {
+.workshops {
   padding-bottom: 45px;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
-}
-
-.speakers-header {
-  padding: 0 0 125px;
-}
-
-.speakers-list {}
-
-@media (max-width:480px) {
-  .speakers {
-    padding-top: 45px;
-    padding-bottom: 0px;
-  }
-  .speakers .container-fluid {
-    width: calc(100% - 90px);
-  }
 }
