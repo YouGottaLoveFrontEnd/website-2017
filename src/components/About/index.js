@@ -32,7 +32,7 @@ class About extends Component {
         <div className="container container-fluid">
           <div className="container-header">
             <span>
-              2 <i>Awesome Spaces</i>
+              3 <i>Awesome Spaces</i>
             </span>
             <h1>The Venue</h1>
             <div className="container-header-flexbox">

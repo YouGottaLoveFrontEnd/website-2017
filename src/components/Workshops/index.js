@@ -8,7 +8,7 @@ class Workshops extends Component {
         <div className="container container-fluid">
           <div className="container-header">
             <span>
-              3 <i>Exceptional Exercises</i>
+              2 <i>Exceptional Exercises</i>
             </span>
             <h1>Workshops</h1>
             <div className="container-header-flexbox">

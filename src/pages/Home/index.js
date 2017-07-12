@@ -11,8 +11,8 @@ class Home extends Component {
       <div className="home">
         <Intro />
         <Speakers />
-        <About />
         <Workshops />
+        <About />
       </div>
     );
   }
