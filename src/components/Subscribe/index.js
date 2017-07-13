@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
 import './Subscribe.css';
 
 class Subscribe extends Component {
@@ -27,7 +26,6 @@ class Subscribe extends Component {
             type="email"
             name="EMAIL"
             placeholder="Enter Your email address"
-            onChange={this.validate.bind(this)}
             required
           />
           <button type="submit" name="subscribe">
