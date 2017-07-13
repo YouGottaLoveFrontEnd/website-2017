@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Intro from '../../components/Intro';
 import About from '../../components/About';
 import Speakers from '../../components/Speakers';
-import Workshops from '../../components/Workshops';
 
 class Home extends Component {
   render() {
@@ -11,7 +10,6 @@ class Home extends Component {
       <div className="home">
         <Intro />
         <Speakers />
-        <Workshops />
         <About />
       </div>
     );
