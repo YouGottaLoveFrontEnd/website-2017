@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import Home from '../../pages/Home';
 import CodeOfConduct from '../../pages/CodeOfConduct';
 import FontLoader from '../../utils/FontLoader';
-import { isStaging } from '../../utils/Browser';
+import { isStaging } from '../../utils/Environment';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SocialIcons from '../SocialIcons';
-import { isChrome } from '../../utils/Browser';
+import { isChrome } from '../../utils/Environment';
 import './Speaker.css';
 
 class Speaker extends Component {

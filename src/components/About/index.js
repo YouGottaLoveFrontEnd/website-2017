@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { isChrome } from '../../utils/Browser';
+import { isChrome } from '../../utils/Environment';
 import './About.css';
 
 class About extends Component {
