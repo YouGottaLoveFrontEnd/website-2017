@@ -7,8 +7,8 @@ Run `yarn install` to get all dependencies. Before pushing, make sure to run `ya
 
 ## Deployment
 ### Staging
-Run `yarn staging` to create the build and copy it to the `docs` folder.
-The staging version will be available at [https://yougottalovefrontend.github.io/website-2017/](https://yougottalovefrontend.github.io/website-2017/) 
+Run `yarn staging` to create the build and copy it to the `docs` folder. Commit the changes.
+The staging version will be available at [https://yougottalovefrontend.github.io/website-2017/](https://yougottalovefrontend.github.io/website-2017/).
 ### Production
 Whenever you are ready to deploy to production, just run `yarn deploy`. It will run `yarn build` and `firebase deploy`. 
 The production version is available at [https://yougottalovefrontend.com/](https://yougottalovefrontend.com/)

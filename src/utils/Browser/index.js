@@ -20,3 +20,7 @@ export const isChrome = () => {
     return false;
   }
 };
+
+export const isStaging = () => {  
+  return window.location.href.indexOf('github.io/website-2017/') > -1;
+};
