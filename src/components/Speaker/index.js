@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SocialIcons from '../SocialIcons';
 import { isChrome } from '../../utils/Environment';
+import LazyLoad from 'react-lazyload';
 import './Speaker.css';
 
 class Speaker extends Component {
@@ -48,12 +49,14 @@ class Speaker extends Component {
     const imageExtension = isChrome() ? 'webp' : 'jpg';
     return (
       <div className="speaker">
-        <img
-          src={`${speaker.image_src}.${imageExtension}`}
-          className="drop-shadow"
-          style={this.state.imageSize}
-          alt={`${speaker.first_name} ${speaker.last_name}`}
-        />
+        <LazyLoad height={this.state.imageSize.height} offset={150}>
+          <img
+            src={`${speaker.image_src}.${imageExtension}`}
+            className="drop-shadow"
+            style={this.state.imageSize}
+            alt={`${speaker.first_name} ${speaker.last_name}`}
+          />
+        </LazyLoad>
         <SocialIcons data={speaker.social_icons} />
         <div className="speaker-info">
           <h2>
