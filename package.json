@@ -11,6 +11,7 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "source-map-explorer": "^1.4.0",
     "firebase-tools": "^3.9.1",
     "husky": "^0.14.3",
     "node-sass-chokidar": "^0.0.2",
@@ -18,6 +19,7 @@
     "react-scripts": "1.0.7"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "precommit": "yarn format && git add .",
