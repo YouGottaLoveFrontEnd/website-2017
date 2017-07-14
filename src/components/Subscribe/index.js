@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './Subscribe.css';
 
 class Subscribe extends Component {
-
   componentDidMount() {
     this.emailInput = ReactDOM.findDOMNode(this.refs.emailInput);
     this.validEmailMessage = ReactDOM.findDOMNode(this.refs.validEmailMessage);

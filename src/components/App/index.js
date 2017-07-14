@@ -19,10 +19,7 @@ class App extends Component {
           <Header />
           <div className="app-body">
             <Route exact path="/" component={Home} />
-            <Route
-              path="/codeofconduct"
-              component={CodeOfConduct}
-            />
+            <Route path="/codeofconduct" component={CodeOfConduct} />
           </div>
           <Footer />
         </div>

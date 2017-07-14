@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SocialIcons from '../SocialIcons';
+import { isChrome } from '../../utils/Browser';
 import './Speaker.css';
 
 class Speaker extends Component {
@@ -44,10 +45,11 @@ class Speaker extends Component {
 
   render() {
     const { speaker } = this.props;
+    const imageExtension = isChrome() ? 'webp' : 'jpg';
     return (
       <div className="speaker">
         <img
-          src={speaker.image_src}
+          src={`${speaker.image_src}.${imageExtension}`}
           className="drop-shadow"
           style={this.state.imageSize}
           alt={`${speaker.first_name} ${speaker.last_name}`}

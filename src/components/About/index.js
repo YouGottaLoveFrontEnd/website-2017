@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { isChrome } from '../../utils/Browser';
 import './About.css';
 
 class About extends Component {
@@ -27,6 +28,7 @@ class About extends Component {
   }
 
   render() {
+    const imageExtension = isChrome() ? 'webp' : 'png';
     return (
       <div className="about">
         <div className="container container-fluid">
@@ -64,7 +66,7 @@ class About extends Component {
                   ref="wrapper"
                 >
                   <img
-                    src="kameri.webp"
+                    src={`cameri.${imageExtension}`}
                     ref="image"
                     alt="The Cameri Theatre of Tel Aviv"
                   />
