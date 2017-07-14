@@ -9,11 +9,7 @@ export const isChrome = () => {
   if (isIOSChrome) {
     return true;
   } else if (
-    isChromium !== null &&
-    isChromium !== undefined &&
-    vendorName === 'Google Inc.' &&
-    isOpera === false &&
-    isIEedge === false
+    isChromium !== null && isChromium !== undefined && vendorName === 'Google Inc.' && isOpera === false && isIEedge === false
   ) {
     return true;
   } else {

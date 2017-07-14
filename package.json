@@ -10,14 +10,23 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "firebase-tools": "^3.9.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.1",
     "node-sass-chokidar": "^0.0.2",
     "prettier": "^1.5.2",
-    "react-scripts": "1.0.7",
-    "firebase-tools": "^3.9.1"
+    "react-scripts": "1.0.7"
+  },
+  "lint-staged": {
+    "src/**/*.js src/**/!(node_modules)/**/*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "precommit": "lint-stages",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "staging": "rm -rf docs && mkdir docs && react-scripts build && mv -v build/* docs",
