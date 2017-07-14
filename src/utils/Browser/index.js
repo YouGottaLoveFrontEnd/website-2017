@@ -9,7 +9,11 @@ export const isChrome = () => {
   if (isIOSChrome) {
     return true;
   } else if (
-    isChromium !== null && isChromium !== undefined && vendorName === 'Google Inc.' && isOpera === false && isIEedge === false
+    isChromium !== null &&
+    isChromium !== undefined &&
+    vendorName === 'Google Inc.' &&
+    isOpera === false &&
+    isIEedge === false
   ) {
     return true;
   } else {
@@ -17,6 +21,6 @@ export const isChrome = () => {
   }
 };
 
-export const isStaging = () => {  
+export const isStaging = () => {
   return window.location.href.indexOf('github.io/website-2017/') > -1;
 };
