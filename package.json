@@ -26,12 +26,11 @@
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "precommit": "lint-stages",
+    "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "staging": "rm -rf docs && mkdir docs && react-scripts build && mv -v build/* docs",
     "deploy": "react-scripts build && firebase deploy",
-    "test": "react-scripts test --env=jsdom",
-    "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*.js' 'src/**/!(node_modules)/**/*.js'"
+    "test": "react-scripts test --env=jsdom"
   }
 }
