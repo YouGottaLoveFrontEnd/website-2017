@@ -1,7 +1,7 @@
 import React from 'react';
 import './SocialIcons.css';
 
-const getClassByType = type => `fa fa-${type}`;
+const getClassByType = type => `icon-${type}`;
 
 const SocialIcons = ({ data }) => {
   const icons = data.map(iconData =>
