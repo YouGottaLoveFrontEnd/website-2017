@@ -12,6 +12,7 @@ Run `yarn install` to get all dependencies. Before pushing, make sure to run `ya
   * `var(--yglf-green)`
   * `var(--yglf-grey)`
   * `var(--yglf-white)`
+* It was services workers support. In case something is not updated, refresh the browser twice.
 
 ## Deployment
 ### Staging
