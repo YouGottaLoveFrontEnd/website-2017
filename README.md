@@ -5,6 +5,14 @@ It's a classic react application. It contains `components` and `pages` folder wi
 
 Run `yarn install` to get all dependencies. Before pushing, make sure to run `yarn format` to comply with coding standards.
 
+### Notes
+* Main css and header css are inlined inside `index.html` to increase time to first paint.
+* File `index.html` contains definitions of main css color using css variables.
+  * `var(--yglf-blue)`
+  * `var(--yglf-green)`
+  * `var(--yglf-grey)`
+  * `var(--yglf-white)`
+
 ## Deployment
 ### Staging
 Run `yarn staging` to create the build and copy it to the `docs` folder. Commit the changes.
