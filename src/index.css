@@ -4,7 +4,6 @@ body {
     padding: 0;
     font-family: "sofia-pro";
     font-weight: 300;
-    background-color: #EBEBF3;
     color: #FFF;
 }
 
@@ -24,10 +23,6 @@ body {
     width: calc(100% - 200px);
     padding: 0 15px;
     margin: 0 auto;
-}
-
-.container-header {
-    //padding-top: 45px;
 }
 
 .container-header span {
