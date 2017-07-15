@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import BuyTicketsButton from '../BuyTicketsButton';
 import { Link } from 'react-router-dom';
-import './Header.css';
 
 class Header extends Component {
   resize() {
