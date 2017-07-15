@@ -15,9 +15,18 @@
   <link rel="icon" href="favicon.ico" />
 
   <style>
+    html {
+      --yglf-blue: #3A47E4;
+      --yglf-green: #05CF9D;
+      --yglf-grey: #ebebf3;
+      --yglf-white: #FFF;
+    }
+  </style>
+
+  <style>
     html,
     body {
-      background-color: #3A47E4;
+      background-color: var(--yglf-blue);
       width: 100%;
       height: 100%;
     }
@@ -27,11 +36,11 @@
       padding: 0;
       font-family: "sofia-pro";
       font-weight: 300;
-      color: #FFF;
+      color: var(--yglf-white);
     }
 
     .app-body {
-      background-color: #3A47E4;
+      background-color: var(--yglf-blue);
     }
 
     .container {
@@ -65,13 +74,13 @@
       display: inline-block;
       margin-left: 10px;
       padding-left: 15px;
-      border-left: 1px solid #FFF;
+      border-left: 1px solid var(--yglf-white);
     }
 
     .container-header h1 {
       padding: 0;
       margin: 3px;
-      color: #05CF9D;
+      color: var(--yglf-green);
       font-size: 45px;
       line-height: 45px;
       font-weight: 400;
@@ -139,17 +148,17 @@
       font-weight: 600;
       letter-spacing: 1.17px;
       -webkit-font-smoothing: antialiased;
-      color: #FFF;
+      color: var(--yglf-white);
       padding: 13px 0;
       text-decoration: none;
-      border-bottom: 1px solid #FFF;
+      border-bottom: 1px solid var(--yglf-white);
       text-transform: uppercase;
       cursor: pointer;
     }
 
     .container-header-flexbox .container-header-info a.directions:hover {
-      color: #05CF9D;
-      border-bottom: 1px solid #05CF9D;
+      color: var(--yglf-green);
+      border-bottom: 1px solid var(--yglf-green);
     }
 
     .container-header-info {
@@ -219,8 +228,8 @@
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 3px;
-      background-color: #FFF;
-      color: #3A47E4;
+      background-color: var(--yglf-white);
+      color: var(--yglf-blue);
       border: 0 none;
       cursor: pointer;
       width: 155px;
@@ -229,8 +238,8 @@
     }
 
     .buy-tickets:hover {
-      background-color: #05CF9D;
-      color: #FFF;
+      background-color: var(--yglf-green);
+      color: var(--yglf-white);
     }
 
     .drop-shadow {
@@ -247,7 +256,7 @@
   </style>
   <style>
     .header {
-      background-color: #3A47E4;
+      background-color: var(--yglf-blue);
       width: 100%;
     }
 
@@ -257,12 +266,12 @@
     }
 
     .header .container-fluid {
-      border-left: 1px solid #05CF9D;
-      border-right: 1px solid #05CF9D;
+      border-left: 1px solid var(--yglf-green);
+      border-right: 1px solid var(--yglf-green);
     }
 
     .header-title {
-      border-bottom: 1px solid #05CF9D;
+      border-bottom: 1px solid var(--yglf-green);
       font-size: 22px;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
@@ -275,7 +284,7 @@
     }
 
     .header-title a {
-      color: #FFF;
+      color: var(--yglf-white);
       text-decoration: none;
       line-height: 44px;
     }
@@ -286,7 +295,7 @@
     }
 
     .header-description {
-      border-bottom: 1px solid #05CF9D;
+      border-bottom: 1px solid var(--yglf-green);
       font-weight: 300;
       line-height: 45px;
       height: 44px;
@@ -295,7 +304,7 @@
     }
 
     .header-date-location {
-      border-bottom: 1px solid #05CF9D;
+      border-bottom: 1px solid var(--yglf-green);
       line-height: 45px;
       font-weight: 300;
       height: 44px;
@@ -349,7 +358,7 @@
         position: absolute;
         bottom: 180px;
         width: 100%;
-        border-top: 1px solid #05CF9D;
+        border-top: 1px solid var(--yglf-green);
         text-align: center;
       }
       .header-date-location .place {

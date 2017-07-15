@@ -8,8 +8,8 @@
 .subscribe button {
     font-family: "sofia-pro";
     border-radius: 0;
-    border: 1px solid #3A47E4;
-    color: #3A47E4;
+    border: 1px solid var(--yglf-blue);
+    color: var(--yglf-blue);
     font-size: 13px;
 }
 
@@ -25,8 +25,8 @@
 }
 
 .subscribe button {
-    color: #3A47E4;
-    background-color: #05CF9D;
+    color: var(--yglf-blue);
+    background-color: var(--yglf-green);
     letter-spacing: 2px;
     padding: 8px 15px;
     margin: 0;
@@ -40,11 +40,9 @@
     display: none;
 }
 
-.subscribe button span {}
-
 .subscribe button:hover {
-    background-color: #3A47E4;
-    color: #FFF;
+    background-color: var(--yglf-blue);
+    color: var(--yglf-white);
 }
 
 .subscribe.animate input {
@@ -59,8 +57,8 @@
     animation: animateButtonWidth 0.5s ease-out;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    background-color: #3A47E4;
-    color: #FFF;
+    background-color: var(--yglf-blue);
+    color: var(--yglf-white);
 }
 
 .subscribe.animate:not(.success) button span {
@@ -83,11 +81,11 @@
 @-webkit-keyframes animateInputWidth {
     0% {
         width: 282px;
-        border: 1px solid #3A47E4;
+        border: 1px solid var(--yglf-blue);
     }
     100% {
         width: 0px;
-        border: 0px solid #3A47E4;
+        border: 0px solid var(--yglf-blue);
         padding: 0;
     }
 }
@@ -107,11 +105,11 @@
     @-webkit-keyframes animateInputWidth {
         0% {
             width: 230px;
-            border: 1px solid #3A47E4;
+            border: 1px solid var(--yglf-blue);
         }
         100% {
             width: 0px;
-            border: 0px solid #3A47E4;
+            border: 0px solid var(--yglf-blue);
             padding: 0;
         }
     }

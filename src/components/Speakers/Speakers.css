@@ -7,8 +7,6 @@
   padding: 0 0 125px;
 }
 
-.speakers-list {}
-
 @media (max-width:480px) {
   .speakers {
     padding-top: 45px;
