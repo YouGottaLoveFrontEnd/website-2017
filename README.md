@@ -7,12 +7,13 @@ Run `yarn install` to get all dependencies. Before pushing, make sure to run `ya
 
 ### Notes
 * Main css and header css are inlined inside `index.html` to increase time to first paint.
-* File `index.html` contains definitions of main css color using css variables.
+* It was services workers support. In case something is not updated, refresh the browser twice.
+* File `index.html` contains definitions of main css color using css variables. **Use** them instead of hard-coded colors.
   * `var(--yglf-blue)`
   * `var(--yglf-green)`
   * `var(--yglf-grey)`
   * `var(--yglf-white)`
-* It was services workers support. In case something is not updated, refresh the browser twice.
+* Some react components can be and are lazy loaded. **Use** `<LazyLoad />` component.
 
 ## Deployment
 ### Staging
