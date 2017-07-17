@@ -2,20 +2,10 @@
     height: 674px;
 	border-bottom: 1px solid rgba(5, 207, 157, .3);
 }
-@media (min-width:320px) {
-    .intro {
-    	height: 224px;
-        padding-top: 25px;
-		border-bottom: 0 none;
-    }
-}
-@media (min-width:375px) {
-    .intro {
-        padding-top: 60px;
-    }
-}
-@media (min-width:400px) {
-    .intro {
-        padding-top: 80px;
-    }
+@media (max-width:480px) {		
+    .intro {		    
+        height: 224px;	
+        padding-top: 40px;
+  		border-bottom: 0 none;
+    }		      
 }
