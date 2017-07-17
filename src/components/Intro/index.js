@@ -24,14 +24,14 @@ class Intro extends Component {
 
   componentDidMount() {
     this.canvas = ReactDOM.findDOMNode(this.refs.canvas);
+    this.resize();
+
     this.introWrapper = ReactDOM.findDOMNode(this.refs.introWrapper);
     this.introStage = new IntroStage(this.canvas);
 
     if (this.isMobile) {
       this.introWrapper.style.height = window.innerHeight + 'px';
     }
-
-    this.resize();
 
     window.addEventListener('resize', this.resize.bind(this));
     window.addEventListener('orientationchange', this.resize.bind(this));
