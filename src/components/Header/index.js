@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import BuyTicketsButton from '../BuyTicketsButton';
 import { Link } from 'react-router-dom';
-import './Header.css';
 
 class Header extends Component {
   resize() {
@@ -32,8 +31,8 @@ class Header extends Component {
           </div>
           <div className="header-description">
             <div className="container-fluid">
-              The largest conference in the middle east, built by developers for
-              developers
+              The largest frontend conference in the Middle East, built by
+              developers for developers
             </div>
           </div>
           <div className="header-date-location">

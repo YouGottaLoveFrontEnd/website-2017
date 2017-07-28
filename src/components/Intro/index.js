@@ -24,6 +24,7 @@ class Intro extends Component {
 
   componentDidMount() {
     this.canvas = ReactDOM.findDOMNode(this.refs.canvas);
+
     this.introWrapper = ReactDOM.findDOMNode(this.refs.introWrapper);
     this.introStage = new IntroStage(this.canvas);
 

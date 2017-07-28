@@ -9,7 +9,7 @@
 
 .codeofconduct h1 {
     margin: 0 0 19px;
-    color: #05CF9D;
+    color: var(--yglf-green);
     font-size: 45px;
     line-height: 45px;
     font-weight: 400;

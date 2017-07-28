@@ -2,15 +2,10 @@
     height: 674px;
 	border-bottom: 1px solid rgba(5, 207, 157, .3);
 }
-.intro canvas {
-	/*border-top: 1px solid #FFF;*/
-	//background-color: rgba(0,0,0,0.3);
-}
-
-@media (max-width:480px) {
-    .intro {
-    	height: 224px;
+@media (max-width:480px) {		
+    .intro {		    
+        height: 224px;	
         padding-top: 40px;
-		border-bottom: 0 none;
-    }
+  		border-bottom: 0 none;
+    }		      
 }

@@ -1,17 +1,15 @@
 .footer {
     padding-top: 100px;
-    color: #3A47E4;
+    color: var(--yglf-blue);
     padding-bottom: 90px;
-    background: #ebebf3;
+    background: var(--yglf-grey);
 }
 
 .footer a {
     font-weight: 300;
-    color: #3A47E4;
+    color: var(--yglf-blue);
     text-decoration: none;
 }
-
-.footer a:hover {}
 
 .footer p {
     line-height: 200%;
@@ -35,7 +33,7 @@
 }
 
 .footer-flexbox:first-child {
-    border-bottom: 1px solid #3A47E4;
+    border-bottom: 1px solid var(--yglf-blue);
     padding-bottom: 45px;
 }
 
@@ -61,13 +59,13 @@
     flex: 1 auto;
     display: inline-block;
     text-decoration: none;
-    color: #3A47E4;
+    color: var(--yglf-blue);
     padding: 5px 0;
     margin-bottom: 3px;
 }
 
 .footer a:hover {
-    color: #05CF9D;
+    color: var(--yglf-green);
 }
 
 .footer .social-icons {
@@ -82,7 +80,7 @@
 @media (max-width:480px) {
     .footer {
         padding: 45px 0 0;
-        color: #3A47E4;
+        color: var(--yglf-blue);
     }
     .footer .container {
         margin: 0 30px;

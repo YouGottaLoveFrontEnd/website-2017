@@ -14,17 +14,17 @@
 
 .speaker .social-icons a {
     text-decoration: none;
-    color: #FFF;
+    color: var(--yglf-white);
     height: 35px;
     cursor: pointer;
 }
 
 .speaker .social-icons a:hover i {
-    color: #05CF9D;
+    color: var(--yglf-green);
 }
 
 .speaker img {
-    border: 1px solid #05CF9D;
+    border: 1px solid var(--yglf-green);
 }
 
 .speaker-info {

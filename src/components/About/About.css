@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 .about .container-header-image-wrapper img {
-  border: 1px solid #05CF9D;
+  border: 1px solid var(--yglf-green);
   width: 100%;
 }
 
