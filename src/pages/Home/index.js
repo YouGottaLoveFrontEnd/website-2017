@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Intro from '../../components/Intro';
 import About from '../../components/About';
 import Speakers from '../../components/Speakers';
+import Workshops from '../../components/Workshops';
 import LazyLoad from 'react-lazyload';
 
 class Home extends Component {
@@ -11,6 +12,9 @@ class Home extends Component {
       <div className="home">
         <Intro />
         <Speakers />
+        <LazyLoad height={400} offset={150}>
+          <Workshops />
+        </LazyLoad>
         <LazyLoad height={400} offset={150}>
           <About />
         </LazyLoad>
