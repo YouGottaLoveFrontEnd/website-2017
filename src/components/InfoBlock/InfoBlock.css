@@ -1,0 +1,40 @@
+.info-block .info-block-header span {
+    display: inline-block;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translate(5px, 8px);
+}
+.info-block .info-block-header span i {
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 1px solid var(--yglf-white);
+}
+.info-block .info-block-text h2 {
+    padding: 0;
+    margin: 3px;
+    color: var(--yglf-green);
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 4.55px;
+    -webkit-font-smoothing: antialiased;
+}
+.info-block .info-block-text p {
+    padding: 15px 0 0 240px;
+    margin: 0;
+    width: 560px;
+    font-size: 15px !important;
+    font-weight: 100;
+    font-family: "sofia-pro";
+    line-height: 33px;
+    letter-spacing: 0.9px;
+    margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+}

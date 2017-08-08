@@ -1,0 +1,60 @@
+{
+    "all": [{
+        "first_name": "Sergei",
+        "last_name": "Bolshichov",
+        "position": "Tech Lead",
+        "image_src": "sergei_bolshichov"
+    }, {
+        "first_name": "Tom",
+        "last_name": "Raviv",
+        "position": "Application Developer",
+        "image_src": "tom_raviv"
+    }, {
+        "first_name": "Igal",
+        "last_name": "Staklov",
+        "position": "Developer",
+        "image_src": "igal_staklov"
+    }, {
+        "first_name": "Oren",
+        "last_name": "Shtang",
+        "position": "Application Developer",
+        "image_src": "oren_shtang"
+    }, {
+        "first_name": "Anna",
+        "last_name": "Helise Rand",
+        "position": "Application Developer",
+        "image_src": "anna_helise_rand"
+    }, {
+        "first_name": "Yogev",
+        "last_name": "Surname",
+        "position": "Application Developer",
+        "image_src": "yogev_surname"
+    }, {
+        "first_name": "Adir",
+        "last_name": "Surname",
+        "position": "Application Developer",
+        "image_src": "adir_surname"
+    }, {
+        "first_name": "Danielle",
+        "last_name": "Kanish",
+        "position": "Application Developer",
+        "image_src": "danielle_kanish"
+    }, {
+        "first_name": "Ella",
+        "last_name": "Moscovitz",
+        "position": "Application Developer",
+        "image_src": "ella_moscovitz"
+    }, {
+        "first_name": "Oren",
+        "last_name": "Shtang",
+        "position": "Application Developer",
+        "image_src": "oren_shtang"
+    }, {
+        "first_name": "Yaron",
+        "last_name": "Shavit",
+        "position": "Application Developer",
+        "image_src": "yaron_shavit"
+    }]
+}
+
+

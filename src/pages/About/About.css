@@ -1,43 +1,67 @@
 .about-page {
-    padding: 90px 0;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
 }
-
 .about-page-header {
+    padding: 90px 0;
     display: flex;
 }
-
 .about-page-header-image {
     width: 50%;
     position: relative;
 }
-
 .about-page-header-image img {
     position: absolute;
     right: 0;
     top: 0;
 }
-
 .about-page-header-text {
     width: 50%;
     position: relative;
 }
-
 .about-page-header-text h1 {
+    padding: 0;
+    margin: 0;
     font-size: 111px;
     font-weight: 400;
     color: #05CF9D;
-    padding: 0;
-    margin: 0;
-    margin-left: -120px;
+    margin-left: -100px;
+    -webkit-font-smoothing: antialiased;
 }
-
 .about-page-header-text p {
+    margin: 0 auto;
+	padding-top: 32px;
 	font-size: 23px;
 	font-weight: 300;
 	letter-spacing: 1.22px;
-	line-height: 48px;
+	line-height: 45px;
 	width: 450px;
     -webkit-font-smoothing: antialiased;
-    margin: 0 auto;
+}
+.about-page-past {
+	display: flex;
+	padding: 45px 0 45px 240px;
+}
+.about-page-past-section {
+	padding-right: 70px;
+	padding-top: 26px;
+	width: 410px;
+}
+.about-page-past-section h3 {
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 3.98px;
+    line-height: 45px;
+    padding: 0;
+    margin: 0;
+	font-size: 48px;
+	font-weight: 400;
+	color: #EAEBF3;
+}
+.about-page-past-section p {
+	padding-top: 12px;
+    font-size: 15px !important;
+    font-weight: 100;
+    font-family: "sofia-pro";
+    line-height: 33px;
+    letter-spacing: 0.9px;
+    -webkit-font-smoothing: antialiased;
 }
