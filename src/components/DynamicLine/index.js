@@ -1,21 +1,23 @@
+import BaseLine from './base-line';
+
 const createjs = window.createjs;
 
 const showLines = false;
 
-class DynamicLine {
+class DynamicLine extends BaseLine {
   constructor(x1, y1, x2, y2) {
+    super(x1, y1, x2, y2);
+
     this.container = new createjs.Container();
     //this.container.alpha = 0;
     this.container.regY = -0.5;
 
-    this.startPoint = new createjs.Point(x1, y1);
     this.point1 = new createjs.Point(x1, y1);
     this.point2 = new createjs.Point(x1, y1);
     this.point3 = new createjs.Point(x1, y1);
     this.point4 = new createjs.Point(x2, y2);
     this.point5 = new createjs.Point(x2, y2);
     this.point6 = new createjs.Point(x2, y2);
-    this.endPoint = new createjs.Point(x2, y2);
 
     return this;
   }
@@ -26,15 +28,8 @@ class DynamicLine {
     this.container.alpha =
       this.container.alpha < 1 ? (this.container.alpha += 0.01) : 1;
 
-    this.graphics = new createjs.Graphics();
-    this.graphics.clear();
-    this.graphics.setStrokeStyle(1);
-    this.graphics.beginStroke('#05CF9D');
-
-    this.line = new createjs.Shape(this.graphics);
-
     // START
-    this.graphics.lineTo(this.startPoint.x, this.startPoint.y);
+    this.drawEndPoint();
     this.graphics.lineTo(this.point1.x, this.point1.y);
 
     //this.createPoint(this.startPoint.x, this.startPoint.y, 'yellow');
@@ -132,7 +127,7 @@ class DynamicLine {
 
     // END
     this.graphics.lineTo(this.point5.x, this.point5.y);
-    this.graphics.lineTo(this.endPoint.x, this.endPoint.y);
+    this.drawEndPoint();
     //        this.createPoint(this.endPoint.x, this.endPoint.y, 'yellow');
 
     this.container.addChild(this.line);
