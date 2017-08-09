@@ -3,6 +3,7 @@ import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/Environment';
 import InfoBlock from '../../components/InfoBlock';
 import TeamPerson from '../../components/TeamPerson';
+import AboutComponent from '../../components/About';
 import teamData from '../../assets/data/team.json';
 
 import './About.css';
@@ -84,7 +85,13 @@ class About extends Component {
                 Supported by non-stop sunshine, it was the first convention of
                 its kind in Israel.
               </p>
-              <a href="#">VIEW 2015 TALKS</a>
+              <a
+                href="http://2015.yougottalovefrontend.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                VIEW 2015 TALKS
+              </a>
             </div>
             <div className="about-page-past-section">
               <h3>YGLF 2016</h3>
@@ -94,7 +101,13 @@ class About extends Component {
                 talks, the technical and social vibe dominated the stage, the
                 bar and the lounge.
               </p>
-              <a href="#">VIEW 2016 TALKS</a>
+              <a
+                href="http://2016.yougottalovefrontend.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                VIEW 2016 TALKS
+              </a>
             </div>
           </div>
           <InfoBlock data={team} />
@@ -102,6 +115,7 @@ class About extends Component {
             {teamPersons}
           </div>
         </div>
+        <AboutComponent />
       </div>
     );
   }

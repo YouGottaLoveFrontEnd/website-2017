@@ -65,3 +65,10 @@
     letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
 }
+.about-page-past-section a {
+    font-size: 15px;
+    font-size: 600;
+    color: var(--yglf-green);
+    text-decoration: none;
+    line-height: var(--cell)
+}

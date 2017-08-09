@@ -1,3 +1,42 @@
+.team-list {
+    padding: var(--cell) 0 calc(var(--cell) * 3);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 63px;
+}
+
+.team-list .team-person:nth-child(3n+2) {
+    padding-top: calc(var(--cell) * 2);
+    text-align: center;
+}
+
+.team-list .team-person:nth-child(3n+3) {
+    text-align: right;
+}
+
 .team-person {
-	
+    width: calc(100% / 3);
+}
+
+.team-person img {
+    border: 1px solid var(--yglf-green);
+    margin: 0 auto;
+}
+
+.team-person-name,
+.team-person-position {
+    font-size: 25px;
+    color: var(--yglf-white);
+    letter-spacing: 0.28px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+.team-person-name {
+    font-size: 25px;
+    line-height: 57px;
+}
+
+.team-person-position {
+    font-size: 13px;
 }
