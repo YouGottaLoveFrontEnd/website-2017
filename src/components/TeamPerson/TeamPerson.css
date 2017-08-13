@@ -27,16 +27,23 @@
 .team-person-position {
     font-size: 25px;
     color: var(--yglf-white);
-    letter-spacing: 0.28px;
-    -webkit-font-smoothing: antialiased;
     font-weight: 400;
 }
 
 .team-person-name {
     font-size: 25px;
     line-height: 57px;
+    letter-spacing: 0.28px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .team-person-position {
     font-size: 13px;
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--yglf-gray);
+    opacity: 0.75;
+    //-webkit-font-smoothing: antialiased;
 }

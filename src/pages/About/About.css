@@ -17,58 +17,66 @@
 .about-page-header-text {
     width: 50%;
     position: relative;
+    padding-top: calc(var(--cell) * 2)
 }
 .about-page-header-text h1 {
-    padding: 0;
-    margin: 0;
     font-size: 111px;
     font-weight: 400;
     color: #05CF9D;
     margin-left: -100px;
     -webkit-font-smoothing: antialiased;
+    transform: translateY(8px);
 }
 .about-page-header-text p {
     margin: 0 auto;
-	padding-top: 32px;
 	font-size: 23px;
 	font-weight: 300;
 	letter-spacing: 1.22px;
 	line-height: 45px;
 	width: 450px;
     -webkit-font-smoothing: antialiased;
+    transform: translateY(12px);
+    padding-top: var(--cell);
 }
 .about-page-past {
 	display: flex;
-	padding: 45px 0 45px 240px;
+	padding: var(--cell) 0 var(--cell) 240px;
 }
 .about-page-past-section {
 	padding-right: 70px;
-	padding-top: 26px;
+	//padding-top: 26px;
 	width: 410px;
 }
 .about-page-past-section h3 {
     -webkit-font-smoothing: antialiased;
     letter-spacing: 3.98px;
     line-height: 45px;
-    padding: 0;
-    margin: 0;
 	font-size: 48px;
 	font-weight: 400;
 	color: #EAEBF3;
+    transform: translateY(2px);
 }
 .about-page-past-section p {
-	padding-top: 12px;
     font-size: 15px !important;
     font-weight: 100;
     font-family: "sofia-pro";
     line-height: 33px;
     letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
+    transform: translateY(23px);
 }
+
 .about-page-past-section a {
     font-size: 15px;
     font-size: 600;
     color: var(--yglf-green);
     text-decoration: none;
-    line-height: var(--cell)
+    line-height: var(--cell);
+    display: inline-block;
+    letter-spacing: 3.51px;
+    border-bottom: 1px solid var(--yglf-green);
+}
+.about-page-past-section a:hover {
+    color: var(--yglf-white);
+    border-bottom-color: var(--yglf-white);
 }

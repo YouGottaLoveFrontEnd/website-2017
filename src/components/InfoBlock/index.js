@@ -13,10 +13,10 @@ class InfoBlock extends Component {
           </span>
         </div>
         <div className="info-block-text">
-          <h2>
+          <h2 className="auto-height-fix-title">
             {this.props.data.title}
           </h2>
-          <p>
+          <p className="auto-height-fix">
             {this.props.data.text}
           </p>
         </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/Environment';
+import { AutoHeightFix } from '../../utils/ElementManipulation';
 import InfoBlock from '../../components/InfoBlock';
 import TeamPerson from '../../components/TeamPerson';
 import AboutComponent from '../../components/About';
@@ -9,7 +10,10 @@ import teamData from '../../assets/data/team.json';
 import './About.css';
 
 class About extends Component {
-  componentDidMount() {}
+  componentDidMount() {
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
+  }
 
   componentWillUnmount() {}
 
@@ -64,8 +68,8 @@ class About extends Component {
             </LazyLoad>
           </div>
           <div className="about-page-header-text">
-            <h1>About</h1>
-            <p>
+            <h1 className="auto-height-fix-title">About</h1>
+            <p className="auto-height-fix">
               The Third international conference of its kind to be held in
               Israel, will take place in Tel Aviv from October 30th through
               October 31st, 2017.
@@ -76,8 +80,8 @@ class About extends Component {
           <InfoBlock data={whoWeAre} />
           <div className="about-page-past">
             <div className="about-page-past-section">
-              <h3>YGLF 2015</h3>
-              <p>
+              <h3 className="auto-height-fix-title">YGLF 2015</h3>
+              <p className="auto-height-fix">
                 Kicking off with JavaScript ‘sensei’, Douglas Crockford, the
                 2015 inauguration event was roaring. Complete with an
                 after-party venue for the evenings, everyone rambled on about
@@ -94,8 +98,8 @@ class About extends Component {
               </a>
             </div>
             <div className="about-page-past-section">
-              <h3>YGLF 2016</h3>
-              <p>
+              <h3 className="auto-height-fix-title">YGLF 2016</h3>
+              <p className="auto-height-fix">
                 At the second run of the conference we gladly hosted Lea Verou
                 along other world-class Front-End gurus. In and around the
                 talks, the technical and social vibe dominated the stage, the
