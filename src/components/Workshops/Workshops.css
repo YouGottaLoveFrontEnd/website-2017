@@ -10,10 +10,17 @@
   flex-wrap: wrap;
 }
 
+.workshop-container {
+  margin-top: 14px;
+}
+
 .workshops .workshop-author {
   margin: 0 !important;
 }
 
 .workshops .workshop-title {
   font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 15px;
+  margin-top: 7px;
 }

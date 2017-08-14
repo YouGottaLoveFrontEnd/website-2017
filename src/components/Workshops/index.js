@@ -20,17 +20,17 @@ class Workshops extends Component {
                   development.
                 </p>
                 <div className="content-container">
-                  <div>
+                  <div className="workshop-container">
                     <p className="workshop-author">RICHARD FELDMAN</p>
                     <h2 className="workshop-title">Learning Elm!</h2>
                     <p className="workshop-description">
                       Come join Richard Feldman and learn how to build Elm
                       application from zero to production-ready. Find out why
                       people say that learning Elm changed the wat they wrote
-                      cpde in other langugages... for the better!
+                      code in other langugages... for the better!
                     </p>
                   </div>
-                  <div>
+                  <div className="workshop-container">
                     <p className="workshop-author">BRIAN HOLT</p>
                     <h2 className="workshop-title">React + Redux</h2>
                     <p className="workshop-description">
