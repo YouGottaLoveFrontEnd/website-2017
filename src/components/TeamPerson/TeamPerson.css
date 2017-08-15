@@ -43,8 +43,8 @@
 
 .team-person.portrait {}
 
-.team-person.sergei_bolshichov,
-.team-person.igal_staklov {
+.team-person.sergey_bolshchikov,
+.team-person.igal_steklov {
     transform: translateY(-8px);
 }
 
@@ -60,27 +60,27 @@
     transform: translateY(14px);
 }
 
-.team-person.anna_helise_rand {
+.team-person.anna_fridman {
     transform: translateY(33px);
 }
 
-.team-person.yogev_surname {
+.team-person.yogev_ahuvia {
     transform: translateY(-49px);
 }
 
-.team-person.yogev_surname .team-person-name {
+.team-person.yogev_ahuvia .team-person-name {
     transform: translateY(15px);
 }
 
-.team-person.yogev_surname .team-person-wrapper {
+.team-person.yogev_ahuvia .team-person-wrapper {
     transform: translateX(-68px);
 }
 
-.team-person.adir_surname {
+.team-person.adir_amsalem {
     transform: translateY(16px);
 }
 
-.team-person.adir_surname .team-person-name {
+.team-person.adir_amsalem .team-person-name {
     transform: translateY(13px);
 }
 

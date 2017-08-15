@@ -12,6 +12,7 @@ import './About.css';
 
 class About extends Component {
   componentDidMount() {
+    window.scrollTo(0, 0);
     AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
     AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
   }
