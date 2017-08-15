@@ -7,7 +7,7 @@ import InfoBlockImage from '../../components/InfoBlockImage';
 import TeamPerson from '../../components/TeamPerson';
 import AboutComponent from '../../components/About';
 import teamData from '../../assets/data/team.json';
-
+import InfoBlocksData from '../../assets/data/info-blocks.json';
 import './About.css';
 
 class About extends Component {
@@ -33,30 +33,6 @@ class About extends Component {
     const imageStyle = {
       width: imageHeight * imageRatio,
       height: imageHeight,
-    };
-
-    const thisYear = {
-      number: 1,
-      numberTitle: 'Who We Are',
-      title: 'This Year',
-      text:
-        'Set in the sunny city of Tel-Aviv YGLF is a community event made by developers, for developers. This non-profit conference is aimed at delivering high quality content about relevant topics that any FrontEnd lover would die to hear. Bringing in internationally recognized speakers and attendees, with the young StartUp nation atmosphere, to create a buzzing bustle of software engineers from around the globe. And as usual, a hefty lunch, refreshing beer and plenty of coffee breaks spark the most interesting conversations between colleagues and strangers alike.',
-    };
-
-    const team = {
-      number: 2,
-      numberTitle: 'Good Vibes',
-      title: 'The Team',
-      text:
-        'A small group of super dedicated people, working hard around the clock to make the most awesome conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Please come and talk to us if you need assistance.',
-    };
-
-    const theVenue = {
-      number: 3,
-      numberTitle: 'Awesome Spaces',
-      title: 'The Venue',
-      text:
-        "This year the conference will take place, once again, at the elegant Cameri Theatre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. Classical and modern will meet under an urban wrap, for another unforgettable conference.",
     };
 
     const teamPersons = teamData.all.map(person =>
@@ -86,7 +62,7 @@ class About extends Component {
           </div>
         </div>
         <div className="container">
-          <InfoBlock data={thisYear} />
+          <InfoBlock data={InfoBlocksData.thisYear} />
           <div className="about-page-past">
             <div className="about-page-past-section">
               <h3 className="auto-height-fix-title">YGLF 2015</h3>
@@ -123,11 +99,11 @@ class About extends Component {
               </a>
             </div>
           </div>
-          <InfoBlock data={team} />
+          <InfoBlock data={InfoBlocksData.team} />
           <div className="team-list">
             {teamPersons}
           </div>
-          <InfoBlockImage data={theVenue} />
+          <InfoBlockImage data={InfoBlocksData.theVenue} />
         </div>
       </div>
     );

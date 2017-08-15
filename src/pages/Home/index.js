@@ -3,7 +3,10 @@ import Intro from '../../components/Intro';
 import About from '../../components/About';
 import Speakers from '../../components/Speakers';
 import Workshops from '../../components/Workshops';
+import InfoBlockImage from '../../components/InfoBlockImage';
+import InfoBlocksData from '../../assets/data/info-blocks.json';
 import LazyLoad from 'react-lazyload';
+import './Home.css';
 
 class Home extends Component {
   render() {
@@ -11,13 +14,13 @@ class Home extends Component {
     return (
       <div className="home">
         <Intro />
-        <Speakers />
-        <LazyLoad height={400} offset={150}>
-          <Workshops />
-        </LazyLoad>
-        <LazyLoad height={400} offset={150}>
-          <About />
-        </LazyLoad>
+        <div className="home-bg">
+          <Speakers />
+          <LazyLoad height={400} offset={150}>
+            <Workshops />
+          </LazyLoad>
+          <InfoBlockImage data={InfoBlocksData.theVenue} />
+        </div>
       </div>
     );
   }

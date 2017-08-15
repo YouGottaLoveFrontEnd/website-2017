@@ -1,6 +1,5 @@
 .workshops {
-  padding-bottom: 45px;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
+  padding-bottom: 25px;
 }
 
 .workshops .content-container {
@@ -10,17 +9,3 @@
   flex-wrap: wrap;
 }
 
-.workshop-container {
-  margin-top: 14px;
-}
-
-.workshops .workshop-author {
-  margin: 0 !important;
-}
-
-.workshops .workshop-title {
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  margin-bottom: 15px;
-  margin-top: 7px;
-}
