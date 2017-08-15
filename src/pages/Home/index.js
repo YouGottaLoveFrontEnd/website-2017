@@ -19,7 +19,7 @@ class Home extends Component {
           <LazyLoad height={400} offset={150}>
             <Workshops />
           </LazyLoad>
-          <InfoBlockImage data={InfoBlocksData.theVenue} />
+          <About />
         </div>
       </div>
     );

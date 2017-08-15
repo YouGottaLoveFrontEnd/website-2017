@@ -10,7 +10,7 @@ class Footer extends Component {
     let icons = [
       {
         type: 'instagram',
-        url: 'https://www.instagram.com/yougottalovefrontend',
+        url: 'https://www.instagram.com/yglfconf',
       },
       {
         type: 'facebook',

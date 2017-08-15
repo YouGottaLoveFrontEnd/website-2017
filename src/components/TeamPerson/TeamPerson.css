@@ -133,16 +133,6 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.team-person-position {
-    font-size: 13px;
-    font-family: "Libre Baskerville";
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 3px;
-    color: var(--yglf-white);
-    opacity: 0.75; //-webkit-font-smoothing: antialiased;
-}
-
 
 @media screen and (max-width: 1024px) {
 
