@@ -1,9 +1,9 @@
 {
     "all": [{
-        "first_name": "Sergei",
-        "last_name": "Bolshichov",
+        "first_name": "Sergey",
+        "last_name": "Bolshchikov",
         "position": "Tech Lead",
-        "image_src": "sergei_bolshichov",
+        "image_src": "sergey_bolshchikov",
         "image_format": "landscape"
     }, {
         "first_name": "Tom",
@@ -13,9 +13,9 @@
         "image_format": "portrait"
     }, {
         "first_name": "Igal",
-        "last_name": "Staklov",
+        "last_name": "Steklov",
         "position": "Developer",
-        "image_src": "igal_staklov",
+        "image_src": "igal_steklov",
         "image_format": "landscape"
     }, {
         "first_name": "Oren",
@@ -25,21 +25,21 @@
         "image_format": "portrait"
     }, {
         "first_name": "Anna",
-        "last_name": "Helise Rand",
+        "last_name": "Fridman & Simba",
         "position": "Application Developer",
-        "image_src": "anna_helise_rand",
+        "image_src": "anna_fridman",
         "image_format": "landscape"
     }, {
         "first_name": "Yogev",
-        "last_name": "Surname",
+        "last_name": "Ahuvia",
         "position": "Application Developer",
-        "image_src": "yogev_surname",
+        "image_src": "yogev_ahuvia",
         "image_format": "portrait"
     }, {
         "first_name": "Adir",
-        "last_name": "Surname",
+        "last_name": "Amsalem",
         "position": "Application Developer",
-        "image_src": "adir_surname",
+        "image_src": "adir_amsalem",
         "image_format": "portrait"
     }, {
         "first_name": "Danielle",
