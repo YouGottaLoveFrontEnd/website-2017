@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import WorkshopItem from '../../components/WorkshopItem';
+import workshopsData from '../../assets/data/workshops.json';
 import './Workshops.css';
 
 class Workshops extends Component {
   render() {
+    const workshopsItems = workshopsData.map(workshop =>
+      <WorkshopItem key={workshop.title} workshop={workshop} />
+    );
+
     return (
       <div className="workshops">
         <div className="container container-fluid">
@@ -20,27 +26,7 @@ class Workshops extends Component {
                   development.
                 </p>
                 <div className="content-container">
-                  <div className="workshop-container">
-                    <p className="workshop-author">RICHARD FELDMAN</p>
-                    <h2 className="workshop-title">Learning Elm!</h2>
-                    <p className="workshop-description">
-                      Come join Richard Feldman and learn how to build Elm
-                      application from zero to production-ready. Find out why
-                      people say that learning Elm changed the wat they wrote
-                      code in other langugages... for the better!
-                    </p>
-                  </div>
-                  <div className="workshop-container">
-                    <p className="workshop-author">BRIAN HOLT</p>
-                    <h2 className="workshop-title">React + Redux</h2>
-                    <p className="workshop-description">
-                      Get up to speed on building apps using React and Redux,
-                      two of very useful tools to have in your toolbox. Learn
-                      how to take advantage of these technologies and avoid
-                      common pitfalls in order to drive your applications
-                      further than ever before.
-                    </p>
-                  </div>
+                  {workshopsItems}
                 </div>
               </div>
             </div>
