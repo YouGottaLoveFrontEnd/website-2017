@@ -126,7 +126,7 @@
 
 .team-person-name {
     font-size: 25px;
-    color: var(--yglf-green);
+    color: var(--yglf-white);
     font-weight: 400;
     font-size: 25px;
     line-height: 57px;
@@ -141,5 +141,6 @@
     font-weight: 400;
     letter-spacing: 3px;
     color: var(--yglf-white);
-    opacity: 0.75; //-webkit-font-smoothing: antialiased;
+    opacity: 0.75; 
+    -webkit-font-smoothing: antialiased;
 }
