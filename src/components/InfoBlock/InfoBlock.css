@@ -1,9 +1,11 @@
 .info-block {
     margin-bottom: var(--cell);
 }
+
 .info-block .info-block-header {
     height: var(--cell);
 }
+
 .info-block .info-block-header span {
     display: inline-block;
     height: var(--cell);
@@ -12,6 +14,7 @@
     padding: 5px 8px;
     transform: translate(5px, 8px);
 }
+
 .info-block .info-block-header span i {
     font-family: "Libre Baskerville";
     font-style: italic;
@@ -23,15 +26,17 @@
     padding-left: 15px;
     border-left: 1px solid var(--yglf-white);
 }
+
 .info-block .info-block-text h2 {
     color: var(--yglf-green);
     font-size: var(--cell);
-    line-height: var(--cell);;
+    line-height: var(--cell);
     font-weight: 400;
     letter-spacing: 4.55px;
     -webkit-font-smoothing: antialiased;
     transform: translateY(4px);
 }
+
 .info-block .info-block-text p {
     padding-left: 240px;
     margin: 0;
@@ -43,4 +48,11 @@
     letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
     transform: translateY(23px);
+}
+
+@media screen and (max-width: 1024px) {
+    .info-block .info-block-text p {
+        padding-left: 140px;
+        width: 500px;
+    }
 }
