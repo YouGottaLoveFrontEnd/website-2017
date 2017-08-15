@@ -1,0 +1,22 @@
+.auto-height-fix {
+    //background-color: rgba(255, 255, 255, 0.2);
+    padding: 0;
+    margin: 0;
+}
+.auto-height-fix-title {
+    //background-color: rgba(255, 255, 255, 0.2);
+    padding: 0;
+    margin: 0;
+}
+.margin-bottom-1 {
+    margin-bottom: var(--cell);
+}
+.margin-bottom-2 {
+    margin-bottom: calc(var(--cell) * 2);
+}
+.margin-bottom-3 {
+    margin-bottom: calc(var(--cell) * 3);
+}
+.margin-bottom-4 {
+    margin-bottom: calc(var(--cell) * 4);
+}

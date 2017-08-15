@@ -3,6 +3,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Home from '../../pages/Home';
 import CodeOfConduct from '../../pages/CodeOfConduct';
+import About from '../../pages/About';
 import FontLoader from '../../utils/FontLoader';
 import { isStaging } from '../../utils/Environment';
 
@@ -21,6 +22,7 @@ class App extends Component {
           <div className="app-body">
             <Route exact path="/" component={Home} />
             <Route path="/codeofconduct" component={CodeOfConduct} />
+            <Route path="/about" component={About} />
           </div>
           <Footer />
         </div>
