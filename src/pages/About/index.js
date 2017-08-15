@@ -3,6 +3,7 @@ import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/Environment';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
 import InfoBlock from '../../components/InfoBlock';
+import InfoBlockImage from '../../components/InfoBlockImage';
 import TeamPerson from '../../components/TeamPerson';
 import AboutComponent from '../../components/About';
 import teamData from '../../assets/data/team.json';
@@ -34,7 +35,7 @@ class About extends Component {
       height: imageHeight,
     };
 
-    const whoWeAre = {
+    const thisYear = {
       number: 1,
       numberTitle: 'Who We Are',
       title: 'This Year',
@@ -48,6 +49,14 @@ class About extends Component {
       title: 'The Team',
       text:
         'A small group of super dedicated people, working hard around the clock to make the most awesome conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Please come and talk to us if you need assistance.',
+    };
+
+    const theVenue = {
+      number: 3,
+      numberTitle: 'Awesome Spaces',
+      title: 'The Venue',
+      text:
+        "This year the conference will take place, once again, at the elegant Cameri Theatre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. Classical and modern will meet under an urban wrap, for another unforgettable conference.",
     };
 
     const teamPersons = teamData.all.map(person =>
@@ -77,11 +86,11 @@ class About extends Component {
           </div>
         </div>
         <div className="container">
-          <InfoBlock data={whoWeAre} />
+          <InfoBlock data={thisYear} />
           <div className="about-page-past">
             <div className="about-page-past-section">
               <h3 className="auto-height-fix-title">YGLF 2015</h3>
-              <p className="auto-height-fix">
+              <p className="auto-height-fix margin-bottom-1">
                 Kicking off with JavaScript ‘sensei’, Douglas Crockford, the
                 2015 inauguration event was roaring. Complete with an
                 after-party venue for the evenings, everyone rambled on about
@@ -99,7 +108,7 @@ class About extends Component {
             </div>
             <div className="about-page-past-section">
               <h3 className="auto-height-fix-title">YGLF 2016</h3>
-              <p className="auto-height-fix">
+              <p className="auto-height-fix margin-bottom-2">
                 At the second run of the conference we gladly hosted Lea Verou
                 along other world-class Front-End gurus. In and around the
                 talks, the technical and social vibe dominated the stage, the
@@ -118,8 +127,8 @@ class About extends Component {
           <div className="team-list">
             {teamPersons}
           </div>
+          <InfoBlockImage data={theVenue} />
         </div>
-        <AboutComponent />
       </div>
     );
   }

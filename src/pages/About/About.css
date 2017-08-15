@@ -64,7 +64,6 @@
     letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
     transform: translateY(23px);
-    margin-bottom: var(--cell);
 }
 
 .about-page-past-section a {

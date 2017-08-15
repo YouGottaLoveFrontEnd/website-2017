@@ -3,57 +3,68 @@
         "first_name": "Sergei",
         "last_name": "Bolshichov",
         "position": "Tech Lead",
-        "image_src": "sergei_bolshichov"
+        "image_src": "sergei_bolshichov",
+        "image_format": "landscape"
     }, {
         "first_name": "Tom",
         "last_name": "Raviv",
         "position": "Application Developer",
-        "image_src": "tom_raviv"
+        "image_src": "tom_raviv",
+        "image_format": "portrait"
     }, {
         "first_name": "Igal",
         "last_name": "Staklov",
         "position": "Developer",
-        "image_src": "igal_staklov"
+        "image_src": "igal_staklov",
+        "image_format": "landscape"
     }, {
         "first_name": "Oren",
         "last_name": "Shtang",
         "position": "Application Developer",
-        "image_src": "oren_shtang"
+        "image_src": "oren_shtang",
+        "image_format": "portrait"
     }, {
         "first_name": "Anna",
         "last_name": "Helise Rand",
         "position": "Application Developer",
-        "image_src": "anna_helise_rand"
+        "image_src": "anna_helise_rand",
+        "image_format": "landscape"
     }, {
         "first_name": "Yogev",
         "last_name": "Surname",
         "position": "Application Developer",
-        "image_src": "yogev_surname"
+        "image_src": "yogev_surname",
+        "image_format": "portrait"
     }, {
         "first_name": "Adir",
         "last_name": "Surname",
         "position": "Application Developer",
-        "image_src": "adir_surname"
+        "image_src": "adir_surname",
+        "image_format": "portrait"
     }, {
         "first_name": "Danielle",
         "last_name": "Kanish",
         "position": "Application Developer",
-        "image_src": "danielle_kanish"
+        "image_src": "danielle_kanish",
+        "image_format": "portrait"
     }, {
         "first_name": "Ella",
         "last_name": "Moscovitz",
         "position": "Application Developer",
-        "image_src": "ella_moscovitz"
+        "image_src": "ella_moscovitz",
+        "image_format": "landscape"
     }, {
         "first_name": "Mor",
         "last_name": "Gilad",
         "position": "Application Developer",
-        "image_src": "mor_gilad"
+        "image_src": "mor_gilad",
+        "image_format": "portrait"
     }, {
         "first_name": "Yaron",
         "last_name": "Shavit",
         "position": "Application Developer",
-        "image_src": "yaron_shavit"
+        "image_src": "yaron_shavit",
+        "image_format": "landscape"
     }]
 }
 
