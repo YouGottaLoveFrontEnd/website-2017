@@ -56,3 +56,14 @@
         width: 500px;
     }
 }
+
+@media screen and (max-width: 764px) {
+    .info-block .info-block-header span {
+        padding: 5px 0;
+    }
+    .info-block .info-block-text p {
+        padding-left: 0px;
+        width: 100%;
+        //height: auto !important;
+    }
+}

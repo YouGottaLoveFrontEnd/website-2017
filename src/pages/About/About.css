@@ -45,6 +45,9 @@
     padding-top: var(--cell);
 }
 
+.about-page-header-text .buy-tickets {
+    display: none;
+}
 
 .about-page-past {
     display: flex;
@@ -126,12 +129,38 @@
 
 @media screen and (max-width: 764px) {
 
-    .about-page-header {
-        flex-direction: column-reverse;
+    .about-page {
+        padding: 0 50px;
     }
 
     .about-page-header {
+        flex-direction: column-reverse;
         padding: var(--cell) 0;
+    }
+
+    .about-page-header-text {
+        padding-bottom: calc(var(--cell) * 2);
+    }
+
+    .about-page-header-text h1 {
+        font-size: var(--cell);
+        margin-left: 0px;
+        transform: translateY(-7px) !important;
+        height: var(--cell) !important;
+    }
+
+    .about-page-header-text p {
+        font-size: 15px;
+        letter-spacing: 1.05px;
+        line-height: 30px;
+        width: auto;
+        transform: translateY(23px);
+        padding-top: 0;
+        margin-bottom: var(--cell);
+    }
+
+    .about-page-header-text .buy-tickets {
+        display: inline-block;
     }
 
     .about-page-header-image {
@@ -141,28 +170,31 @@
 
     .about-page-header-image img {
         position: static;
+        transform: translateX(-40%);
+        border: 1px solid var(--yglf-green);
     }
 
     .about-page-header-text {
         width: 100%;
-        padding-top: calc(var(--cell))
+        padding-top: calc(var(--cell));
+        height: 224px;
     }
 
-    .about-page-header-text h1 {
-        font-size: var(--cell);
-        margin-left: 0px;
-        transform: translateY(8px);
+    .about-page .info-block {
+        transform: translateY(-6px);
     }
 
-    .about-page-header-text p {
-        margin: 0 auto;
-        font-size: 23px;
-        font-weight: 300;
-        letter-spacing: 1.22px;
-        line-height: 45px;
-        width: 450px;
-        -webkit-font-smoothing: antialiased;
-        transform: translateY(12px);
-        padding-top: var(--cell);
+    .about-page-past {
+        padding: var(--cell) 0;
+        flex-direction: column;
+    }
+
+    .about-page-past-section {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .about-page-past-section h3 {
+        white-space: nowrap;
     }
 }
