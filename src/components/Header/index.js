@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import BuyTicketsButton from '../BuyTicketsButton';
+import MenuButtom from '../MenuButtom';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 class Header extends Component {
   resize() {
@@ -27,6 +29,7 @@ class Header extends Component {
               <Link to="/">
                 <span>You Gotta Love</span> <span>Frontend Conference</span>
               </Link>
+              <MenuButtom />
             </div>
           </div>
           <div className="header-description">
