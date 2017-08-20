@@ -33,8 +33,11 @@ class App extends Component {
       <Router basename={isStaging() ? '/website-2017' : '/'}>
         <ScrollToTop>
           <div className="app">
-            <Menu isOpen={this.state.isOpen} toggleMenu={this.toggleMenu} />
-            <Header toggleMenu={this.toggleMenu} />
+            <Menu
+              isOpen={this.state.isOpen}
+              toggleMenu={this.toggleMenu.bind(this)}
+            />
+            <Header toggleMenu={this.toggleMenu.bind(this)} />
             <div className="app-body">
               <Route exact path="/" component={Home} />
               <Route path="/codeofconduct" component={CodeOfConduct} />
