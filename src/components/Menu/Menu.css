@@ -11,6 +11,10 @@
     background-color: var(--yglf-blue);
 }
 
+.menu-overlay.hide {
+	display: none;
+}
+
 .menu-overlay .menu-list {
     display: flex;
     flex-direction: column;
@@ -31,7 +35,7 @@
 	color: var(--yglf-green);
 	text-decoration: none;
 	border-bottom: 1px solid var(--yglf-green);
-	padding: calc(var(--cell) / 2) 0;
+	padding: var(--cell) 0;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 0.95px;
 }

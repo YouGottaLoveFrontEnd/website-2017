@@ -4,17 +4,22 @@ import { Link } from 'react-router-dom';
 import './Menu.css';
 
 class Menu extends Component {
-  constractor(props) {
-    this.state = {
-      isOpen: false,
-    };
+  constructor(props) {
+    super(props);
   }
 
-  close() {}
+  close() {
+    this.props.toggleMenu(false);
+  }
 
   render() {
     return (
-      <div className="menu-overlay" onClick={this.close.bind(this)}>
+      <div
+        className={
+          this.props.isOpen ? `menu-overlay show` : `menu-overlay hide`
+        }
+        onClick={this.close.bind(this)}
+      >
         <div className="menu-list">
           <div className="menu-list-item">
             <Link to="/" onClick={this.close.bind(this)}>
@@ -33,7 +38,7 @@ class Menu extends Component {
             <Link to="/sponsors">Sponsors</Link>
           </div>
           <div className="menu-list-item">
-            <Link to="/chedule">Schedule</Link>
+            <Link to="/schedule">Schedule</Link>
           </div>
         </div>
       </div>

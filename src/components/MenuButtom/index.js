@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import './MenuButtom.css';
 
 class MenuButtom extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   showMenu() {
-    alert();
+    this.props.toggleMenu(true);
   }
 
   render() {

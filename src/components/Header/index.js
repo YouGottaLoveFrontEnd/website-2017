@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   resize() {
     let height = window.innerWidth > 480 ? 154 : window.innerHeight;
 
@@ -29,7 +33,7 @@ class Header extends Component {
               <Link to="/">
                 <span>You Gotta Love</span> <span>Frontend Conference</span>
               </Link>
-              <MenuButtom />
+              <MenuButtom toggleMenu={this.props.toggleMenu} />
             </div>
           </div>
           <div className="header-description">

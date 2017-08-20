@@ -13,16 +13,29 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 class App extends Component {
   constructor(props) {
     super(props);
+
     FontLoader.load();
+
+    this.state = {
+      isOpen: true,
+    };
+  }
+
+  toggleMenu(isOpen) {
+    this.setState({
+      isOpen: isOpen,
+    });
   }
 
   render() {
+    debugger;
+
     return (
       <Router basename={isStaging() ? '/website-2017' : '/'}>
         <ScrollToTop>
           <div className="app">
-            <Menu />
-            <Header />
+            <Menu isOpen={this.state.isOpen} toggleMenu={this.toggleMenu} />
+            <Header toggleMenu={this.toggleMenu} />
             <div className="app-body">
               <Route exact path="/" component={Home} />
               <Route path="/codeofconduct" component={CodeOfConduct} />
