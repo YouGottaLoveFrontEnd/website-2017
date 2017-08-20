@@ -49,6 +49,7 @@ class Footer extends Component {
                   Tickets
                 </a>
                 <Link to="/about">About</Link>
+                <Link to="/speakers">Speakers</Link>
                 <a
                   href="http://2016.yougottalovefrontend.com/"
                   target="_blank"

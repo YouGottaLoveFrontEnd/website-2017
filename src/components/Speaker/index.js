@@ -51,7 +51,7 @@ class Speaker extends Component {
       <div className="speaker">
         <LazyLoad height={this.state.imageSize.height} offset={150}>
           <img
-            src={`speakers/${speaker.image_src}.${imageExtension}`}
+            src={`/speakers/${speaker.image_src}.${imageExtension}`}
             className="drop-shadow"
             style={this.state.imageSize}
             alt={`${speaker.first_name} ${speaker.last_name}`}

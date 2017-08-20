@@ -125,7 +125,7 @@
 
 .team-person-name {
     font-size: 25px;
-    color: var(--yglf-green);
+    color: var(--yglf-white);
     font-weight: 400;
     font-size: 25px;
     line-height: 57px;
@@ -222,7 +222,7 @@
     }
 
     .yogev_ahuvia,
-    .ella_moscovitz{
+    .ella_moscovitz {
         transform: translateY(calc(var(--cell) * 3)) !important;
     }
     .danielle_kanish {

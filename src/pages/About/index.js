@@ -79,8 +79,8 @@ class About extends Component {
             <h1 className="auto-height-fix-title">About</h1>
             <p className="auto-height-fix">
               The Third international conference of its kind to be held in
-              Israel, will take place in Tel Aviv from October 30th through
-              October 31st, 2017.
+              Israel.
+              <small>Tel Aviv 30-31 October</small>
             </p>
             <BuyTicketsButton />
           </div>
