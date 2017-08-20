@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import { AutoHeightFix } from '../../utils/ElementManipulation';
 import './InfoBlock.css';
 
 class InfoBlock extends Component {
-  componentDidMount() {}
+  componentDidMount() {
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
+  }
 
   render() {
     return (
@@ -19,6 +23,7 @@ class InfoBlock extends Component {
           <p className="auto-height-fix">
             {this.props.data.text}
           </p>
+          {this.props.children}
         </div>
       </div>
     );
