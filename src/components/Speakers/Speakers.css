@@ -2,6 +2,14 @@
   padding-bottom: 45px;
 }
 
+.speakers .info-block {
+  margin-bottom: calc(var(--cell) * 2);
+}
+.speakers .buy-tickets {
+  margin: var(--cell) 240px;
+}
+
+
 .speakers-header {
   padding: 0 0 125px;
 }

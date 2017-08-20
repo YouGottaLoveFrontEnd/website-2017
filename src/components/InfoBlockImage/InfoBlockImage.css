@@ -22,8 +22,28 @@
 }
 
 .info-block-image .info-block-header {
-	margin-left: 160px;
+    margin-left: 160px;
 }
+
 .info-block-image h2 {
-	margin-left: 160px;
+    margin-left: 160px;
 }
+
+.info-block-image p {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .info-block-image .info-block-header {
+        margin-left: var(--cell);
+    }
+    .info-block-image h2 {
+        margin-left: var(--cell);
+    }
+    .info-block-image p {
+        padding-left: var(--cell) !important;
+    }
+}
+
+@media screen and (max-width: 764px) {}

@@ -65,6 +65,28 @@
           "url": "https://www.linkedin.com/in/ashleygwilliams"
         }
       ]
+    },
+    {
+      "first_name": "Brian",
+      "last_name": "Holt",
+      "position": "Staff Engineer",
+      "company": "LinkedIn",
+      "description": "Brian is currently a freelance JS engineer and teacher for Frontend Masters. Previously he worked as the director of redditgifts front end at reddit and senior UI engineer at Netflix. When not on a Netflix bender or devouring content on reddit, Brian is probably hanging out with his wife and dog, running, traveling, or playing video games. Brian is presently a resident of San Francisco, CA.",
+      "image_src": "brian_holt",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/holtbt"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/btholt"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/btholt"
+        }
+      ]
     }
   ]
 }

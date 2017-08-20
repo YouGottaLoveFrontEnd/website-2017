@@ -5,35 +5,58 @@ import { AutoHeightFix } from '../../utils/ElementManipulation';
 import InfoBlock from '../../components/InfoBlock';
 import InfoBlockImage from '../../components/InfoBlockImage';
 import TeamPerson from '../../components/TeamPerson';
-import AboutComponent from '../../components/About';
+import BuyTicketsButton from '../../components/BuyTicketsButton';
 import teamData from '../../assets/data/team.json';
 import InfoBlocksData from '../../assets/data/info-blocks.json';
 import './About.css';
 
 class About extends Component {
-  componentDidMount() {
-    AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
-    AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      aboutStyle: {
+        height: 0,
+      },
+      imageStyle: {
+        width: 0,
+        height: 0,
+      },
+    };
+  }
+
+  resize() {
+    const gutterSize = 45;
+    const isMobile = window.innerWidth <= 764;
+    const imageRatio = 1206 / 625;
+    const imageHeight = isMobile ? gutterSize * 8 - 1 : gutterSize * 13 - 1;
+
+    this.setState({
+      aboutStyle: {
+        height: isMobile ? 'auto' : imageHeight,
+      },
+      imageStyle: {
+        width: imageHeight * imageRatio,
+        height: imageHeight,
+      },
+    });
   }
 
   componentWillUnmount() {}
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+
+    this.resize();
+
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
+
+    window.addEventListener('resize', this.resize.bind(this));
+  }
+
   render() {
-    const imageRatio = 1206 / 625;
-    const halfWidth = window.innerWidth / 2;
-    const gutterSize = 45;
     const imageExtension = isChrome() ? 'webp' : 'jpg';
-
-    const imageHeight = gutterSize * 13 - 1;
-
-    const aboutStyle = {
-      height: imageHeight,
-    };
-
-    const imageStyle = {
-      width: imageHeight * imageRatio,
-      height: imageHeight,
-    };
 
     const teamPersons = teamData.all.map(person =>
       <TeamPerson key={person.image_src} person={person} />
@@ -41,14 +64,14 @@ class About extends Component {
 
     return (
       <div className="about-page">
-        <div className="about-page-header" style={aboutStyle}>
+        <div className="about-page-header" style={this.state.aboutStyle}>
           <div className="about-page-header-image">
             <LazyLoad>
               <img
+                style={this.state.imageStyle}
                 src={`about-header-photo.${imageExtension}`}
                 className="drop-shadow"
                 alt={``}
-                style={imageStyle}
               />
             </LazyLoad>
           </div>
@@ -56,9 +79,10 @@ class About extends Component {
             <h1 className="auto-height-fix-title">About</h1>
             <p className="auto-height-fix">
               The Third international conference of its kind to be held in
-              Israel, will take place in Tel Aviv from October 30th through
-              October 31st, 2017.
+              Israel.
+              <small>Tel Aviv 30-31 October</small>
             </p>
+            <BuyTicketsButton />
           </div>
         </div>
         <div className="container">

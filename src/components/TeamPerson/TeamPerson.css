@@ -1,9 +1,8 @@
 .team-list {
-    padding: var(--cell) 0 calc(var(--cell) * 4 + 29px);
+    padding: var(--cell) 0 calc(var(--cell) * 4);
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    // height: calc(var(--cell) * 38);
+    justify-content: flex-start; // height: calc(var(--cell) * 38);
     // min-height: calc(var(--cell) * 38);
 }
 
@@ -43,8 +42,8 @@
 
 .team-person.portrait {}
 
-.team-person.sergei_bolshichov,
-.team-person.igal_staklov {
+.team-person.sergey_bolshchikov,
+.team-person.igal_steklov {
     transform: translateY(-8px);
 }
 
@@ -60,27 +59,27 @@
     transform: translateY(14px);
 }
 
-.team-person.anna_helise_rand {
+.team-person.anna_fridman {
     transform: translateY(33px);
 }
 
-.team-person.yogev_surname {
+.team-person.yogev_ahuvia {
     transform: translateY(-49px);
 }
 
-.team-person.yogev_surname .team-person-name {
+.team-person.yogev_ahuvia .team-person-name {
     transform: translateY(15px);
 }
 
-.team-person.yogev_surname .team-person-wrapper {
+.team-person.yogev_ahuvia .team-person-wrapper {
     transform: translateX(-68px);
 }
 
-.team-person.adir_surname {
+.team-person.adir_amsalem {
     transform: translateY(16px);
 }
 
-.team-person.adir_surname .team-person-name {
+.team-person.adir_amsalem .team-person-name {
     transform: translateY(13px);
 }
 
@@ -134,13 +133,109 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.team-person-position {
-    font-size: 13px;
-    font-family: "Libre Baskerville";
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 3px;
-    color: var(--yglf-white);
-    opacity: 0.75; 
-    -webkit-font-smoothing: antialiased;
+
+@media screen and (max-width: 1024px) {
+
+    .team-list {
+        padding: var(--cell) 0;
+    }
+
+    .team-list .team-person:nth-child(3n+2) {
+        padding-top: 0;
+    }
+
+    .team-person {
+        width: calc(100% / 2); //height: calc(var(--cell) * 8);
+        height: calc(var(--cell) * 10);
+    }
+
+    .team-person.landscape {}
+    .team-person.portrait {}
+
+    .team-list .team-person:nth-child(2n) {
+        padding-top: 0;
+    }
+
+    .team-list .team-person:nth-child(2) .team-person-wrapper {
+        float: right;
+    }
+
+    .team-list .team-person:nth-child(2) {}
+
+
+    .team-person.portrait:nth-child(3n+2) .team-person-wrapper,
+    .team-person.landscape:nth-child(3n+2) .team-person-wrapper {
+        margin: 0;
+    }
+
+    .team-list .team-person.portrait .team-person-wrapper {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .sergey_bolshchikov {
+        order: 1;
+        transform: translateY(0) !important;
+    }
+    .sergey_bolshchikov .team-person-name {
+        transform: translateY(-8px) !important;
+    }
+    .tom_raviv {
+        order: 2;
+        transform: translateY(0) !important;
+    }
+    .oren_shtang {
+        order: 3;
+        transform: translateY(0) !important;
+    }
+    .igal_steklov {
+        order: 4;
+        transform: translateY(0) !important;
+    }
+    .anna_fridman {
+        order: 5;
+        transform: translateY(37px) !important;
+    }
+    .yogev_ahuvia {
+        order: 6;
+    }
+    .yogev_ahuvia .team-person-wrapper {
+        transform: translateX(0) !important;
+    }
+    .adir_amsalem {
+        order: 7;
+        transform: translateY(1px) !important;
+    }
+    .ella_moscovitz {
+        order: 8;
+    }
+    .danielle_kanish {
+        order: 10;
+    }
+    .danielle_kanish .team-person-wrapper {
+        float: right;
+    }
+    .mor_gilad {
+        order: 11;
+        transform: translateY(0) !important;
+    }
+    .yaron_shavit {
+        order: 9;
+        transform: translateY(37px) !important;
+    }
+
+    .yogev_ahuvia,
+    .ella_moscovitz {
+        transform: translateY(calc(var(--cell) * 3)) !important;
+    }
+    .danielle_kanish {
+        transform: translateY(calc(var(--cell) * 3 + 14px)) !important;
+    }
+    .igal_steklov {
+        transform: translateY(calc(var(--cell) * 3 + 37px)) !important;
+    }
+
+    .tom_raviv {
+        transform: translateY(calc(var(--cell) * 3 + 14px)) !important;
+    }
 }
