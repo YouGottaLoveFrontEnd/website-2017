@@ -1,5 +1,5 @@
 .team-list {
-    padding: var(--cell) 0 calc(var(--cell) * 4 + 29px);
+    padding: var(--cell) 0 calc(var(--cell) * 4);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; // height: calc(var(--cell) * 38);
@@ -136,6 +136,9 @@
 
 @media screen and (max-width: 1024px) {
 
+    .team-list {
+        padding: var(--cell) 0;
+    }
 
     .team-list .team-person:nth-child(3n+2) {
         padding-top: 0;

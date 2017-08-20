@@ -105,6 +105,10 @@
 }
 
 
+.about-page .info-block-image {
+    padding-top: 29px;
+}
+
 @media screen and (max-width: 1024px) {
     .about-page-header-text {
         padding-top: calc(var(--cell) * 1)
@@ -141,6 +145,10 @@
     }
     .about-page-past-section p {
         transform: translateY(-22px);
+    }
+
+    .about-page .info-block-image {
+        padding-top: 0;
     }
 }
 
