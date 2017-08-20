@@ -1,0 +1,27 @@
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid var(--yglf-green);
+    padding-top: 20px;
+}
+
+.menu-btn {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    line-height: calc(var(--cell) - 2px);
+    cursor: pointer;
+    color: var(--yglf-white);
+    padding: 0 10px;
+    border-top: 1px solid var(--yglf-green);
+    user-select: none;
+}
+.menu-btn:hover {
+    color: var(--yglf-green);
+}
+.menu-btn:active {
+    background-color: var(--yglf-green);
+    color: var(--yglf-white);
+}
