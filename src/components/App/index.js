@@ -4,6 +4,7 @@ import Footer from '../Footer';
 import Home from '../../pages/Home';
 import CodeOfConduct from '../../pages/CodeOfConduct';
 import About from '../../pages/About';
+import Speakers from '../../pages/Speakers';
 import FontLoader from '../../utils/FontLoader';
 import { isStaging } from '../../utils/Environment';
 import ScrollToTop from '../ScrollToTop';
@@ -25,6 +26,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/codeofconduct" component={CodeOfConduct} />
               <Route path="/about" component={About} />
+              <Route path="/speakers" component={Speakers} />
             </div>
             <Footer />
           </div>
