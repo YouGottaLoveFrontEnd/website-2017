@@ -1,11 +1,14 @@
-[{
-    "first_name": "Richard",
-    "last_name": "Feldman",
-    "title": "Learning Elm!",
-    "text": "Come join Richard Feldman and learn how to build Elm application from zero to production-ready. Find out why people say that learning Elm changed the wat they wrote code in other langugages... for the better!"
-}, {
-    "first_name": "Brian",
-    "last_name": "Holt",
-    "title": "React + Redux",
-    "text": "Get up to speed on building apps using React and Redux, two of very useful tools to have in your toolbox. Learn how to take advantage of these technologies and avoid common pitfalls in order to drive your applications further than ever before."
-}]
+[
+    {
+        "first_name": "Richard",
+        "last_name": "Feldman",
+        "title": "Learning Elm!",
+        "text": "Come join Richard Feldman and learn how to build Elm application from zero to production. Find out why people say that learning Elm changed the way they wrote code in other langugages... for the better!"
+    },
+    {
+        "first_name": "Brian",
+        "last_name": "Holt",
+        "title": "React + Redux",
+        "text": "Get up to speed on building apps using React and Redux, two of very useful tools to have in your toolbox. Learn how to take advantage of these technologies and avoid common pitfalls in order to drive your applications further than ever before."
+    }
+]
