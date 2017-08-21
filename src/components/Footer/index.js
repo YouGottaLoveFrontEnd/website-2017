@@ -50,6 +50,7 @@ class Footer extends Component {
                 </a>
                 <Link to="/about">About</Link>
                 <Link to="/speakers">Speakers</Link>
+                <Link to="/workshops">Workshops</Link>
                 <a
                   href="http://2016.yougottalovefrontend.com/"
                   target="_blank"
