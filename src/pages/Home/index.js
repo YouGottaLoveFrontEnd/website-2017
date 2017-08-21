@@ -3,8 +3,6 @@ import Intro from '../../components/Intro';
 import About from '../../components/About';
 import Speakers from '../../components/Speakers';
 import Workshops from '../../components/Workshops';
-import InfoBlockImage from '../../components/InfoBlockImage';
-import InfoBlocksData from '../../assets/data/info-blocks.json';
 import LazyLoad from 'react-lazyload';
 import './Home.css';
 

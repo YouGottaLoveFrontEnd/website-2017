@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './MenuButtom.css';
 
 class MenuButtom extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   showMenu() {
     this.props.toggleMenu(true);
   }
