@@ -20,6 +20,11 @@ class Menu extends Component {
         }
         onClick={this.close.bind(this)}
       >
+        <div className="menu-back-wrapper">
+          <div className="menu-back">
+            <a>BACK</a>
+          </div>
+        </div>
         <div className="menu-list">
           <div className="menu-list-item">
             <Link to="/" onClick={this.close.bind(this)}>
