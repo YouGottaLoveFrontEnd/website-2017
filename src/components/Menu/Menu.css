@@ -26,7 +26,7 @@
 
 }
 
-.menu-overlay .menu-list .menu-list-item a {
+.menu-list-item a {
 	text-align: center;
 	display: block;
 	line-height: var(--cell);
@@ -78,3 +78,7 @@
     color: var(--yglf-white);
 }
 
+a.disabled {
+    text-decoration: line-through;
+    pointer-events: none;
+}
