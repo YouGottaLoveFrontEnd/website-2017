@@ -37,6 +37,14 @@
         "numberTitle": "Amazing Talks",
         "title": "Meet Our Speakers",
         "text": "This year YGLF is hosting amazing speakers from all around the world. Listed below are our keynote speakers. For the whole lineup you can visit our Speakers page. Make sure to check back reguraly as this is just the beginning and we have many more to be announced soon!"
+    },
+
+    "workshopsPage":
+    {
+        "number": 1,
+        "numberTitle": "Hands on Experience",
+        "title": "Workshops",
+        "text": "Go beyond the great talks and talented speakers by joining us in one of our expert workshops. Choose between one of two whole day workshops where you’ll learn practical skills, using hands on experience."
     }
 
 }

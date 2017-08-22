@@ -1,0 +1,43 @@
+.workshops-page {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
+}
+
+
+.workshops-page .container {
+    padding-top: calc(var(--cell) * 2);
+}
+
+.workshops-info {
+    padding-left: 240px;
+}
+
+.workshops-info p {
+	padding-top: var(--cell);
+    padding-left: 0 !important;
+    min-height: 135px;
+}
+
+.workshops-info .buy-tickets {
+	margin-top: var(--cell);
+}
+
+.workshops-list {
+    padding-left: 240px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .workshops-list {
+        padding-left: 140px !important;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    
+    .workshops-list {
+        padding-left: 0 !important;
+    }
+    
+}

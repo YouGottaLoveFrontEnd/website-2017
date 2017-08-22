@@ -6,6 +6,7 @@ import CodeOfConduct from '../../pages/CodeOfConduct';
 import About from '../../pages/About';
 import Menu from '../../components/Menu';
 import Speakers from '../../pages/Speakers';
+import Workshops from '../../pages/Workshops';
 import FontLoader from '../../utils/FontLoader';
 import { isStaging } from '../../utils/Environment';
 import ScrollToTop from '../ScrollToTop';
@@ -43,6 +44,7 @@ class App extends Component {
               <Route path="/codeofconduct" component={CodeOfConduct} />
               <Route path="/about" component={About} />
               <Route path="/speakers" component={Speakers} />
+              <Route path="/workshops" component={Workshops} />
             </div>
             <Footer />
           </div>
