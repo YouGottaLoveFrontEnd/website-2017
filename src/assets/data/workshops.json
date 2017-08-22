@@ -3,7 +3,7 @@
     "last_name": "Feldman",
     "title": "Learning Elm!",
     "image_src": "richard_feldman",
-    "text": "Come join Richard Feldman and learn how to build Elm application from zero to production-ready. Find out why people say that learning Elm changed the wat they wrote code in other langugages... for the better!",
+    "text": "Come join Richard Feldman and learn how to build Elm application from zero to production. Find out why people say that learning Elm changed the way they wrote code in other langugages... for the better!",
     "paragraphs": [
         "Richard is a functional programmer who specializes in pushing the limits of browser-based UIs. He’s built seamless-immutable, a JavaScript immutables library that seamlessly interoperates with normal JS collections; elm-css, a CSS preprocessor where you write Elm instead of CSS; and Dreamwriter, a long-form writing Web App written in Elm which works like a desktop app in the absence of an Internet connection.",
         "Surely by now you have heard the buzz surrounding Facebook’s React. More and more people and companies are using it to build large-scale production apps (including at Netflix). Brian Holt guides attendees through an overview of React. In this 2-day training, attendees will go from knowing nothing (or very little) about React to building a whole app using React and Redux.",
