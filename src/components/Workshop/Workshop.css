@@ -6,27 +6,27 @@
 }
 
 
-.workshop-image {}
+.workshop .workshop-image {}
 
 
-.workshop-image img {
+.workshop .workshop-image img {
     border: 1px solid var(--yglf-green);
     transform: translateY(-1px);
 }
 
 
-.workshop-info {
+.workshop .workshop-info {
     -webkit-font-smoothing: antialiased;
     padding-left: calc(var(--cell) * 2);
 }
 
 
-.workshop-info p:not(.workshop-author) {
+.workshop .workshop-info p:not(.workshop-author) {
 	font-size: 17px;
 	line-height: 30px;
 }
 
-.workshop-author {
+.workshop .workshop-author {
     text-transform: uppercase;
     letter-spacing: 2.47px;
     font-size: 15px;
@@ -35,26 +35,26 @@
     margin: 0;
 }
 
-.workshop-title {
+.workshop .workshop-title {
     line-height: var(--cell);
     padding: 0;
     margin: 0;
 }
 
-.workshop-paragraphs {
+.workshop .workshop-paragraphs {
     transform: translateY(5px);
 }
 
 
 @media screen and (max-width: 1024px) {
-    .workshops-info {
+    .workshop .workshops-info {
         padding-left: 140px !important;
     }
 }
 
 @media screen and (max-width: 764px) {
     
-    .workshops-info {
+    .workshop .workshops-info {
         padding-left: 0 !important;
     }
     
