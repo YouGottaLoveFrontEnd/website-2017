@@ -112,7 +112,7 @@
 
     .header-date-location .buy-tickets {
         display: block;
-        top: var(--cell) !important;
+        top: calc(var(--cell) * 3) !important;
         left: 50%;
         transform: translateX(-50%);
     }

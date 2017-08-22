@@ -35,6 +35,9 @@ class Menu extends Component {
             <Link to="/speakers">Speakers</Link>
           </div>
           <div className="menu-list-item">
+            <Link to="/workshops">Workshops</Link>
+          </div>
+          <div className="menu-list-item">
             <a className="disabled">Sponsors</a>
           </div>
           <div className="menu-list-item">
