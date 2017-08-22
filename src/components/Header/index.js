@@ -6,10 +6,6 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   resize() {
     let height = window.innerWidth > 480 ? 154 : window.innerHeight;
 

@@ -26,7 +26,7 @@
 
 }
 
-.menu-overlay .menu-list .menu-list-item a {
+.menu-list-item a {
 	text-align: center;
 	display: block;
 	line-height: var(--cell);
@@ -35,11 +35,50 @@
 	color: var(--yglf-green);
 	text-decoration: none;
 	border-bottom: 1px solid var(--yglf-green);
-	padding: var(--cell) 0;
+	padding: 40px 0;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 0.95px;
 }
 .menu-overlay .menu-list .menu-list-item a:hover {
 	background-color: var(--yglf-green);
 	color: var(--yglf-white);
+}
+
+.menu-back-wrapper {
+    position: absolute;
+    top: var(--cell);
+    width: 100%;
+    border-top: 1px solid var(--yglf-green);
+    border-bottom: 1px solid var(--yglf-green);
+} 
+
+
+.menu-back {
+    float: right;
+    padding-top: var(--cell);
+    margin-top: calc(var(--cell) * -1);
+    margin-right: calc(var(--cell) * 2);
+    border-left: 1px solid var(--yglf-green);
+    border-right: 1px solid var(--yglf-green);
+} 
+
+.menu-back a {
+    display: inline-block;
+    line-height: var(--cell);
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    letter-spacing: 4.5px;
+    padding: 0 calc(var(--cell) / 4);
+    cursor: pointer;
+}
+
+.menu-back a:hover {
+    background-color: var(--yglf-green);
+    color: var(--yglf-white);
+}
+
+a.disabled {
+    text-decoration: line-through;
+    pointer-events: none;
 }
