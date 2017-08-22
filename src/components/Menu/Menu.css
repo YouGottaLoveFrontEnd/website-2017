@@ -82,3 +82,25 @@ a.disabled {
     text-decoration: line-through;
     pointer-events: none;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .menu-list-item a {
+        line-height: 30px;
+        font-size: 30px;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 764px) {
+
+    .menu-list-item a {
+        line-height: 30px;
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .menu-back-wrapper,
+    .menu-back {
+        display: none;
+    }
+}
