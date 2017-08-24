@@ -71,7 +71,7 @@
       "last_name": "Holt",
       "position": "Staff Engineer",
       "company": "LinkedIn",
-      "description": "Brian Holt is a staff engineer at LinkedIn and a senior user interface engineer at Netflix. He also used to be a freelance JS engineer and teacher for Frontend Masters. Previously he worked as the director of redditgifts front end at reddit and senior UI engineer at Netflix. When not on a Netflix bender or devouring content on reddit, Brian is probably hanging out with his wife and dog, running, traveling, or playing video games. Brian is presently a resident of San Francisco, CA.",
+      "description": "Brian Holt is a staff engineer at LinkedIn and a former senior user interface engineer at Netflix. He also used to be a freelance JS engineer and teacher for Frontend Masters. Previously he worked as the director of redditgifts front end at reddit and senior UI engineer at Netflix. When not on a Netflix bender or devouring content on reddit, Brian is probably hanging out with his wife and dog, running, traveling, or playing video games. Brian is presently a resident of San Francisco, CA.",
       "image_src": "brian_holt",
       "social_icons": [
         {
@@ -85,6 +85,28 @@
         {
           "type": "linkedin",
           "url": "https://www.linkedin.com/in/btholt"
+        }
+      ]
+    },
+    {
+      "first_name": "Martin",
+      "last_name": "Splitt",
+      "position": "Head of Engineering",
+      "company": "Archilogic AG",
+      "description": "Martin is pretty decent at humaning and pretty good at computering, so he decided to use his computering to improve his and other's humaning. He is a Google Developer Expert, Mozillian, loves the open web and open source, and aims to make things better with, but not limited to, code.",
+      "image_src": "martin_splitt",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/g33konaut"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/AVGP"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/martinsplitt/"
         }
       ]
     }
