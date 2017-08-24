@@ -1,50 +1,38 @@
 {
-    "thisYear":
-    {
+    "thisYear": {
         "number": 1,
         "numberTitle": "Who We Are",
         "title": "This Year",
         "text": "Set in the sunny city of Tel-Aviv YGLF is a community event made by developers, for developers. This non-profit conference is aimed at delivering high quality content about relevant topics that any FrontEnd lover would die to hear. Bringing in internationally recognized speakers and attendees, with the young StartUp nation atmosphere, to create a buzzing bustle of software engineers from around the globe. And as usual, a hefty lunch, refreshing beer and plenty of coffee breaks spark the most interesting conversations between colleagues and strangers alike."
     },
-
-    "team":
-    {
+    "team": {
         "number": 2,
         "numberTitle": "Good Vibes",
         "title": "The Team",
         "text": "A small group of super dedicated people, working hard around the clock to make the most awesome conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Please come and talk to us if you need assistance."
     },
-
-    "theVenue":
-    {
+    "theVenue": {
         "number": 3,
         "numberTitle": "Awesome Spaces",
         "title": "The Venue",
         "text": "This year the conference will take place, once again, at the elegant Cameri Theatre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. Classical and modern will meet under an urban wrap, for another unforgettable conference."
     },
-
-    "workshops":
-    {
+    "workshops": {
         "number": 2,
         "numberTitle": "Hands on Experience",
         "title": "Workshops",
         "text": "For the first time, join us for one two YGLF master class workshops with world renowed experts. Use this opportunity to hone your skills and delve into the cutting edge of Frontend development."
     },
-
-    "meetOurSpeakers":
-    {
+    "meetOurSpeakers": {
         "number": 1,
         "numberTitle": "Amazing Talks",
         "title": "Meet Our Speakers",
         "text": "This year YGLF is hosting amazing speakers from all around the world. Listed below are our keynote speakers. For the whole lineup you can visit our Speakers page. Make sure to check back reguraly as this is just the beginning and we have many more to be announced soon!"
     },
-
-    "workshopsPage":
-    {
+    "workshopsPage": {
         "number": 1,
         "numberTitle": "Hands on Experience",
         "title": "Workshops",
-        "text": "Go beyond the great talks and talented speakers by joining us in one of our expert workshops. Choose between one of two whole day workshops where you’ll learn practical skills, using hands on experience."
+        "text": "Go beyond the great talks and talented speakers by joining us in one of the expert workshops. Choose between one of two full-day workshops where you will get hands on experience in Functional Programming and/or React."
     }
-
 }
