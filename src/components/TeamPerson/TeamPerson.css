@@ -239,3 +239,55 @@
         transform: translateY(calc(var(--cell) * 3 + 14px)) !important;
     }
 }
+
+.team-person-container {
+    position: relative;
+    width: 100%;
+}
+
+.team-person-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team-person-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: var(--yglf-green);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;  
+    transform: translate(1px, -1px);
+}
+
+.team-person-container:hover .team-person-overlay {
+    width: 100%;
+    left: 0;
+}
+
+.team-person-social {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.team-person-social a {
+    color: var(--yglf-white);
+    transform: scale(1.2);
+    margin: auto;
+}
+
+.team-person-social .social-icons {
+    margin: auto;
+    width: 60%;
+}
+
+.team-person-social a:hover {
+    opacity: 0.8;
+}
