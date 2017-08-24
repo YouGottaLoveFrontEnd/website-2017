@@ -3,8 +3,40 @@ import { Link } from 'react-router-dom';
 import './Menu.css';
 
 class Menu extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      listClassName: '',
+    };
+  }
+
   close() {
     this.props.toggleMenu(false);
+  }
+
+  resize() {
+    let listClassName = '';
+
+    if (window.innerHeight < 990 && window.innerHeight > 830) {
+      listClassName = 'menu-list-size-1';
+    } else if (window.innerHeight < 830 && window.innerHeight > 620) {
+      listClassName = 'menu-list-size-2';
+    } else if (window.innerHeight < 620) {
+      listClassName = 'menu-list-size-3';
+    }
+
+    this.setState({ listClassName });
+  }
+
+  componentDidMount() {
+    this.resize();
+
+    window.addEventListener('resize', this.resize.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize.bind(this));
   }
 
   render() {
@@ -20,7 +52,7 @@ class Menu extends Component {
             <a>BACK</a>
           </div>
         </div>
-        <div className="menu-list">
+        <div className={`menu-list ` + this.state.listClassName}>
           <div className="menu-list-item">
             <Link to="/" onClick={this.close.bind(this)}>
               Home
