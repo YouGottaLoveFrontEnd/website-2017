@@ -1,9 +1,10 @@
 .menu {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 85px;
     border-left: 1px solid var(--yglf-green);
     padding-top: 20px;
+    z-index: 1;
 }
 
 .menu-btn {
@@ -17,11 +18,25 @@
     padding: 0 10px;
     border-top: 1px solid var(--yglf-green);
     user-select: none;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.19);
 }
+
 .menu-btn:hover {
     color: var(--yglf-green);
 }
+
 .menu-btn:active {
     background-color: var(--yglf-green);
     color: var(--yglf-white);
+}
+
+@media screen and (max-width: 764px) {
+    .menu {
+        border-left: 0 none;
+        right: 50%;
+        transform: translatex(35px);
+    }
+    .menu-btn {
+        border-top: 0 none;
+    }
 }

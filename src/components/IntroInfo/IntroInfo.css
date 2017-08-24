@@ -1,0 +1,47 @@
+.intro-info {
+    display: none;
+    text-align: center;
+    padding-top: var(--cell);
+}
+
+.intro-info-title {
+    color: var(--yglf-white);
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 29px;
+    -webkit-font-smoothing: antialiased;
+    border-bottom: 0 none;
+    margin-bottom: calc(var(--cell) / 2);
+}
+
+
+.intro-info-title span {
+    display: block;
+}
+.intro-info-location {
+	font-size: 16px;
+	line-height: 38px;
+	font-weight: 100;
+	border-top: 1px solid var(--yglf-green);
+	border-bottom: 1px solid var(--yglf-green);
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: calc(var(--cell) / 2);
+}
+
+.intro-info-description {
+	font-weight: 100;
+	font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: calc(var(--cell) / 2);
+}
+
+.intro-info .buy-tickets {
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width: 764px) {
+    .intro-info {
+        display: block;
+    }
+}

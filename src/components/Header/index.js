@@ -6,30 +6,16 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
-  resize() {
-    let height = window.innerWidth > 480 ? 154 : window.innerHeight;
-
-    this.headerWrapper.style.height = height + 'px';
-  }
-
-  componentDidMount() {
-    this.headerWrapper = ReactDOM.findDOMNode(this.refs.headerWrapper);
-
-    this.resize();
-
-    window.addEventListener('resize', this.resize.bind(this));
-  }
-
   render() {
     return (
       <header className="header">
         <div className="header-wrapper" ref="headerWrapper">
+          <MenuButtom toggleMenu={this.props.toggleMenu} />
           <div className="header-title">
             <div className="container-fluid">
               <Link to="/">
                 <span>You Gotta Love</span> <span>Frontend Conference</span>
               </Link>
-              <MenuButtom toggleMenu={this.props.toggleMenu} />
             </div>
           </div>
           <div className="header-description">
