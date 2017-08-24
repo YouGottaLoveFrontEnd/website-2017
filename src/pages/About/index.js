@@ -3,7 +3,6 @@ import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/Environment';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
 import InfoBlock from '../../components/InfoBlock';
-import InfoBlockImage from '../../components/InfoBlockImage';
 import TeamPerson from '../../components/TeamPerson';
 import BuyTicketsButton from '../../components/BuyTicketsButton';
 import teamData from '../../assets/data/team.json';
