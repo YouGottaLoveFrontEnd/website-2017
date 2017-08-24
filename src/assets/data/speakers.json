@@ -145,6 +145,28 @@
           "url": "https://twitter.com/dieku"
         }
       ]
+    },
+    {
+      "first_name": "Vitaly",
+      "last_name": "Friedman",
+      "position": "Co-founder",
+      "company": "Smashing Magazine",
+      "description": "Vitaly Friedman loves beautiful content and does not give up easily. From Minsk in Belarus, he studied computer science and mathematics in Germany, discovered the passage a passion for typography, writing and design. After working as a freelance designer and developer for 6 years, he co-founded Smashing Magazine, a leading online magazine dedicated to design and web development. Vitaly is the author, co-author and editor of all Smashing books. He currently works as editor-in-chief of Smashing Magazine in the lovely city of Freiburg, Germany.",
+      "image_src": "vitaly_friedman",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/smashingmag"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/vitalyfriedman"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/vitalyfriedman/"
+        }
+      ]
     }
   ]
 }
