@@ -24,9 +24,9 @@ class Workshops extends Component {
             <InfoBlock data={InfoBlocksData.workshopsPage}>
               <div className="workshops-info">
                 <p>
-                  The workshops will take place on the &lt;DATE TBD&gt;, in the
-                  Tel-Aviv port and will be limited up to 25 participants each.
-                  Additional details will be sent at a later date.
+                  The workshops will take place on the 1st of November, 2017, in
+                  the Tel-Aviv port and will be limited up to 25 participants
+                  each. Additional details will be sent at a later date.
                 </p>
                 <BuyTicketsButton />
               </div>

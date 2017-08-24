@@ -127,7 +127,6 @@ class About extends Component {
           <div className="team-list">
             {teamPersons}
           </div>
-          <InfoBlockImage data={InfoBlocksData.theVenue} />
         </div>
       </div>
     );
