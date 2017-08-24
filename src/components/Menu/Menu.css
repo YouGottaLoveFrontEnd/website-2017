@@ -22,7 +22,7 @@
 	border-top: 1px solid var(--yglf-green);
 }
 
-.menu-overlay .menu-list .menu-list-item {
+.menu-overlay .menu-list.menu-list-size-1 {
 
 }
 
@@ -39,6 +39,25 @@
     -webkit-font-smoothing: antialiased;
     letter-spacing: 0.95px;
 }
+
+.menu-overlay .menu-list.menu-list-size-1 a { 
+    padding: 30px 0;
+    line-height: calc(var(--cell));
+    font-size: calc(var(--cell));
+}
+
+.menu-overlay .menu-list.menu-list-size-2 a { 
+    padding: 20px 0;
+    line-height: calc(var(--cell) * .6);
+    font-size: calc(var(--cell) * .6);
+}
+
+.menu-overlay .menu-list.menu-list-size-3 a { 
+    padding: 10px 0;
+    line-height: calc(var(--cell) * .4);
+    font-size: calc(var(--cell) * .4);
+}
+
 .menu-overlay .menu-list .menu-list-item a:hover {
 	background-color: var(--yglf-green);
 	color: var(--yglf-white);
