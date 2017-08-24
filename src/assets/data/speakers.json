@@ -109,6 +109,28 @@
           "url": "https://www.linkedin.com/in/martinsplitt/"
         }
       ]
+    },
+    {
+      "first_name": "Uri",
+      "last_name": "Shaked",
+      "position": "Senior Software Engineer",
+      "company": "Blackberry",
+      "description": "Uri Shaked is a Google Developer Expert for Web Technologies. He regularly writes about Web and IoT related technologies in his medium blog, and speaks about these topics in conferences and meetup around the world. Among his interests are reverse engineering, hardware hacking, building 3D-printed robots and games, playing music and Salsa dancing.",
+      "image_src": "uri_shaked",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": ""
+        },
+        {
+          "type": "github",
+          "url": ""
+        },
+        {
+          "type": "linkedin",
+          "url": ""
+        }
+      ]
     }
   ]
 }
