@@ -131,6 +131,20 @@
           "url": "https://www.linkedin.com/in/urishaked/"
         }
       ]
+    },
+    {
+      "first_name": "Diego",
+      "last_name": "Gonzalez-Zuniga",
+      "position": "Senior Engineer",
+      "company": "Samsung Research",
+      "description": "Diego Gonzalez-Zuniga, PhD (diekus) is a Senior Engineer at Samsung Research UK. He works as a Developer Advocate in the Samsung Internet team. He recently completed his PhD in Informatics researching Stereoscopic Graphical User Interfaces in Barcelona. His main interests are the use of 3D in applications, Graphical User Interfaces, VR, creative uses of technology, video games and gadgets.",
+      "image_src": "diego_gonzales",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/dieku"
+        }
+      ]
     }
   ]
 }
