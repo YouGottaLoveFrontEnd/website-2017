@@ -6,7 +6,7 @@ import './TeamPerson.css';
 class TeamPerson extends Component {
   render() {
     const { person } = this.props;
-    const imageExtension = isChrome() ? 'webp' : 'jpg';
+    const imageExtension = isChrome() ? 'webp' : 'png';
 
     console.log(person);
 
