@@ -55,7 +55,7 @@ class About extends Component {
   }
 
   render() {
-    const imageExtension = isChrome() ? 'webp' : 'jpg';
+    const imageExtension = isChrome() ? 'webp' : 'png';
 
     const teamPersons = teamData.all.map(person =>
       <TeamPerson key={person.image_src} person={person} />
