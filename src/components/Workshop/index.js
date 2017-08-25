@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/Environment';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
 import './Workshop.css';
