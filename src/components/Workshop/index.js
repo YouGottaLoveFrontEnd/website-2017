@@ -24,13 +24,11 @@ class Workshop extends Component {
     return (
       <div className="workshop">
         <div className="workshop-image">
-          <LazyLoad>
-            <img
-              src={`/workshop/${workshop.image_src}.${imageExtension}`}
-              className="drop-shadow"
-              alt={`${workshop.first_name} ${workshop.last_name}`}
-            />
-          </LazyLoad>
+          <img
+            src={`/workshop/${workshop.image_src}.${imageExtension}`}
+            className="drop-shadow"
+            alt={`${workshop.first_name} ${workshop.last_name}`}
+          />
         </div>
         <div className="workshop-info">
           <p className="workshop-author">
