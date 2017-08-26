@@ -1,0 +1,13 @@
+[{
+    "company": "WIX",
+    "className": "wix",
+    "image_src": "wix.svg"
+}, {
+    "company": "Autodesk",
+    "className": "autodesk",
+    "image_src": "autodesk.svg"
+}, {
+    "company": "Cloudinary",
+    "className": "cloudinary",
+    "image_src": "cloudinary.svg"
+}]

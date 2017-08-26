@@ -70,7 +70,7 @@ class Menu extends Component {
             <Link to="/workshops">Workshops</Link>
           </div>
           <div className="menu-list-item">
-            <a className="disabled">Sponsors</a>
+            <Link to="/sponsors">Sponsors</Link>
           </div>
           <div className="menu-list-item">
             <a className="disabled">Schedule</a>

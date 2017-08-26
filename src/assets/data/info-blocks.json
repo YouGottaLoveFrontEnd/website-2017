@@ -34,5 +34,11 @@
         "numberTitle": "Hands on Experience",
         "title": "Workshops",
         "text": "Go beyond the great talks and talented speakers by joining us in one of the expert workshops. Choose between one of two full-day workshops where you will get hands on experience in Functional Programming and/or React."
+    },
+    "sponsorsPage": {
+        "number": 1,
+        "numberTitle": "Priceless Partners",
+        "title": "Sponsors",
+        "text": "YGLF is a community event made by developers, for developers. In being so it provides an unmatched opportunity for a connection between the great Israeli frontend community and the companies that help shape the web. We would like to thank our partners who are helping us to make this great event happen."
     }
 }

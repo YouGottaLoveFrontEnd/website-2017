@@ -1,0 +1,53 @@
+.sponsors {
+    padding: calc(var(--cell) * 2) 0;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
+}
+
+.sponsors-list {
+    padding-top: calc(var(--cell) * 2);
+    padding-left: 240px;
+    display: flex;
+}
+
+
+.sponsor-item {
+    margin-right: 100px;
+}
+
+.sponsor-item.autodesk {
+    transform: translateY(12px);
+}
+
+.sponsor-item.cloudinary {
+    transform: translateY(-4px);
+}
+
+@media screen and (max-width: 1280px) {
+    .sponsors-list {
+        flex-direction: column;
+    }
+    .sponsor-item {
+        margin-right: 0;
+        margin-bottom: var(--cell);
+    }
+
+    .sponsor-item.autodesk {
+        transform: translateY(7px);
+    }
+
+    .sponsor-item.cloudinary {
+        transform: translateY(-13px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sponsors-list {
+        padding-left: 140px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .sponsors-list {
+        padding-left: 0;
+    }
+}
