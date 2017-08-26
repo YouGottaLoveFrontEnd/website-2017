@@ -7,6 +7,7 @@ import About from '../../pages/About';
 import Menu from '../../components/Menu';
 import Speakers from '../../pages/Speakers';
 import Workshops from '../../pages/Workshops';
+import Sponsors from '../../pages/Sponsors';
 import FontLoader from '../../utils/FontLoader';
 import { isStaging } from '../../utils/Environment';
 import ScrollToTop from '../ScrollToTop';
@@ -45,6 +46,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/speakers" component={Speakers} />
               <Route path="/workshops" component={Workshops} />
+              <Route path="/sponsors" component={Sponsors} />
             </div>
             <Footer />
           </div>
