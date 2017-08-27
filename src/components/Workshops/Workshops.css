@@ -1,11 +1,27 @@
 .workshops {
-  padding-bottom: 37px;
+    padding-bottom: calc(var(--cell) * 2);
 }
 
-.workshops .content-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.workshops .workshops-items {
+    padding-left: 240px;
+    display: flex;
+    flex-direction: row;
 }
 
+
+@media screen and (max-width: 1024px) {
+
+    .workshops .workshops-items {
+        padding-left: 140px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .workshops .workshops-items {
+        padding-left: 0px;
+        flex-direction: column;
+    }
+    .workshops .container-fluid {
+        width: calc(100% - 90px);
+    }
+}

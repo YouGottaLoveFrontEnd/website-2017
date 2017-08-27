@@ -11,7 +11,7 @@ class Sponsors extends Component {
         className={`sponsor-item ` + sponsor.className}
         key={sponsor.image_src}
       >
-        <img src={sponsor.image_src} />
+        <img src={`/sponsors/` + sponsor.image_src} alt={sponsor.company} />
       </div>
     );
 
