@@ -9,10 +9,14 @@
     top: 0;
     left: 0;
     background-color: var(--yglf-blue);
+    opacity: 1;
+    -webkit-transition: opacity 250ms;
+    transition: opacity 250ms;
 }
 
 .menu-overlay.hide {
-	display: none;
+	pointer-events: none;
+    opacity: 0;
 }
 
 .menu-overlay .menu-list {
