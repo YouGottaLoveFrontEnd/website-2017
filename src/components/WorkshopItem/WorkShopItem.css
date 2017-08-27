@@ -1,14 +1,31 @@
 .workshop-container {
-    margin-top: 14px;
 }
 
-.workshops .workshop-author {
-    margin: 0 !important;
-}
-
-.workshops .workshop-title {
-    font-weight: normal;
+.workshop-container .workshop-author {
+	font-size: 15px;
+	font-weight: 100;
     -webkit-font-smoothing: antialiased;
-    margin-bottom: 15px;
-    margin-top: 7px;
+    line-height: var(--cell);
+    letter-spacing: 2.47px;
+    transform: translateY(16px);
 }
+
+.workshop-container .workshop-title {
+    letter-spacing: .53px;
+    font-weight: normal;
+    line-height: var(--cell);
+	font-size: 30px;
+	font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(9px);
+}
+
+.workshop-container .workshop-description {
+	font-size: 17px;
+	font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    line-height: 30px;
+    padding-right:  var(--cell);
+    transform: translateY(22px);
+}
+

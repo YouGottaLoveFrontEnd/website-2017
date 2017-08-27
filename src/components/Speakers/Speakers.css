@@ -22,4 +22,9 @@
   .speakers .container-fluid {
     width: calc(100% - 90px);
   }
+
+  .speakers .buy-tickets {
+    margin: var(--cell) 0;
+  }
+
 }

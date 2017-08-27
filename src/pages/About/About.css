@@ -66,16 +66,18 @@
 .about-page-past-section {
     padding-right: 70px;
     width: 410px;
+    transform: translateY(-6px);
 }
 
 .about-page-past-section h3 {
     -webkit-font-smoothing: antialiased;
     letter-spacing: 3.98px;
-    line-height: 45px;
+    line-height: var(--cell);
     font-size: 48px;
     font-weight: 400;
     color: #EAEBF3;
     transform: translateY(2px);
+    margin-bottom: var(--cell);
 }
 
 .about-page-past-section p {
