@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/Environment';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
 import './Workshop.css';
@@ -24,13 +23,11 @@ class Workshop extends Component {
     return (
       <div className="workshop">
         <div className="workshop-image">
-          <LazyLoad>
-            <img
-              src={`/workshop/${workshop.image_src}.${imageExtension}`}
-              className="drop-shadow"
-              alt={`${workshop.first_name} ${workshop.last_name}`}
-            />
-          </LazyLoad>
+          <img
+            src={`/workshop/${workshop.image_src}.${imageExtension}`}
+            className="drop-shadow"
+            alt={`${workshop.first_name} ${workshop.last_name}`}
+          />
         </div>
         <div className="workshop-info">
           <p className="workshop-author">

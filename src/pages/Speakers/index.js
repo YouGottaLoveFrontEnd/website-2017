@@ -4,8 +4,6 @@ import './Speakers.css';
 
 class SpeakersPage extends Component {
   render() {
-    window.scrollTo(0, 0);
-
     return (
       <div className="speakers-page">
         <Speakers />

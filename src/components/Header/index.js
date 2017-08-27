@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import BuyTicketsButton from '../BuyTicketsButton';
 import MenuButtom from '../MenuButtom';
 import { Link } from 'react-router-dom';

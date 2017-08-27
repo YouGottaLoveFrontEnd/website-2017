@@ -3,7 +3,6 @@ import LazyLoad from 'react-lazyload';
 import { isChrome } from '../../utils/Environment';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
 import InfoBlock from '../../components/InfoBlock';
-import InfoBlockImage from '../../components/InfoBlockImage';
 import TeamPerson from '../../components/TeamPerson';
 import BuyTicketsButton from '../../components/BuyTicketsButton';
 import teamData from '../../assets/data/team.json';
@@ -56,7 +55,7 @@ class About extends Component {
   }
 
   render() {
-    const imageExtension = isChrome() ? 'webp' : 'jpg';
+    const imageExtension = isChrome() ? 'webp' : 'png';
 
     const teamPersons = teamData.all.map(person =>
       <TeamPerson key={person.image_src} person={person} />
@@ -99,7 +98,7 @@ class About extends Component {
                 its kind in Israel.
               </p>
               <a
-                href="http://2015.yougottalovefrontend.com/"
+                href="https://www.youtube.com/watch?v=7TwrABEAfTk&list=PLII-CO3Ff0qbx_zJYVsmg0pIgf32zyB5p"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -115,7 +114,7 @@ class About extends Component {
                 bar and the lounge.
               </p>
               <a
-                href="http://2016.yougottalovefrontend.com/"
+                href="https://www.youtube.com/watch?v=HKYviOtA55A&list=PLII-CO3Ff0qY1VbkvUyLcUmegS3U7XB1D"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -127,7 +126,6 @@ class About extends Component {
           <div className="team-list">
             {teamPersons}
           </div>
-          <InfoBlockImage data={InfoBlocksData.theVenue} />
         </div>
       </div>
     );

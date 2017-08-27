@@ -25,8 +25,8 @@
     {
       "first_name": "Sarah",
       "last_name": "Drasner",
-      "position": "Speaker, Consultant & Staff Writer",
-      "company": "sarahdrasnerdesign.com",
+      "position": "Sr. Cloud Developer Advocate",
+      "company": "Microsoft",
       "description": "Sarah is an award-winning speaker, consultant and staff writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given a Frontend Masters workshop on Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).",
       "image_src": "sara_drasner",
       "social_icons": [
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "first_name": "Ashlee",
+      "first_name": "Ashley",
       "last_name": "Williams",
       "position": "Developer",
       "company": "NPM",
@@ -71,7 +71,7 @@
       "last_name": "Holt",
       "position": "Staff Engineer",
       "company": "LinkedIn",
-      "description": "Brian is currently a freelance JS engineer and teacher for Frontend Masters. Previously he worked as the director of redditgifts front end at reddit and senior UI engineer at Netflix. When not on a Netflix bender or devouring content on reddit, Brian is probably hanging out with his wife and dog, running, traveling, or playing video games. Brian is presently a resident of San Francisco, CA.",
+      "description": "Brian Holt is a staff engineer at LinkedIn and a former senior user interface engineer at Netflix. He also used to be a freelance JS engineer and teacher for Frontend Masters. Previously he worked as the director of redditgifts front end at reddit and senior UI engineer at Netflix. When not on a Netflix bender or devouring content on reddit, Brian is probably hanging out with his wife and dog, running, traveling, or playing video games. Brian is presently a resident of San Francisco, CA.",
       "image_src": "brian_holt",
       "social_icons": [
         {
@@ -85,6 +85,86 @@
         {
           "type": "linkedin",
           "url": "https://www.linkedin.com/in/btholt"
+        }
+      ]
+    },
+    {
+      "first_name": "Martin",
+      "last_name": "Splitt",
+      "position": "Head of Engineering",
+      "company": "Archilogic AG",
+      "description": "Martin is pretty decent at humaning and pretty good at computering, so he decided to use his computering to improve his and other's humaning. He is a Google Developer Expert, Mozillian, loves the open web and open source, and aims to make things better with, but not limited to, code.",
+      "image_src": "martin_splitt",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/g33konaut"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/AVGP"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/martinsplitt/"
+        }
+      ]
+    },
+    {
+      "first_name": "Uri",
+      "last_name": "Shaked",
+      "position": "Senior Software Engineer",
+      "company": "Blackberry",
+      "description": "Uri Shaked is a Google Developer Expert for Web Technologies. He regularly writes about Web and IoT related technologies in his medium blog, and speaks about these topics in conferences and meetup around the world. Among his interests are reverse engineering, hardware hacking, building 3D-printed robots and games, playing music and Salsa dancing.",
+      "image_src": "uri_shaked",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/urishaked"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/urish"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/urishaked/"
+        }
+      ]
+    },
+    {
+      "first_name": "Diego",
+      "last_name": "Gonzalez-Zuniga",
+      "position": "Senior Engineer",
+      "company": "Samsung Research",
+      "description": "Diego Gonzalez-Zuniga, PhD (diekus) is a Senior Engineer at Samsung Research UK. He works as a Developer Advocate in the Samsung Internet team. He recently completed his PhD in Informatics researching Stereoscopic Graphical User Interfaces in Barcelona. His main interests are the use of 3D in applications, Graphical User Interfaces, VR, creative uses of technology, video games and gadgets.",
+      "image_src": "diego_gonzales",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/dieku"
+        }
+      ]
+    },
+    {
+      "first_name": "Vitaly",
+      "last_name": "Friedman",
+      "position": "Co-founder",
+      "company": "Smashing Magazine",
+      "description": "Vitaly Friedman loves beautiful content and does not give up easily. From Minsk in Belarus, he studied computer science and mathematics in Germany, discovered the passage a passion for typography, writing and design. After working as a freelance designer and developer for 6 years, he co-founded Smashing Magazine, a leading online magazine dedicated to design and web development. Vitaly is the author, co-author and editor of all Smashing books. He currently works as editor-in-chief of Smashing Magazine in the lovely city of Freiburg, Germany.",
+      "image_src": "vitaly_friedman",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/smashingmag"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/vitalyfriedman"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/vitalyfriedman/"
         }
       ]
     }
