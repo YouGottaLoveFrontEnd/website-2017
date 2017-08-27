@@ -133,6 +133,57 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.team-person-container {
+    position: relative;
+    width: 100%;
+}
+
+.team-person-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team-person-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: var(--yglf-green);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;  
+    transform: translate(1px, -1px);
+}
+
+.team-person-container:hover .team-person-overlay {
+    width: 100%;
+    left: 0;
+}
+
+.team-person-social {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.team-person-social a {
+    color: var(--yglf-white);
+    transform: scale(1.2);
+    margin: auto;
+}
+
+.team-person-social .social-icons {
+    margin: auto;
+    width: 60%;
+}
+
+.team-person-social a:hover {
+    opacity: 0.8;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -240,54 +291,37 @@
     }
 }
 
-.team-person-container {
-    position: relative;
-    width: 100%;
-}
 
-.team-person-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.team-person-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: var(--yglf-green);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;  
-    transform: translate(1px, -1px);
-}
-
-.team-person-container:hover .team-person-overlay {
-    width: 100%;
-    left: 0;
-}
-
-.team-person-social {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.team-person-social a {
-    color: var(--yglf-white);
-    transform: scale(1.2);
-    margin: auto;
-}
-
-.team-person-social .social-icons {
-    margin: auto;
-    width: 60%;
-}
-
-.team-person-social a:hover {
-    opacity: 0.8;
+@media screen and (max-width: 764px) {
+    .team-list {
+        flex-direction: column;
+    }
+    .team-person {
+        width: 100%;
+        height: auto;
+        float: none;
+        transform: translateY(0px) !important;
+        margin-bottom: var(--cell);
+    }
+    .team-person.landscape .team-person-wrapper {
+        width: 100%;
+    }
+    .team-person.landscape img {
+        width: 100%;
+        height: auto;
+    }
+    .team-list .team-person:nth-child(2) .team-person-wrapper {
+        float: none;
+    }
+    .team-person.portrait:nth-child(3n+3) .team-person-wrapper,
+    .team-person.landscape:nth-child(3n+3) .team-person-wrapper {
+        float: none;
+    }
+    .team-list .team-person.portrait .team-person-wrapper {
+        margin-left: 0;
+        margin-right: 0;   
+    }
+    .danielle_kanish .team-person-wrapper {
+        float: none;
+    }
 }
