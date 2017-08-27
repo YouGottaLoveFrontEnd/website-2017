@@ -3,9 +3,19 @@ import { AutoHeightFix } from '../../utils/ElementManipulation';
 import './InfoBlock.css';
 
 class InfoBlock extends Component {
-  componentDidMount() {
+  resize() {
     AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
     AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resize.bind(this));
+
+    this.resize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize.bind(this));
   }
 
   render() {

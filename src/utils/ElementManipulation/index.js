@@ -3,6 +3,7 @@ import './AutoHeightFix.css';
 const CELL = 45;
 
 export const GetElementHeight = element => {
+  element.removeAttribute('style');
   return Math.ceil(element.offsetHeight / CELL) * CELL;
 };
 
