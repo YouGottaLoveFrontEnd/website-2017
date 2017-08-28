@@ -14,7 +14,7 @@ class Home extends Component {
       <div className="home">
         <Intro />
         <IntroInfo />
-        <div className="home-bg">
+        <div className="bg">
           <Speakers size={3} />
           <LazyLoad height={400} offset={150}>
             <Workshops />
