@@ -12,6 +12,7 @@ import FontLoader from '../../utils/FontLoader';
 import { isStaging } from '../../utils/Environment';
 import ScrollToTop from '../ScrollToTop';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './App.css';
 
 class App extends Component {
   constructor(props) {

@@ -62,7 +62,7 @@ class About extends Component {
     );
 
     return (
-      <div className="about-page">
+      <div className="about-page bg">
         <div className="about-page-header" style={this.state.aboutStyle}>
           <div className="about-page-header-image">
             <LazyLoad>
