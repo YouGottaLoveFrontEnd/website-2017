@@ -8,8 +8,6 @@ class TeamPerson extends Component {
     const { person } = this.props;
     const imageExtension = isChrome() ? 'webp' : 'png';
 
-    console.log(person);
-
     return (
       <div className={`team-person ${person.image_format} ${person.image_src}`}>
         <div className="team-person-wrapper">

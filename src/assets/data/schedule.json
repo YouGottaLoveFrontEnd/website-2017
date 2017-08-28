@@ -1,0 +1,85 @@
+{
+	"days": [{
+		"id": "day_one",
+		"title": "Day One",
+		"date": "October 30th",
+		"timetable": [{
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}, {
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}, {
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}, {
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}]
+	}, {
+		"id": "day_two",
+		"title": "Day Two",
+		"date": "October 31th",
+		"timetable": [{
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}, {
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}, {
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}, {
+			"time": {
+				"hour": "08",
+				"minute": "00"
+			},
+			"title": "Automating the wrong things",
+			"speaker": "Christian Heilmann",
+			"company": "Microsoft",
+			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
+		}]
+	}]
+}
