@@ -44,11 +44,18 @@
 
 .team-person.sergey_bolshchikov,
 .team-person.igal_steklov {
-    transform: translateY(-8px);
+}
+
+.team-person.sergey_bolshchikov .team-person-name,
+.team-person.igal_steklov .team-person-name {
+    transform: translateY(-3px);
 }
 
 .team-person.tom_raviv {
     transform: translateY(14px);
+}
+.team-person.tom_raviv .team-person-name {
+    transform: translateY(5px);
 }
 
 .team-person.oren_shtang {
@@ -92,7 +99,7 @@
 }
 
 .team-person.ella_moscovitz .team-person-name {
-    transform: translateY(37px);
+    transform: translateY(7px);
 }
 
 .team-person.mor_gilad {

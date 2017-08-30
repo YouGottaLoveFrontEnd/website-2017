@@ -1,8 +1,9 @@
 .about-page {
+    padding-bottom: var(--cell);
 }
 
 .about-page-header {
-    padding: 90px 0;
+    padding: calc(var(--cell) * 2) 0;
     display: flex;
 }
 
@@ -65,7 +66,6 @@
 .about-page-past-section {
     padding-right: 70px;
     width: 410px;
-    transform: translateY(-6px);
 }
 
 .about-page-past-section h3 {
