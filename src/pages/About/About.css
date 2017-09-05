@@ -89,22 +89,6 @@
     transform: translateY(23px);
 }
 
-.about-page-past-section a {
-    font-size: 15px;
-    font-size: 600;
-    color: var(--yglf-green);
-    text-decoration: none;
-    line-height: var(--cell);
-    display: inline-block;
-    letter-spacing: 3.51px;
-    border-bottom: 1px solid var(--yglf-green);
-}
-
-.about-page-past-section a:hover {
-    color: var(--yglf-white);
-    border-bottom-color: var(--yglf-white);
-}
-
 
 .about-page .info-block-image {
     padding-top: 29px;

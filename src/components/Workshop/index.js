@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import { isChrome } from '../../utils/Environment';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
+import ReadMore from '../ReadMore';
 import './Workshop.css';
 
 class Workshop extends Component {
   componentDidMount() {
     AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
-  }
-
-  getParagraphs(paragraphsData) {
-    return paragraphsData.map(paragraph =>
-      <p>
-        {paragraph}
-      </p>
-    );
   }
 
   render() {
@@ -37,7 +30,7 @@ class Workshop extends Component {
             {workshop.title}
           </h2>
           <div className="workshop-paragraphs">
-            {this.getParagraphs(workshop.paragraphs)}
+            <ReadMore paragraphs={workshop.paragraphs} />
           </div>
         </div>
       </div>

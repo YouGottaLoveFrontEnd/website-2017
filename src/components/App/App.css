@@ -6,3 +6,22 @@
 .bg {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
 }
+
+.btn-underline {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--yglf-green);
+    text-decoration: none;
+    line-height: var(--cell);
+    display: inline-block;
+    letter-spacing: 3.51px;
+    border-bottom: 1px solid var(--yglf-green);
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+.btn-underline:hover {
+    color: var(--yglf-white);
+    border-bottom-color: var(--yglf-white);
+}
