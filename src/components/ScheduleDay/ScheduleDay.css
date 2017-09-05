@@ -1,0 +1,33 @@
+.schedule-day {
+	width: 50%;
+	flex: 1 auto;
+}
+
+.schedule-day-timetable {
+	border-top: 1px solid var(--yglf-green);
+}
+
+.schedule-day .schedule-day-title {
+	font-style: 28px;
+	letter-spacing: 2.73;
+	color: var(--yglf-green);
+	text-transform: uppercase;
+	font-weight: 100;
+	line-height: var(--cell);
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(12px);
+}
+.schedule-day .schedule-day-date {
+	font-family: "Libre Baskerville";
+	font-style: 12px;
+	letter-spacing: 2.25;
+	color: var(--yglf-green);
+	font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+	line-height: var(--cell);
+    font-style: italic;
+	
+}
+.schedule-day .schedule-day-title {
+	
+}

@@ -40,5 +40,11 @@
         "numberTitle": "Priceless Partners",
         "title": "Sponsors",
         "text": "YGLF is a community event made by developers, for developers. In being so it provides an unmatched opportunity for a connection between the great Israeli frontend community and the companies that help shape the web. We would like to thank our partners who are helping us to make this great event happen."
+    },
+    "schedule": {
+        "number": 1,
+        "numberTitle": "What’s When",
+        "title": "Schedule",
+        "text": "YGLF is a 2-day event. Days start at 8:30am with breakfast and a friendly gathering. Talk sessions last 30 minutes, except the longer keynotes and a few other surprises along the day :)"
     }
 }

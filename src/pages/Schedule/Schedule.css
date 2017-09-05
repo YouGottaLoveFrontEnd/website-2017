@@ -1,0 +1,13 @@
+.schedule {
+	padding: calc(var(--cell) * 2) 0;
+}
+
+.schedule .info-block .info-block-text p {
+	margin-bottom: var(--cell);
+}
+
+.schedule-days {
+	padding: calc(var(--cell) * 2) 0;
+	display: flex;
+	flex-direction: row;
+}

@@ -41,7 +41,9 @@ class About extends Component {
     });
   }
 
-  componentWillUnmount() {}
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize.bind(this));
+  }
 
   componentDidMount() {
     window.scrollTo(0, 0);
