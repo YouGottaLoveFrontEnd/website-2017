@@ -27,7 +27,7 @@ class ScheduleDay extends Component {
   }
 
   render() {
-    const scheduleEvents = this.props.day.timetable.map(event =>
+    const scheduleEvents = this.props.day.events.map(event =>
       <ScheduleEvent key={event.id} event={event} />
     );
 

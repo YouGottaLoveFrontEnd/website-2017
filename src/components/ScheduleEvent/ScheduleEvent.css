@@ -1,7 +1,7 @@
 .schedule-event {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: calc(var(--cell) * 2);
+	margin-bottom: var(--cell);
 	padding-right: var(--cell);
 }
 
@@ -12,6 +12,7 @@
     transform: translateY(15px);
     width: 100px;
     min-width: 100px;
+    max-width: 100px;
     flex: 1;
 }
 .schedule-event-time-hour {
@@ -28,8 +29,9 @@
 }
 
 .schedule-event-info {
-	border-bottom: 1px solid var(--yglf-white);
+    flex: 1;
 	padding-bottom: var(--cell);
+	border-bottom: 1px solid var(--yglf-grey);
 }
 
 .schedule-event-info-title {
@@ -56,5 +58,5 @@
 	font-size: 15px;
     -webkit-font-smoothing: antialiased;
 	font-weight: 100;
-    transform: translateY(16px);
+    transform: translateY(11px);
 }

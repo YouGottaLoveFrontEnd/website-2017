@@ -27,13 +27,13 @@ class ScheduleEvent extends Component {
 
   render() {
     const paragraphs = this.props.event.paragraphs.map(paragraph =>
-      <p className="schedule-event-info-paragraph">
+      <p key={paragraph} className="schedule-event-info-paragraph">
         {paragraph}
       </p>
     );
 
     return (
-      <div className="schedule-event auto-height-fix">
+      <div className="schedule-event">
         <div className="schedule-event-time">
           <span className="schedule-event-time-hour">
             {this.props.event.time.hour}
@@ -42,13 +42,15 @@ class ScheduleEvent extends Component {
             {this.props.event.time.minute}
           </span>
         </div>
-        <div className="schedule-event-info">
+        <div className="schedule-event-info auto-height-fix">
           <h4 className="schedule-event-info-title">
             {this.props.event.title}
           </h4>
-          <strong className="schedule-event-info-speaker">
-            {this.props.event.speaker} ({this.props.event.company})
-          </strong>
+          {this.props.event.speaker
+            ? <strong className="schedule-event-info-speaker">
+                {this.props.event.speaker} ({this.props.event.company})
+              </strong>
+            : ''}
           {paragraphs}
         </div>
       </div>
