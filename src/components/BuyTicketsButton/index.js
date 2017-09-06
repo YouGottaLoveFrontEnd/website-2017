@@ -1,4 +1,5 @@
 import React from 'react';
+import './BuyTicketsButton.css';
 
 const BuyTicketsButton = () => {
   const sendBi = () => {
