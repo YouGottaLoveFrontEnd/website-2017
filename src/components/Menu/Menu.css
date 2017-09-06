@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     background-color: var(--yglf-blue);
-    opacity: 1;
+    opacity: 0;
     -webkit-transition: opacity 250ms;
     transition: opacity 250ms;
 }
