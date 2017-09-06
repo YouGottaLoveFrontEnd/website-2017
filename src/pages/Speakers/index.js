@@ -5,7 +5,7 @@ import './Speakers.css';
 class SpeakersPage extends Component {
   render() {
     return (
-      <div className="speakers-page">
+      <div className="speakers-page bg">
         <Speakers />
       </div>
     );

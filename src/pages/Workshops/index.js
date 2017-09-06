@@ -18,7 +18,7 @@ class Workshops extends Component {
     );
 
     return (
-      <div className="workshops-page">
+      <div className="workshops-page bg">
         <div className="container">
           <div>
             <InfoBlock data={InfoBlocksData.workshopsPage}>

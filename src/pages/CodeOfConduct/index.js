@@ -5,8 +5,8 @@ import './CodeOfConduct.css';
 class CodeOfConduct extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.header = document.querySelector('.header');
-    this.header.style.display = 'none';
+    // this.header = document.querySelector('.header');
+    // this.header.style.display = 'none';
   }
 
   componentWillUnmount() {

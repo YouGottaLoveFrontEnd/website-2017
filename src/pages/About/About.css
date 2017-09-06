@@ -1,9 +1,9 @@
 .about-page {
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
+    padding-bottom: var(--cell);
 }
 
 .about-page-header {
-    padding: 90px 0;
+    padding: calc(var(--cell) * 2) 0;
     display: flex;
 }
 
@@ -88,22 +88,6 @@
     letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
     transform: translateY(23px);
-}
-
-.about-page-past-section a {
-    font-size: 15px;
-    font-size: 600;
-    color: var(--yglf-green);
-    text-decoration: none;
-    line-height: var(--cell);
-    display: inline-block;
-    letter-spacing: 3.51px;
-    border-bottom: 1px solid var(--yglf-green);
-}
-
-.about-page-past-section a:hover {
-    color: var(--yglf-white);
-    border-bottom-color: var(--yglf-white);
 }
 
 

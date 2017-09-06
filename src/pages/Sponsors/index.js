@@ -16,7 +16,7 @@ class Sponsors extends Component {
     );
 
     return (
-      <div className="sponsors">
+      <div className="sponsors bg">
         <div className="container container-fluid">
           <InfoBlock data={InfoBlocksData.sponsorsPage} />
           <div className="sponsors-list">

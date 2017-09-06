@@ -52,6 +52,12 @@
 
 .menu-overlay .menu-list.menu-list-size-2 a { 
     padding: 20px 0;
+    line-height: calc(var(--cell) * .6);
+    font-size: calc(var(--cell) * .6);
+}
+
+.menu-overlay .menu-list.menu-list-size-3 a { 
+    padding: 10px 0;
     line-height: calc(var(--cell) * .75);
     font-size: calc(var(--cell) * .75);
 }
