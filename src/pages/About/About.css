@@ -66,6 +66,7 @@
 .about-page-past-section {
     padding-right: 70px;
     width: 410px;
+    transform: translateY(-6px);
 }
 
 .about-page-past-section h3 {

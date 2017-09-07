@@ -8,10 +8,10 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--yglf-blue);
     opacity: 1;
     -webkit-transition: opacity 250ms;
     transition: opacity 250ms;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .menu-overlay.hide {
@@ -30,6 +30,20 @@
 
 }
 
+.menu-list-item {
+    transition: transform 150ms;
+    transition-delay: 250ms;
+
+    transform-origin: 50% 50% 0px;
+    transform: scaleY(1);
+}
+
+
+.menu-overlay.hide .menu-list-item {
+    transform: scaleY(0);
+}
+
+
 .menu-list-item a {
 	text-align: center;
 	display: block;
@@ -42,6 +56,8 @@
 	padding: 40px 0;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 0.95px;
+    background-color: var(--yglf-blue);
+    overflow: hidden;
 }
 
 .menu-overlay .menu-list.menu-list-size-1 a { 
