@@ -45,28 +45,6 @@
       ]
     },
     {
-      "first_name": "Ashley",
-      "last_name": "Williams",
-      "position": "Developer",
-      "company": "NPM",
-      "description": "Ashley Williams wears a lot of hats, both literally and professionally. She is currently a services engineer at npm, Inc, the package manager for JavaScript and the Node.js ecosystem. She also represents the Individual Membership on the Node.js Foundation Board of Directors. Previously a backend and services engineer at Mozilla, and a web engineer and educator at Bocoup, Ashley has a long history of designing, developing, and teaching systems and systems architecture.",
-      "image_src": "ashley_williams",
-      "social_icons": [
-        {
-          "type": "twitter",
-          "url": "https://twitter.com/ag_dubs"
-        },
-        {
-          "type": "github",
-          "url": "https://github.com/ashleygwilliams"
-        },
-        {
-          "type": "linkedin",
-          "url": "https://www.linkedin.com/in/ashleygwilliams"
-        }
-      ]
-    },
-    {
       "first_name": "Brian",
       "last_name": "Holt",
       "position": "Staff Engineer",
@@ -85,6 +63,28 @@
         {
           "type": "linkedin",
           "url": "https://www.linkedin.com/in/btholt"
+        }
+      ]
+    },
+    {
+      "first_name": "Yoav",
+      "last_name": "Weiss",
+      "position": "Principal Architect",
+      "company": "Akamai",
+      "description": "Yoav Weiss focuses on making the Web platform faster by adding performance-related features to browsers as well as to Akamai’s CDN. Yoav has been working on mobile Web performance for longer than he cares to admit. He takes image bloat on the Web as a personal insult, which is why he joined the Responsive Image Community Group and implemented the various responsive images features in Blink and WebKit. When he’s not writing code, he’s probably slapping his bass, mowing the lawn in the French countryside, or playing board games with his family.",
+      "image_src": "yoav_weiss",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/yoavweiss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/yoavweiss"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/weissyoav/"
         }
       ]
     },
