@@ -1,90 +1,379 @@
 {
-	"days": [{
-		"id": "day_one",
-		"title": "Day One",
-		"date": "October 30th",
-		"events": [{
-			"id": "day_one_event_1",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Automating the wrong things",
-			"paragraphs": ["Come and pick up your badge."]
-		}, {
-			"id": "day_one_event_2",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Registration",
-			"company": "Microsoft",
-			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
-		}, {
-			"id": "day_one_event_3",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Automating the wrong things",
-			"speaker": "Christian Heilmann",
-			"company": "Microsoft",
-			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
-		}, {
-			"id": "day_one_event_4",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Automating the wrong things",
-			"speaker": "Christian Heilmann",
-			"company": "Microsoft",
-			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
-		}]
-	}, {
-		"id": "day_two",
-		"title": "Day Two",
-		"date": "October 31th",
-		"events": [{
-			"id": "day_one_event_1",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Automating the wrong things",
-			"speaker": "Christian Heilmann",
-			"company": "Microsoft",
-			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
-		}, {
-			"id": "day_one_event_2",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Automating the wrong things",
-			"speaker": "Christian Heilmann",
-			"company": "Microsoft",
-			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
-		}, {
-			"id": "day_one_event_3",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Automating the wrong things",
-			"speaker": "Christian Heilmann",
-			"company": "Microsoft",
-			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
-		}, {
-			"id": "day_one_event_4",
-			"time": {
-				"hour": "08",
-				"minute": "00"
-			},
-			"title": "Automating the wrong things",
-			"speaker": "Christian Heilmann",
-			"company": "Microsoft",
-			"paragraphs": ["As web developers we have been in a bubble for quite some time. Our craft has always been an odd one out, …. what we create could be done by many people. Of course, we produce quality and we are proud of what we do. But the final products often look dire. So we look to automating optimising the final products, instead of concentrating on ensuring that maintenance of our products doesn't undo the good we did. In this talk Chris Heilmann will talk about how we can use tools, machine learning and APIs to make sure the bytes we saved don't get smothered by fat assets our maintainers add to the"]
-		}]
-	}]
+	"days": [
+		{
+			"id": "day_one",
+			"title": "Day One",
+			"date": "October 30th",
+			"events": [
+				{
+					"id": "day_one_event_1",
+					"time": {
+						"hour": "08",
+						"minute": "00"
+					},
+					"title": "Registration & Breakfast",
+					"paragraphs": [
+						"Pick up your badge. Take sometime to enjoy your morning coffee and pastries."
+					]
+				},
+				{
+					"id": "day_one_event_2",
+					"time": {
+						"hour": "09",
+						"minute": "30"
+					},
+					"title": "Strolling down the Metaverse",
+					"speaker": "Diego Gonzales",
+					"company": "Samsung",
+					"paragraphs": [
+						"In this presentation we will take a *virtual* stroll around the web. We will understand what are the key elements that make WebVR a crucial technology in the path to make VR a democratic and accessible medium. We will see the concepts behind it, some experiences out there, and will get know about the community that drives it so passionately. Most importantly, everyone is invited, all you need is the web."
+					]
+				},
+				{
+					"id": "day_one_event_3",
+					"time": {
+						"hour": "10",
+						"minute": "15"
+					},
+					"title": "WebGL: Building interactive 3D worlds in the browser",
+					"speaker": "Martin Splitt",
+					"company": "Archilogic AG",
+					"paragraphs": [
+						"Thanks to the wide adoption and availability of WebGL across browsers (including those on mobile) we get control of the full graphics pipeline.",
+						"After we get an introduction to WebGL basics and the render pipeline, we'll learn what Three.js brings to the table and do a live coding demonstration you can code along to in which we’ll build a 3D web app from the ground up with all elements."
+					]
+				},
+				{
+					"id": "day_one_event_4",
+					"time": {
+						"hour": "11",
+						"minute": "00"
+					},
+					"title": "Coffee Break",
+					"paragraphs": [
+						"Time to take a break, have some coffee.", "Feel free to approach our speakers and ask more questions."
+					]
+				},
+				{
+					"id": "day_one_event_5",
+					"time": {
+						"hour": "11",
+						"minute": "30"
+					},
+					"title": "",
+					"speaker": "Gonen Jerbi",
+					"company": "Wix",
+					"paragraphs": [
+						
+					]
+				},
+				{
+					"id": "day_one_event_6",
+					"time": {
+						"hour": "12",
+						"minute": "00"
+					},
+					"title": "Caches All The Way Down!",
+					"speaker": "Yoav Weiss",
+					"company": "Akamai",
+					"paragraphs": [
+						"The fastest resource download is the one never made. Caching is a great way to ensure your content is positioned as close to your users as possible and that your repeat visitors get instant access to your content. Developers can impact the behavior of network and browser caches, improving content caching and ensuring it’s always as available as it can be, but caching semantics in HTTP can be confusing, which means that most content on the web today is not properly cached.",
+						"Yoav Weiss explores HTTP cache semantics, strategies, browser internal caches, and service workers and explains how serve your content fast and fresh."
+					]
+				},
+				{
+					"id": "day_one_event_7",
+					"time": {
+						"hour": "12",
+						"minute": "30"
+					},
+					"title": "Lunch",
+					"paragraphs": [
+						"Enjoy great asado meat, hamburgers. As well taco bar.",
+						"Don't forget to stop by beer garden to have several bottles of Israeli boutique beer."
+					]
+				},
+				{
+					"id": "day_one_event_8",
+					"time": {
+						"hour": "14",
+						"minute": "00"
+					},
+					"title": "Proposals in this day & age, taking steps to the next stage",
+					"speaker": "Brian Holt",
+					"company": "LinkedIn",
+					"paragraphs": [
+						"We’re all pretty stoked about ES6 / ES2015 and all the features we’ve recently added the language. JavaScript really has taken a step into the modern era and embraced its role as the language being in almost every contexts, from the Internet of Things to the server to your TV.",
+						"Beyond what language features did for JavaScript, perhaps its most contribution is it started the yearly release cylce for revisions of JavaScript. With the march of progress ever moving forward it can be overwhelming to keep track of what’s in the pipeline. We’ll go over the process of how a feature makes it into the language and highlight some of my and the JavaScript standardization committee’s favorite features upcoming in JavaScript."
+					]
+				},
+				{
+					"id": "day_one_event_9",
+					"time": {
+						"hour": "14",
+						"minute": "30"
+					},
+					"title": "",
+					"speaker": "TBD",
+					"company": "",
+					"paragraphs": [
+						
+					]
+				},
+				{
+					"id": "day_one_event_10",
+					"time": {
+						"hour": "15",
+						"minute": "00"
+					},
+					"title": "Components: Fast & Furious",
+					"speaker": "Noam Elboim & Tzook Shaked",
+					"company": "My Heritage",
+					"paragraphs": [
+						"Have you ever wanted to use a component but it wasn’t reusable enough?",
+						"Do certain components make your application less smooth?",
+						"Do you like puppies?",
+						"Well, then this talk is just for you! Join a talk that introduces practical techniques to improve your components, in both reusability and performance. Bring a notepad with you - you'll want to write them down!"
+					]
+				},
+				{
+					"id": "day_one_event_11",
+					"time": {
+						"hour": "15",
+						"minute": "30"
+					},
+					"title": "Coffee Break",
+					"paragraphs": [
+						"Time to take a break, have some coffee.", "Feel free to approach our speakers and ask more questions."
+					]
+				},
+				{
+					"id": "day_one_event_12",
+					"time": {
+						"hour": "16",
+						"minute": "00"
+					},
+					"title": "Front-end Engineering - you are holding it wrong!",
+					"speaker": "Boris Litvinsky",
+					"company": "Wix",
+					"paragraphs": [
+						"The flood of tools and frameworks in the front-end development world caused both the developers and their employers to lose sight of the things that really matter - software craftsmanship. It’s demand for Angular over TDD, SASS over SOLID. This loss of focus from the essentials is in the long run damaging and sadly - it is all self-inflicted. In this talk we will go over the long-term effects and explore solutions."
+					]
+				},
+				{
+					"id": "day_one_event_13",
+					"time": {
+						"hour": "16",
+						"minute": "10"
+					},
+					"title": "",
+					"speaker": "TBD",
+					"company": "Cloudinary",
+					"paragraphs": [
+						
+					]
+				},
+				{
+					"id": "day_one_event_14",
+					"time": {
+						"hour": "16",
+						"minute": "20"
+					},
+					"title": "Crafting Faster in the Dark",
+					"speaker": "Richard Feldman",
+					"company": "RedInk",
+					"paragraphs": [
+						"When I got into Elm as a React developer in 2014, I thought I was signing up to learn a functional programming language. Nobody told me I would end up embracing a programming flow I didn't even know existed back then—a flow where I could spend hours productively writing front-end code without slowing down to open a browser and visually check my progress.",
+						"My Elm flow today would horrify my JavaScript self from 2014. Last year I boarded a four-hour flight intending to work on an Elm app where every page load required a HTTP request. The flight had no wifi. Still, I hammered out front-end code the entire four hours, no Internet, never opening a browser. When the plane landed and I reconnected, all the code I'd written worked on the first try, HTTP requests and all—and what's crazier is that I had *assumed* it would.",
+						"What kind of bizarro front-end development world is that? What is it about Elm's design that makes this kind of flow possible, and what assumptions does it challenge about the most effective ways to write front-end code? Does it take a whole different programming language to pull this off, or are there ways to combine existing JavaScript tools to get the same benefits?",
+						"We'll explore all of these questions and more in this talk. Come find out!"
+					]
+				}
+			]
+		},
+		{
+			"id": "day_two",
+			"title": "Day Two",
+			"date": "October 31th",
+			"events": [
+				{
+					"id": "day_two_event_1",
+					"time": {
+						"hour": "08",
+						"minute": "30"
+					},
+					"title": "Breakfast",
+					"paragraphs": [
+						""
+					]
+				},
+				{
+					"id": "day_two_event_2",
+					"time": {
+						"hour": "09",
+						"minute": "30"
+					},
+					"title": "Animating Vue",
+					"speaker": "Sarah Dresner",
+					"company": "Microsoft",
+					"paragraphs": [
+						"As superfluous as something like animation may initially seem, you can tell a lot about framework by the way that it handles the concept of time. Idiosyncrasies and race conditions in rendering reveal themselves, pauses in DOM and virtual DOM diffing can be exposed.",
+						"This is one of the ways Vue shows itself to be uniquely capable and elegant as a framework. In this session, we'll cover how to use the <transition> component and some of its offerings to create fluid effects in the browser. We'll move on to watchers and transitioning state. Finally, we'll talk about lifecycle methods, asynchronous updates, and pushing our animations to the next level."
+					]
+				},
+				{
+					"id": "day_two_event_3",
+					"time": {
+						"hour": "10",
+						"minute": "15"
+					},
+					"title": "When East meets West, web typography and how it can inspire modern layouts",
+					"speaker": "Chen Hui Jing",
+					"company": "Wismut Labs",
+					"paragraphs": [
+						"This talk traces the parallel history of western and eastern typography from handwriting to the internet age, setting the context for how the web is a brand new medium for typesetting. CSS allows us to implement advanced typographic features and multi-directional layouts, that not only benefits internationalisation, but opens up a myriad of options for creative and interesting layouts in general as well."
+					]
+				},
+				{
+					"id": "day_two_event_4",
+					"time": {
+						"hour": "11",
+						"minute": "00"
+					},
+					"title": "Coffee Break",
+					"paragraphs": [
+						"Time to take a break, have some coffee.", "Feel free to approach our speakers and ask more questions."
+					]
+				},
+				{
+					"id": "day_two_event_5",
+					"time": {
+						"hour": "11",
+						"minute": "30"
+					},
+					"title": "",
+					"speaker": "Alex Wolkov",
+					"company": "Fundbox",
+					"paragraphs": [
+						""
+					]
+				},
+				{
+					"id": "day_two_event_6",
+					"time": {
+						"hour": "12",
+						"minute": "00"
+					},
+					"title": "www.yougottalovefrontend.com",
+					"speaker": "Uri Shaked",
+					"company": "Blackberry",
+					"paragraphs": [
+						"When you open your browser and type www.yougottalovefrontend.com in the address bar, there is an amazing amount of things that happen in just a split of a second. Thousands of IP packets are being exchanged by your browser and remote servers involving many protocols such as HTTP, TCP, DNS and SSL to ensure fast, smooth and secure experience. There is so much going on behind the scenes, things such as routing, NAT, retransmissions, Nagle's algorithm, ack piggybacking just to name a few. In this session, we are going to do a deep network surgery and cut through the different protocol layers as we use the browser."
+					]
+				},
+				{
+					"id": "day_two_event_7",
+					"time": {
+						"hour": "12",
+						"minute": "30"
+					},
+					"title": "Lunch",
+					"paragraphs": [
+						"Enjoy great asado meat, hamburgers. As well caribbean bar.",
+						"Don't forget to stop by beer garden to have several bottles of Israeli boutique beer."
+					]
+				},
+				{
+					"id": "day_two_event_8",
+					"time": {
+						"hour": "14",
+						"minute": "00"
+					},
+					"title": "Maneuvering Errors within the Bowels of JavaScript",
+					"speaker": "Bret Little",
+					"company": "Canopy",
+					"paragraphs": [
+						"Abnormalities in the way JavaScript handles asynchronous behavior can cause you to experience greater than normal discomfort when propagating your errors. Before you know it, your errors pile up, and no amount of digest cycles will save you. Though JavaScript error handling is chronic, with symptoms that usually recur, in this talk we’ll discuss the symptoms and common triggers of the condition."
+					]
+				},
+				{
+					"id": "day_two_event_9",
+					"time": {
+						"hour": "14",
+						"minute": "30"
+					},
+					"title": "",
+					"speaker": "Ran Byron",
+					"company": "Facebook",
+					"paragraphs": [
+						""
+					]
+				},
+				{
+					"id": "day_two_event_10",
+					"time": {
+						"hour": "15",
+						"minute": "00"
+					},
+					"title": "",
+					"speaker": "TBD",
+					"company": "",
+					"paragraphs": [
+						""
+					]
+				},
+				{
+					"id": "day_two_event_11",
+					"time": {
+						"hour": "15",
+						"minute": "30"
+					},
+					"title": "Coffee Break",
+					"paragraphs": [
+						"Time to take a break, have some coffee.", "Feel free to approach our speakers and ask more questions."
+					]
+				},
+				{
+					"id": "day_two_event_12",
+					"time": {
+						"hour": "16",
+						"minute": "00"
+					},
+					"title": "Mutation tests - Testing the right things",
+					"speaker": "Danny Vernovsky",
+					"company": "AT&T",
+					"paragraphs": [
+						"What is considered a good test anyway? Is it when we covered all the possible scenarios? Maybe it’s when we got 100% coverage?  Or maybe, it’s when we got multiple layers of tests that cover your code?",
+						"The truth is, that even when we got all the above covered it’s still says little on the quality of our tests, or our code. Mutation tests are one of the tools we can use to put our tests to the tests. It created mutations on our code and checks if our tests are durable enough to catch and kill them and it can also point out on possible weaknesses in our code."
+					]
+				},
+				{
+					"id": "day_two_event_13",
+					"time": {
+						"hour": "16",
+						"minute": "10"
+					},
+					"title": "",
+					"speaker": "TBD",
+					"company": "",
+					"paragraphs": [
+						""
+					]
+				},
+				{
+					"id": "day_two_event_14",
+					"time": {
+						"hour": "16",
+						"minute": "20"
+					},
+					"title": "Big Bang Redesign: Smashing Magazine’s 2017 Relaunch, a Case Study",
+					"speaker": "Vitaly Friedman",
+					"company": "Smashing Magazine",
+					"paragraphs": [
+						"You’ve been there: big bang redesigns are usually a very, very bad idea. Redesigning and rebuilding an existing website from scratch is risky and unpredictable, and in many cases the level of complexity is highly underrated and underestimated. In mid-2016, Smashing Magazine has decided to make a big switch from the existing WordPress setup to an entirely new design, entirely new architecture (JAM Stack) and an entirely new, GitHub-based, editorial workflow."
+					]
+				}
+			]
+		}
+	]
 }
