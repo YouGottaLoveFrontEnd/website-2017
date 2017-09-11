@@ -6,19 +6,35 @@
     padding-top: calc(var(--cell) * 2);
     padding-left: 240px;
     display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 
 .sponsor-item {
+    min-width: 205px;
     margin-right: 100px;
+    margin-bottom: var(--cell);
 }
 
 .sponsor-item.autodesk {
-    transform: translateY(12px);
+    transform: translateY(16px);
+}
+
+.sponsor-item.fundbox {
+    transform: translateY(10px);
+}
+
+.sponsor-item.myheritage {
+    transform: translateY(17px);
 }
 
 .sponsor-item.cloudinary {
-    transform: translateY(-4px);
+    transform: translateY(4px);
+}
+
+.sponsor-item.at_and_t {
+    transform: translateY(10px);
 }
 
 @media screen and (max-width: 1280px) {
@@ -30,12 +46,24 @@
         margin-bottom: var(--cell);
     }
 
-    .sponsor-item.autodesk {
-        transform: translateY(7px);
+    .sponsor-item.fundbox {
+        transform: translateY(5px);
     }
 
+    .sponsor-item.myheritage {
+        transform: translateY(6px);
+    }
+    .sponsor-item.autodesk {
+        transform: translateY(18px);
+    }
+
+
     .sponsor-item.cloudinary {
-        transform: translateY(-13px);
+        transform: translateY(17px);
+    }
+
+    .sponsor-item.at_and_t {
+        transform: translateY(25px);
     }
 }
 
