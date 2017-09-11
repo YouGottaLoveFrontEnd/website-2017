@@ -3,19 +3,19 @@
         "number": 1,
         "numberTitle": "Who We Are",
         "title": "This Year",
-        "text": "Set in the sunny city of Tel-Aviv YGLF is a community event made by developers, for developers. This non-profit conference is aimed at delivering high quality content about relevant topics that any FrontEnd lover would die to hear. Bringing in internationally recognized speakers and attendees, with the young StartUp nation atmosphere, to create a buzzing bustle of software engineers from around the globe. And as usual, a hefty lunch, refreshing beer and plenty of coffee breaks spark the most interesting conversations between colleagues and strangers alike."
+        "text": "Set in the sunny city of Tel-Aviv, YGLF is a community event built by developers for developers. This non-profit conference is aimed at delivering high quality content, regarding relevant topics, that any Frontend admirer would love to hear. Bringing in internationally recognized speakers and attendees, with the young and vibrant atmosphere Startup nation has to offer, YGLF creates a buzzling bustle of software engineers from around the globe. And as usual, a hefty lunch, refreshing beer and plenty of coffee breaks spark the most interesting conversations between colleagues and strangers alike."
     },
     "team": {
         "number": 2,
         "numberTitle": "Good Vibes",
         "title": "The Team",
-        "text": "A small group of super dedicated people, working hard around the clock to make the most awesome conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Please come and talk to us if you need assistance."
+        "text": "A small group of super dedicated people, working hard around the clock to make the most stunning conference ever. During YGLF Conference, you can find a member of the team at the registration desk at all times. Don't hesistate to come and talk to us, if you need any assitance."
     },
     "theVenue": {
         "number": 3,
         "numberTitle": "Awesome Spaces",
         "title": "The Venue",
-        "text": "This year the conference will take place, once again, at the elegant Cameri Theatre - Tel Aviv's municipal theathre. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected theathers. Classical and modern will meet under an urban wrap, for another unforgettable conference."
+        "text": "The elegant Cameri Theater, Tel Aviv's municipal theater, is where this year's YGLF conference will once again take place. Located in the center of bohemic Tel Aviv, it is considered one of Israel's largest and most respected performance halls. The Cameri holds over dozens of yearly productions, inlcuding a touring company. Classical and modern will meet under an urban wrap, for another unforgettable conference."
     },
     "workshops": {
         "number": 2,
@@ -27,19 +27,19 @@
         "number": 1,
         "numberTitle": "Amazing Talks",
         "title": "Meet Our Speakers",
-        "text": "This year YGLF is hosting amazing speakers from all around the world. Listed below are our keynote speakers. For the whole lineup you can visit our Speakers page. Make sure to check back reguraly as this is just the beginning and we have many more to be announced soon!"
+        "text": "This year YGLF is hosting amazing speakers from all around the world. Listed below are our keynote speakers. For the full lineup you can visit our Speakers page. Make sure to check back reguraly, as this is just the beginning, there is a lot more to come!"
     },
     "workshopsPage": {
         "number": 1,
         "numberTitle": "Hands on Experience",
         "title": "Workshops",
-        "text": "Go beyond the great talks and talented speakers by joining us in one of the expert workshops. Choose between one of two full-day workshops where you will get hands on experience in Functional Programming and/or React."
+        "text": "For the first time, YGLF will be holding two Master class workshops, led by world-renowned experts. Sign up and join us on November 1st at the Tel-Aviv Port for the opportunity to hone your skills and delve into the cutting edge of Frontend development."
     },
     "sponsorsPage": {
         "number": 1,
         "numberTitle": "Priceless Partners",
         "title": "Sponsors",
-        "text": "YGLF is a community event made by developers, for developers. In being so it provides an unmatched opportunity for a connection between the great Israeli frontend community and the companies that help shape the web. We would like to thank our partners who are helping us to make this great event happen."
+        "text": "YGLF is a leading community event. Being so, it bridges between extraordinary talents from the Israeli Frontend realm and the fantastic companies that shape the web we live in. Thus, creating limitless opportunities for beautiful cooperations, knowledge sharing and networking. We would like to thank our partners for helping us to make this great event happen."
     },
     "schedule": {
         "number": 1,
