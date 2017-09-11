@@ -79,9 +79,9 @@ class About extends Component {
           <div className="about-page-header-text">
             <h1 className="auto-height-fix-title">About</h1>
             <p className="auto-height-fix">
-              The Third international conference of its kind to be held in
-              Israel.
-              <small>Tel Aviv 30-31 October</small>
+              Third time ice cream - The first international conference to be
+              held in Israel for the third time.
+              <small>30-31 October, Tel Aviv</small>
             </p>
             <BuyTicketsButton />
           </div>
@@ -92,12 +92,12 @@ class About extends Component {
             <div className="about-page-past-section">
               <h3 className="auto-height-fix-title">YGLF 2015</h3>
               <p className="auto-height-fix margin-bottom-1">
-                Kicking off with JavaScript ‘sensei’, Douglas Crockford, the
-                2015 inauguration event was roaring. Complete with an
-                after-party venue for the evenings, everyone rambled on about
-                Martin Kleppe’s interactive art display into the night.
-                Supported by non-stop sunshine, it was the first convention of
-                its kind in Israel.
+                Kicking off with JavaScript expert, Douglas Crockford, the 2015
+                inauguration event was roaring. Complete with an after-party
+                venue for the evenings, everyone rambled on about Martin
+                Kleppe’s interactive art display into the night. Supported by
+                sun rays of joy and unbelievable energy, it was the first
+                convention of its kind in Israel.
               </p>
               <a
                 href="https://www.youtube.com/watch?v=7TwrABEAfTk&list=PLII-CO3Ff0qbx_zJYVsmg0pIgf32zyB5p"
@@ -111,10 +111,10 @@ class About extends Component {
             <div className="about-page-past-section">
               <h3 className="auto-height-fix-title">YGLF 2016</h3>
               <p className="auto-height-fix margin-bottom-2">
-                At the second run of the conference we gladly hosted Lea Verou
-                along other world-class Front-End gurus. In and around the
-                talks, the technical and social vibe dominated the stage, the
-                bar and the lounge.
+                At the second run of the conference, we gladly hosted Lea Verou
+                along with other world-class Frontend gurus. In and around the
+                talks, the technical dominated the stage, while social conquered
+                the bar and the lounge.
               </p>
               <a
                 href="https://www.youtube.com/watch?v=HKYviOtA55A&list=PLII-CO3Ff0qY1VbkvUyLcUmegS3U7XB1D"

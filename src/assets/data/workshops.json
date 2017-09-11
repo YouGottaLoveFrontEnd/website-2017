@@ -3,7 +3,7 @@
     "last_name": "Feldman",
     "title": "Elm in Action!",
     "image_src": "richard_feldman",
-    "text": "Come join Richard Feldman and learn how to build Elm application from zero to production. Find out why people say that learning Elm changed the way they wrote code in other langugages... for the better!",
+    "text": "It is said that Elm is beyond just another programming language, that it changed the way developers code in different languages! Come join Richard Feldman, to re-think what you know about Elm and learn how to build an Elm application from nothing to production.",
     "paragraphs": [
         "Richard is a functional programmer who specializes in pushing the limits of browser-based UIs. He’s built seamless-immutable, a JavaScript immutables library that seamlessly interoperates with normal JS collections; elm-css, a CSS preprocessor where you write Elm instead of CSS; and Dreamwriter, a long-form writing Web App written in Elm which works like a desktop app in the absence of an Internet connection.",
         "Write bullet-proof, easily maintainable web applications with Elm, the functional programming language that is transforming web application development. Build an Elm application from start to finish, inter-operate between Elm and JavaScript, organize Elm code using modules and the Elm Architecture and write unit tests for Elm applications.",
@@ -14,7 +14,7 @@
     "last_name": "Holt",
     "title": "React + Redux",
     "image_src": "brian_holt",
-    "text": "Get up to speed on building apps using React and Redux, two of very useful tools to have in your toolbox. Learn how to take advantage of these technologies and avoid common pitfalls in order to drive your applications further than ever before.",
+    "text": "Get up to speed on building apps using React and Redux, two incredibly useful tools to have in your toolbox. Brian Holt will teach you how to take advantage of these technologies and avoid common pitfalls in order to drive your applications further than ever before.",
     "paragraphs": [
         "Brian Holt is a staff engineer at LinkedIn and a former senior user interface engineer at Netflix. This means he’s using JavaScript to enable your (and his own) House of Cards binge watching. Previously, he worked as the director of Redditgifts frontend at Reddit. When not on a Netflix bender or devouring content on Reddit, Brian is probably hanging out with his wife and their dog, running, traveling, or playing video games. Brian is currently a resident of San Francisco, CA.",
         "Surely by now you have heard the buzz surrounding Facebook’s React. More and more people and companies are using it to build large-scale production apps (including at Netflix). Brian Holt guides attendees through an overview of React. In this one-day training, attendees will go from knowing nothing (or very little) about React to building a whole app using React and Redux.",
