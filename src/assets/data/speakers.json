@@ -167,6 +167,46 @@
           "url": "https://www.linkedin.com/in/vitalyfriedman/"
         }
       ]
+    },
+    {
+      "first_name": "Chen Hui",
+      "last_name": "Jing",
+      "position": "Founder, Director & Design Lead",
+      "company": "Wismut Labs",
+      "description": "Hui Jing is a self-taught designer and developer from Singapore. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions.",
+      "image_src": "chen_hui_jing",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/hj_chen"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/huijing"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://sg.linkedin.com/in/huijingchen"
+        }
+      ]
+    },
+    {
+      "first_name": "Danny",
+      "last_name": "Vernovsky",
+      "position": "Senior Software Engineer",
+      "company": "AT&T",
+      "description": "Danny is a senior developer, working in AT&T Israel for the past 4 years. When not wreaking havoc in Warframe, Danny is teaching fellow programmers in a number of internal courses. These days, Danny’s main focus is engineering practices, with an emphasis on the JavaScript ecosystem. Danny is leading a concentrated effort in the company to create a fully automated pipeline, to deliver code from requirements to Production – with the highest possible quality and speed.",
+      "image_src": "danny_vernovsky",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/dimkinv"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://il.linkedin.com/in/danny-vernovsky-4a35b262"
+        }
+      ]
     }
   ]
 }
