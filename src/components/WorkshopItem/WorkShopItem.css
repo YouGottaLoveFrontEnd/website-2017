@@ -21,6 +21,7 @@
 }
 
 .workshop-container .workshop-description {
+    letter-spacing: .53px;
 	font-size: 17px;
 	font-weight: 100;
     -webkit-font-smoothing: antialiased;

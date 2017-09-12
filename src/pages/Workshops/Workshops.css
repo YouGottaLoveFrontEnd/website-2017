@@ -7,11 +7,10 @@
 }
 
 .workshops-info {
-    padding-left: 240px;
+    padding-left: 120px;
 }
 
 .workshops-info p {
-	padding-top: var(--cell);
     padding-left: 0 !important;
     min-height: 135px;
 }
@@ -21,7 +20,7 @@
 }
 
 .workshops-list {
-    padding-left: 240px;
+    padding-left: 120px;
 }
 
 
