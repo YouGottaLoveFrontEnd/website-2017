@@ -17,16 +17,20 @@
     margin-bottom: var(--cell);
 }
 
+.sponsor-item.wix {
+    transform: translateY(-24px) scale(1.2);
+}
+
 .sponsor-item.autodesk {
     transform: translateY(16px);
 }
 
 .sponsor-item.fundbox {
-    transform: translateY(10px);
+    transform: translateY(14px) scale(1.1);
 }
 
 .sponsor-item.myheritage {
-    transform: translateY(17px);
+    transform: translateY(21px) scale(1.1);
 }
 
 .sponsor-item.cloudinary {

@@ -207,6 +207,28 @@
           "url": "https://il.linkedin.com/in/danny-vernovsky-4a35b262"
         }
       ]
+    },
+    {
+      "first_name": "Bret",
+      "last_name": "Little",
+      "position": "Web Developer",
+      "company": "Canopy",
+      "description": "Bret is an avid web developer with a background in physics and astronomy. He loves JavaScript and front-end web development. Bret is currently in charge of front-end development at Canopy.",
+      "image_src": "bret_little",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/little_bret"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/blittle"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/bretlittle/"
+        }
+      ]
     }
   ]
 }

@@ -60,11 +60,12 @@
 						"hour": "11",
 						"minute": "30"
 					},
-					"title": "",
+					"title": "CSS in a Components World",
 					"speaker": "Ido Rosenthal",
 					"company": "Wix",
 					"paragraphs": [
-						
+						"We all love building with components. But they can lead to difficulties with styling - whether theming whole apps, or styling third-party libraries. This has led some people to describe CSS as \"broken\" but at Wix, we love CSS - so we’ve extended CSS to make it easier to use in a components world, building it into cross-browser, valid and performant stylesheets.",
+						"We’ll suggest how you too can write typed CSS that can abstract a component’s internals with a stylable API, keeping the power and simplicity of CSS."
 					]
 				},
 				{
@@ -279,7 +280,7 @@
 					},
 					"title": "Lunch",
 					"paragraphs": [
-						"Enjoy great asado meat, hamburgers. As well caribbean bar.",
+						"Enjoy great asado meat, hamburgers. As well as caribbean bar.",
 						"Don't forget to stop by beer garden to have several bottles of Israeli boutique beer."
 					]
 				},
@@ -316,8 +317,8 @@
 						"minute": "00"
 					},
 					"title": "",
-					"speaker": "TBD",
-					"company": "",
+					"speaker": "Daniel Lereya",
+					"company": "DaPulse",
 					"paragraphs": [
 						""
 					]
