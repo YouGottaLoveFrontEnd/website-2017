@@ -18,11 +18,11 @@ class Menu extends Component {
   resize() {
     let listClassName = '';
 
-    if (window.innerHeight < 990 && window.innerHeight > 830) {
+    if (window.innerHeight < 990 && window.innerHeight > 940) {
       listClassName = 'menu-list-size-1';
-    } else if (window.innerHeight < 830 && window.innerHeight > 620) {
+    } else if (window.innerHeight < 940 && window.innerHeight > 840) {
       listClassName = 'menu-list-size-2';
-    } else if (window.innerHeight < 620) {
+    } else if (window.innerHeight < 840) {
       listClassName = 'menu-list-size-3';
     }
 

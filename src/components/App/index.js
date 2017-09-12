@@ -27,18 +27,10 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    this.appLayout = ReactDOM.findDOMNode(this.refs.appLayout);
-  }
-
   toggleMenu(isOpen) {
     this.setState({
       isOpen: isOpen,
     });
-
-    this.appLayout.style = isOpen
-      ? 'transform: scale(1.05);'
-      : 'transform: scale(1);';
   }
 
   render() {
