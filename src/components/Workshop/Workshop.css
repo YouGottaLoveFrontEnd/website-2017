@@ -1,5 +1,5 @@
 .workshop {
-	padding-top: calc(var(--cell) * 2);
+	padding-top: var(--cell);
     display: flex;
     flex-direction: row;
     margin-bottom: calc(var(--cell) * 2);
@@ -24,6 +24,7 @@
 .workshop .workshop-info p:not(.workshop-author) {
 	font-size: 17px;
 	line-height: 30px;
+    max-width: 450px;
 }
 
 .workshop .workshop-author {

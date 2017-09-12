@@ -25,11 +25,6 @@
     color: var(--yglf-green);
 }
 
-.menu-btn:active {
-    background-color: var(--yglf-green);
-    color: var(--yglf-white);
-}
-
 @media screen and (max-width: 764px) {
     .menu {
         border-left: 0 none;
