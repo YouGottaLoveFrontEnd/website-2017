@@ -114,11 +114,12 @@
 						"hour": "14",
 						"minute": "30"
 					},
-					"title": "",
-					"speaker": "TBD",
-					"company": "",
+					"title": "Micro Frontends: Break up you web app!",
+					"speaker": "Michael Geers",
+					"company": "Neuland - Büro für Informatik",
 					"paragraphs": [
-						
+						"JavaScript frameworks are on the rise. More and more companies employ specialized frontend teams which are building client side web applications. As projects grow, things start to get more complicated. Building a feature requires coordination between frontend and backend teams. In my talk I present an alternative organizational model where teams have end-to-end ownership. Each team focusses on one specific use-case and not a technology. Building a site with independent cross-functional teams has major advantages. It reduces communication and make shipping features fun again.",
+						"But maintaining a consistent and performant user interface comes with a few technical challenges."
 					]
 				},
 				{
@@ -185,7 +186,6 @@
 					"company": "RedInk",
 					"paragraphs": [
 						"When I got into Elm as a React developer in 2014, I thought I was signing up to learn a functional programming language. Nobody told me I would end up embracing a programming flow I didn't even know existed back then—a flow where I could spend hours productively writing front-end code without slowing down to open a browser and visually check my progress.",
-						"My Elm flow today would horrify my JavaScript self from 2014. Last year I boarded a four-hour flight intending to work on an Elm app where every page load required a HTTP request. The flight had no wifi. Still, I hammered out front-end code the entire four hours, no Internet, never opening a browser. When the plane landed and I reconnected, all the code I'd written worked on the first try, HTTP requests and all—and what's crazier is that I had *assumed* it would.",
 						"What kind of bizarro front-end development world is that? What is it about Elm's design that makes this kind of flow possible, and what assumptions does it challenge about the most effective ways to write front-end code? Does it take a whole different programming language to pull this off, or are there ways to combine existing JavaScript tools to get the same benefits?",
 						"We'll explore all of these questions and more in this talk. Come find out!"
 					]
@@ -354,11 +354,11 @@
 						"hour": "16",
 						"minute": "10"
 					},
-					"title": "",
-					"speaker": "TBD",
-					"company": "",
+					"title": "SOLID Teamwork - A word about effective cooperation",
+					"speaker": "Kamil Ejsymont",
+					"company": "Netguru",
 					"paragraphs": [
-						""
+						"Using some well-known programming principles in our daily life may sound a little bit crazy, especially if we put teamwork as a context. But in fact, they are extremely helpful if you want to be a good team player with significant effectiveness. Being SOLID as a teammate is much more than just coding. I'll be glad to introduce you to my 5 rules of thumb which I try to use in all my projects - every day."
 					]
 				},
 				{
