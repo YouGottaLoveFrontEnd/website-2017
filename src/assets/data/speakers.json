@@ -229,6 +229,94 @@
           "url": "https://www.linkedin.com/in/bretlittle/"
         }
       ]
+    },
+    {
+      "first_name": "Daniel",
+      "last_name": "Lereya",
+      "position": "Head of Web Development",
+      "company": "Dapulse",
+      "description": "Daniel is currently Head of Web Development at dapulse and based in Tel Aviv, Israel. Over the last few years, Daniel has been leading Web and Mobile development teams in both startup and corporate environments. Daniel loves coding and is passionate about building customer facing products. He has special interests in leadership and shaping an organizations culture.",
+      "image_src": "daniel_lereya",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/daniellereya"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/daniellereya"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/daniel-lereya-aa487646"
+        }
+      ]
+    },
+    {
+      "first_name": "Boris",
+      "last_name": "Litvinsky",
+      "position": "Frontend Engineer",
+      "company": "Wix",
+      "description": "Boris is a software developer since age 16, and has experience in mobile development, backend systems and for the past 4 years – client side development. During his career, Boris had the chance to work in companies of various sizes – from garage-stage startup to colossal corporate environments. Boris believes that product’s internal code quality has a direct impact on software’s external quality – the business value the product gives the management and the product owner.",
+      "image_src": "boris_litvinsky",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/borislit"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/borislit"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/borislit"
+        }
+      ]
+    },
+    {
+      "first_name": "Kamil",
+      "last_name": "Ejsymont",
+      "position": "Senior Frontend Developer",
+      "company": "Netguru",
+      "description": "I'm a self-taught developer with 5 years of commercial experience. Since my earliest years I am absolutely fascinated with web technologies. Currently, I work at Netguru for 2 years - as a Senior Frontend Developer with 1 year of experience as a Team Leader.",
+      "image_src": "kamil_ejsymont",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/netespl"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/netes"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/kamil-ejsymont-63b76b118/"
+        }
+      ]
+    },
+    {
+      "first_name": "Alex",
+      "last_name": "Wolkov",
+      "position": "Head of Innovation Labs",
+      "company": "Funbox",
+      "description": "Alex is head of innovation labs at Fundbox in San Francisco. In addition to his daily job, he's a creator of numerous side projects like Extensionizr.com and a productivity enthusiast. If there's a way not to use the mouse, he'll find it. He's involved with multiple online communities and a strong believer in open source.",
+      "image_src": "alex_wolkov",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/altryne"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/altryne"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/alexwolkov/"
+        }
+      ]
     }
   ]
 }
