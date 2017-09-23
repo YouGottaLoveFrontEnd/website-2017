@@ -339,6 +339,68 @@
           "url": "https://www.linkedin.com/in/alexwolkov/"
         }
       ]
+    },
+    {
+      "first_name": "Eric",
+      "last_name": "Portis",
+      "position": "Developer Evangelist",
+      "company": "Cloudinary",
+      "description": "Eric is a Developer Evangelist at Cloudinary, where he works to build a better toolset for managing images on the web. He’s also a card-carrying and tee-shirt-wearing member of the Responsive Issues Community Group – a rag-tag band of everyday developers who worked with standards bodies and browser vendors to upgrade the <img> element for the responsive web. He loves learning through teaching and building and lives on an island in the Pacific Northwest.",
+      "image_src": "eric_portis",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/etportis"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/eeeps"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/eric-portis/"
+        }
+      ]
+    },
+    {
+      "first_name": "Ran",
+      "last_name": "Byron",
+      "position": "UI Engineer",
+      "company": "Facebook",
+      "description": "Ran has been around since the crummy old IE6 days. Started his career at Netcraft, lead teams, created communities and events so he could speak at them, did the startup scene and now is all about Facebook TLV. Loves skateboarding, drumming, coffee and cats. Lots and lots of cats.",
+      "image_src": "ran_byron",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ranbena"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/ranbena"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/ranbena/"
+        }
+      ]
+    },
+    {
+      "first_name": "Ido",
+      "last_name": "Rosenthal",
+      "position": "Software Enginner",
+      "company": "Wix",
+      "description": "Ido first fell in love with client-side technologies in 2001. In his role as a Client-Solutions Architect at Wix, he’s been in charge of Flash and then HTML and JavaScript projects since 2010. With a deep burning passion (and red glowing eyes) for visual programming, code editors, and developer tooling, Ido leads the charge for a better styling library in the world of components. When not behind the keyboard, he’s the father of a 1-year-old son, and an avid Settlers of Catan player.",
+      "image_src": "ido_rosenthal",
+      "social_icons": [
+        {
+          "type": "github",
+          "url": "https://github.com/idoros"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/ido-rosenthal-a2b02210"
+        }
+      ]
     }
   ]
 }
