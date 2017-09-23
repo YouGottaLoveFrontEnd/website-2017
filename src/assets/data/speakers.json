@@ -297,6 +297,28 @@
       ]
     },
     {
+      "first_name": "Michael",
+      "last_name": "Geers",
+      "position": " Frontend Engineer",
+      "company": "neuland Büro für Informatik",
+      "description": "Michael Geers loves the open web and enjoys building things. Would describe himself as a full stack developer. At neuland Büro für Informatik he works on taking e-commerce frontends to the next level. Learning new technologies and programming languages inspires him. At home he constructs hardware projects with his kids.",
+      "image_src": "michael_geers",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/naltatis"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/naltatis"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/mgeers/"
+        }
+      ]
+    },
+    {
       "first_name": "Alex",
       "last_name": "Wolkov",
       "position": "Head of Innovation Labs",
