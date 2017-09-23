@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
 import ScheduleEvent from '../../components/ScheduleEvent';
-
 import './ScheduleDay.css';
 
 class ScheduleDay extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   resize() {
     AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
     AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
@@ -31,8 +26,12 @@ class ScheduleDay extends Component {
       <ScheduleEvent key={event.id} event={event} />
     );
 
+    const { isActive, onSelect } = this.props;
+
+    const scheduleDayClass = `schedule-day ${isActive ? '' : 'non-active'}`;
+
     return (
-      <div className="schedule-day">
+      <div className={scheduleDayClass} onClick={onSelect}>
         <h2 className="schedule-day-title auto-height-fix-title">
           {this.props.day.title}
         </h2>

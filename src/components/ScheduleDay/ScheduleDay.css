@@ -3,6 +3,19 @@
 	flex: 1 auto;
 }
 
+.schedule-day.non-active {
+	opacity: 0.6;
+	color: #D8D8D8;
+}
+
+.schedule-day.non-active h2 {
+	color: #D8D8D8;
+}
+
+.schedule-day.non-active p {
+	color: #D8D8D8;
+}
+
 .schedule-day-timetable {
 	border-top: 1px solid var(--yglf-green);
 }
@@ -26,8 +39,5 @@
     -webkit-font-smoothing: antialiased;
 	line-height: var(--cell);
     font-style: italic;
-	
-}
-.schedule-day .schedule-day-title {
 	
 }

@@ -10,13 +10,33 @@ class Schedule extends Component {
     super(props);
 
     this.state = {
-      test: false,
+      day_one: true,
+      day_two: false,
     };
+  }
+
+  toggle(dayId) {
+    if (dayId === 'day_one') {
+      this.setState({
+        day_one: true,
+        day_two: false,
+      });
+    } else {
+      this.setState({
+        day_one: false,
+        day_two: true,
+      });
+    }
   }
 
   render() {
     const scheduleDays = scheduleData.days.map(day =>
-      <ScheduleDay key={day.id} day={day} />
+      <ScheduleDay
+        key={day.id}
+        day={day}
+        isActive={this.state[day.id]}
+        onSelect={this.toggle.bind(this, day.id)}
+      />
     );
 
     return (
