@@ -79,8 +79,8 @@ class About extends Component {
           <div className="about-page-header-text">
             <h1 className="auto-height-fix-title">About</h1>
             <p className="auto-height-fix">
-              Third time ice cream - The first international conference to be
-              held in Israel for the third time.
+              Third time is a charm - the largest international frontend
+              conference in the Middle East is happening for the third time
               <small>30-31 October, Tel Aviv</small>
             </p>
             <BuyTicketsButton />
