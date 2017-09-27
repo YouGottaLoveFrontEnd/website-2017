@@ -52,6 +52,18 @@ class IntroStage {
   }
 
   bind() {
+    let dinamicLine = new DynamicLine(200, 200, 600, 200);
+
+    dinamicLine.setPoint(0, 100, 300);
+    dinamicLine.setPoint(1, 400, 500);
+    dinamicLine.drawPoints();
+
+    this.stage.addChild(dinamicLine.line);
+
+    this.stage.update();
+
+    return;
+
     let currentPositionY = 0;
 
     const lines = this.isMobile ? 6 : 7;
@@ -59,7 +71,7 @@ class IntroStage {
     for (let i = 0; i < lines; i++) {
       let y = i * this.lineMargin;
       let dinamicLine = new DynamicLine(0, y, this.width, y);
-      this.container.addChild(dinamicLine.container);
+      this.container.addChild(dinamicLine.line);
       this.topLines.push(dinamicLine);
       dinamicLine.drawPoints();
       currentPositionY = y;
@@ -70,7 +82,7 @@ class IntroStage {
     for (let i = 0; i < lines; i++) {
       let y = i * this.lineMargin + currentPositionY;
       let dinamicLine = new DynamicLine(0, y, this.width, y);
-      this.container.addChild(dinamicLine.container);
+      this.container.addChild(dinamicLine.line);
       this.bottomLines.push(dinamicLine);
       dinamicLine.drawPoints();
     }

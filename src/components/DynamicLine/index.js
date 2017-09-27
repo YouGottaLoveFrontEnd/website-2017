@@ -8,31 +8,49 @@ class DynamicLine extends BaseLine {
   constructor(x1, y1, x2, y2) {
     super(x1, y1, x2, y2);
 
-    this.container = new createjs.Container();
-    //this.container.alpha = 0;
-    this.container.regY = -0.5;
-
-    this.point1 = new createjs.Point(x1, y1);
-    this.point2 = new createjs.Point(x1, y1);
-    this.point3 = new createjs.Point(x1, y1);
-    this.point4 = new createjs.Point(x2, y2);
-    this.point5 = new createjs.Point(x2, y2);
-    this.point6 = new createjs.Point(x2, y2);
-
-    return this;
+    this.points = [];
   }
 
   drawPoints() {
-    this.container.removeAllChildren();
+    this.drawStartPoint();
 
-    this.container.alpha =
-      this.container.alpha < 1 ? (this.container.alpha += 0.01) : 1;
+    if (this.points.length > 0) {
+      this.graphics.lineTo(this.points[0].x, this.points[0].y);
 
-    // START
+      this.points.forEach((point, index) => {
+        if (!this.points[index + 1]) return;
+
+        const nextPoint = this.points[index + 1];
+
+        const cp1x = point.x + (nextPoint.x - point.x) / 2;
+        const cp1y = point.y;
+
+        const cp2x = nextPoint.x - (nextPoint.x - point.x) / 2;
+        const cp2y = nextPoint.y;
+
+        this.bezierCurveTo(
+          point.x,
+          point.y,
+          cp1x,
+          cp1y,
+          cp2x,
+          cp2y,
+          nextPoint.x,
+          nextPoint.y
+        );
+      });
+
+      this.graphics.lineTo(
+        this.points[this.points.length - 1].x,
+        this.points[this.points.length - 1].y
+      );
+    }
+
     this.drawEndPoint();
-    this.graphics.lineTo(this.point1.x, this.point1.y);
 
-    //this.createPoint(this.startPoint.x, this.startPoint.y, 'yellow');
+    console.log('drawPoints: ');
+
+    return;
 
     // POINT 1
 
@@ -186,7 +204,15 @@ class DynamicLine extends BaseLine {
   }
 
   setPoint(index, x, y) {
-    this['point' + index].setValues(x, y);
+    if (index > this.points.length - 1) {
+      const pointsToAdd = index - (this.points.length - 1);
+
+      for (var i = 0; i < pointsToAdd; i++) {
+        this.points.push(this.startPoint.clone());
+      }
+    }
+
+    this.points[index].setValues(x, y);
   }
 }
 

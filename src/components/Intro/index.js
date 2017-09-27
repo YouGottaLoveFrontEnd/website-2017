@@ -36,10 +36,11 @@ class Intro extends Component {
   initIntro() {
     const _this = this;
     setTimeout(() => {
-      this.introMovieClip = new IntroMovieClip(this.introStage.stage, () => {
-        _this.introStage.bind();
-        _this.introMovieClip.remove();
-      });
+      _this.introStage.bind();
+      // this.introMovieClip = new IntroMovieClip(this.introStage.stage, () => {
+      //   _this.introStage.bind();
+      //   _this.introMovieClip.remove();
+      // });
     });
   }
 
