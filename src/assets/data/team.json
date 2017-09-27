@@ -1,0 +1,199 @@
+{
+    "all": [
+        {
+            "first_name": "Sergey",
+            "last_name": "Bolshchikov",
+            "position": "Tech Lead",
+            "image_src": "sergey_bolshchikov",
+            "image_format": "landscape",
+            "social": [
+                {
+                    "type": "twitter",
+                    "url": "https://twitter.com/bolshchikov"
+                },
+                {
+                    "type": "github",
+                    "url": "https://github.com/bolshchikov"
+                },
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/bolshchikov"
+                }
+            ]
+        },
+        {
+            "first_name": "Tom",
+            "last_name": "Raviv",
+            "position": "Application Developer",
+            "image_src": "tom_raviv",
+            "image_format": "portrait",
+            "social": [
+                {
+                    "type": "twitter",
+                    "url": "https://twitter.com/RavivTom"
+                },
+                {
+                    "type": "github",
+                    "url": "https://github.com/tomrav"
+                },
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/tom-raviv-2486a943/"
+                }
+            ]
+        },
+        {
+            "first_name": "Igal",
+            "last_name": "Steklov",
+            "position": "Developer",
+            "image_src": "igal_steklov",
+            "image_format": "landscape",
+            "social": [
+                {
+                    "type": "twitter",
+                    "url": "https://twitter.com/IgalStek"
+                },
+                {
+                    "type": "github",
+                    "url": "https://github.com/igalst"
+                },
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/igalsteklov/"
+                }
+            ]
+        },
+        {
+            "first_name": "Oren",
+            "last_name": "Shtang",
+            "position": "Application Developer",
+            "image_src": "oren_shtang",
+            "image_format": "portrait",
+            "social": [
+                {
+                    "type": "twitter",
+                    "url": "https://twitter.com/Orenshtang"
+                },
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/oren-shtang-b997133/"
+                }
+            ]
+        },
+        {
+            "first_name": "Anna",
+            "last_name": "Fridman & Simba",
+            "position": "Application Developer",
+            "image_src": "anna_fridman",
+            "image_format": "landscape",
+            "social": [
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/annafridman/"
+                },
+                {
+                    "type": "facebook",
+                    "url": "https://www.facebook.com/fridman.anna"
+                }
+            ]
+        },
+        {
+            "first_name": "Yogev",
+            "last_name": "Ahuvia",
+            "position": "Application Developer",
+            "image_src": "yogev_ahuvia",
+            "image_format": "portrait",
+            "social": [
+                {
+                    "type": "twitter",
+                    "url": "https://twitter.com/kindofone"
+                },
+                {
+                    "type": "github",
+                    "url": "https://github.com/kindofone"
+                },
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/yogevahuvia/"
+                }
+            ]
+        },
+        {
+            "first_name": "Adir",
+            "last_name": "Amsalem",
+            "position": "Application Developer",
+            "image_src": "adir_amsalem",
+            "image_format": "portrait",
+            "social": [
+                {
+                    "type": "twitter",
+                    "url": "https://twitter.com/amsalemadir"
+                },
+                {
+                    "type": "github",
+                    "url": "https://github.com/AdirAmsalem"
+                },
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/adiramsalem/"
+                }
+            ]
+        },
+        {
+            "first_name": "Danielle",
+            "last_name": "Kanish",
+            "position": "Application Developer",
+            "image_src": "danielle_kanish",
+            "image_format": "portrait",
+            "social": [
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/danielle-kanish-777b0256/"
+                }
+            ]
+        },
+        {
+            "first_name": "Ella",
+            "last_name": "Moscovitz",
+            "position": "Application Developer",
+            "image_src": "ella_moscovitz",
+            "image_format": "landscape",
+            "social": [
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/ella-moscovitz-b3b920102/"
+                }
+            ]
+        },
+        {
+            "first_name": "Mor",
+            "last_name": "Gilad",
+            "position": "Application Developer",
+            "image_src": "mor_gilad",
+            "image_format": "portrait",
+            "social": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/mor-gilad"
+                },
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/mor-gilad-33a5a230/"
+                }
+            ]
+        },
+        {
+            "first_name": "Yaron",
+            "last_name": "Shavit",
+            "position": "Application Developer",
+            "image_src": "yaron_shavit",
+            "image_format": "landscape",
+            "social": [
+                {
+                    "type": "linkedin",
+                    "url": "https://www.linkedin.com/in/yaron-shavit-31b383131/"
+                }
+            ]
+        }
+    ]
+}

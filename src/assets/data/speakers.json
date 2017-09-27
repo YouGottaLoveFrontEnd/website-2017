@@ -5,7 +5,7 @@
       "last_name": "Feldman",
       "position": "Director of Engineering",
       "company": "NoRedInk",
-      "description": "Richard is the author of “Elm in Action” from Manning Publications, and the instructor for the Frontend Masters2-Day Elm Workshop. When he’s not writing about Elm, teaching Elm, speaking about Elm, or co-hosting the San Francisco Elm meetup, he likes to take a break from his job at NoRedInk (where front-end programmers spend almost all their coding time writing production Elm code) by kicking back and working on some of his open-source Elm projects.",
+      "description": "Richard is the author of “Elm in Action” from Manning Publications, and the instructor for the Frontend Masters 2-Day Elm Workshop. When he’s not writing about Elm, teaching Elm, speaking about Elm, or co-hosting the San Francisco Elm meetup, he likes to take a break from his job at NoRedInk (where frontend programmers spend almost almost all their coding time writing production Elm code), by kicking back and working on some of his open source Elm projects.",
       "image_src": "richard_feldman",
       "social_icons": [
         {
@@ -25,8 +25,8 @@
     {
       "first_name": "Sarah",
       "last_name": "Drasner",
-      "position": "Speaker, Consultant & Staff Writer",
-      "company": "sarahdrasnerdesign.com",
+      "position": "Sr. Cloud Developer Advocate",
+      "company": "Microsoft",
       "description": "Sarah is an award-winning speaker, consultant and staff writer at CSS-Tricks. Sarah is also the co-founder of Web Animation Workshops, with Val Head. She’s the author of SVG Animations from O’Reilly and has given a Frontend Masters workshop on Advanced SVG Animations. Sarah is formerly Manager of UX Design & Engineering at Trulia (Zillow).",
       "image_src": "sara_drasner",
       "social_icons": [
@@ -45,24 +45,360 @@
       ]
     },
     {
-      "first_name": "Ashlee",
-      "last_name": "Williams",
-      "position": "Developer",
-      "company": "NPM",
-      "description": "Ashley Williams wears a lot of hats, both literally and professionally. She is currently a services engineer at npm, Inc, the package manager for JavaScript and the Node.js ecosystem. She also represents the Individual Membership on the Node.js Foundation Board of Directors. Previously a backend and services engineer at Mozilla, and a web engineer and educator at Bocoup, Ashley has a long history of designing, developing, and teaching systems and systems architecture.",
-      "image_src": "ashley_williams",
+      "first_name": "Brian",
+      "last_name": "Holt",
+      "position": "Staff Engineer",
+      "company": "LinkedIn",
+      "description": "Brian Holt is a staff engineer at LinkedIn and a former senior user interface engineer at Netflix. He also used to be a freelance JS engineer and teacher for Frontend Masters. Previously he worked as the director of redditgifts front end at reddit and senior UI engineer at Netflix. When not on a Netflix bender or devouring content on reddit, Brian is probably hanging out with his wife and dog, running, traveling, or playing video games. Brian is presently a resident of San Francisco, CA.",
+      "image_src": "brian_holt",
       "social_icons": [
         {
           "type": "twitter",
-          "url": "https://twitter.com/ag_dubs"
+          "url": "https://twitter.com/holtbt"
         },
         {
           "type": "github",
-          "url": "https://github.com/ashleygwilliams"
+          "url": "https://github.com/btholt"
         },
         {
           "type": "linkedin",
-          "url": "https://www.linkedin.com/in/ashleygwilliams"
+          "url": "https://www.linkedin.com/in/btholt"
+        }
+      ]
+    },
+    {
+      "first_name": "Yoav",
+      "last_name": "Weiss",
+      "position": "Principal Architect",
+      "company": "Akamai",
+      "description": "Yoav Weiss focuses on making the Web platform faster by adding performance-related features to browsers as well as to Akamai’s CDN. Yoav has been working on mobile Web performance for longer than he cares to admit. He takes image bloat on the Web as a personal insult, which is why he joined the Responsive Image Community Group and implemented the various responsive images features in Blink and WebKit. When he’s not writing code, he’s probably slapping his bass, mowing the lawn in the French countryside, or playing board games with his family.",
+      "image_src": "yoav_weiss",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/yoavweiss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/yoavweiss"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/weissyoav/"
+        }
+      ]
+    },
+    {
+      "first_name": "Martin",
+      "last_name": "Splitt",
+      "position": "Head of Engineering",
+      "company": "Archilogic AG",
+      "description": "Martin is pretty decent at humaning and pretty good at computering, so he decided to use his computering to improve his and other's humaning. He is a Google Developer Expert, Mozillian, loves the open web and open source, and aims to make things better with, but not limited to, code.",
+      "image_src": "martin_splitt",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/g33konaut"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/AVGP"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/martinsplitt/"
+        }
+      ]
+    },
+    {
+      "first_name": "Uri",
+      "last_name": "Shaked",
+      "position": "Senior Software Engineer",
+      "company": "Blackberry",
+      "description": "Uri Shaked is a Google Developer Expert for Web Technologies. He regularly writes about Web and IoT related technologies in his medium blog, and speaks about these topics in conferences and meetup around the world. Among his interests are reverse engineering, hardware hacking, building 3D-printed robots and games, playing music and Salsa dancing.",
+      "image_src": "uri_shaked",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/urishaked"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/urish"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/urishaked/"
+        }
+      ]
+    },
+    {
+      "first_name": "Diego",
+      "last_name": "Gonzalez-Zuniga",
+      "position": "Senior Engineer",
+      "company": "Samsung Research",
+      "description": "Diego Gonzalez-Zuniga, PhD (diekus) is a Senior Engineer at Samsung Research UK. He works as a Developer Advocate in the Samsung Internet team. He recently completed his PhD in Informatics researching Stereoscopic Graphical User Interfaces in Barcelona. His main interests are the use of 3D in applications, Graphical User Interfaces, VR, creative uses of technology, video games and gadgets.",
+      "image_src": "diego_gonzales",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/dieku"
+        }
+      ]
+    },
+    {
+      "first_name": "Vitaly",
+      "last_name": "Friedman",
+      "position": "Co-founder",
+      "company": "Smashing Magazine",
+      "description": "Vitaly Friedman loves beautiful content and does not give up easily. From Minsk in Belarus, he studied computer science and mathematics in Germany, discovered the passage a passion for typography, writing and design. After working as a freelance designer and developer for 6 years, he co-founded Smashing Magazine, a leading online magazine dedicated to design and web development. Vitaly is the author, co-author and editor of all Smashing books. He currently works as editor-in-chief of Smashing Magazine in the lovely city of Freiburg, Germany.",
+      "image_src": "vitaly_friedman",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/smashingmag"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/vitalyfriedman"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/vitalyfriedman/"
+        }
+      ]
+    },
+    {
+      "first_name": "Chen Hui",
+      "last_name": "Jing",
+      "position": "Founder, Director & Design Lead",
+      "company": "Wismut Labs",
+      "description": "Hui Jing is a self-taught designer and developer from Singapore. Reducing lines of code in her web projects makes her extremely happy. She used to play basketball full-time and launched her web career during downtime between training sessions.",
+      "image_src": "chen_hui_jing",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/hj_chen"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/huijing"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://sg.linkedin.com/in/huijingchen"
+        }
+      ]
+    },
+    {
+      "first_name": "Danny",
+      "last_name": "Vernovsky",
+      "position": "Senior Software Engineer",
+      "company": "AT&T",
+      "description": "Danny is a senior developer, working in AT&T Israel for the past 4 years. When not wreaking havoc in Warframe, Danny is teaching fellow programmers in a number of internal courses. These days, Danny’s main focus is engineering practices, with an emphasis on the JavaScript ecosystem. Danny is leading a concentrated effort in the company to create a fully automated pipeline, to deliver code from requirements to Production – with the highest possible quality and speed.",
+      "image_src": "danny_vernovsky",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/dimkinv"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://il.linkedin.com/in/danny-vernovsky-4a35b262"
+        }
+      ]
+    },
+    {
+      "first_name": "Bret",
+      "last_name": "Little",
+      "position": "Web Developer",
+      "company": "Canopy",
+      "description": "Bret is an avid web developer with a background in physics and astronomy. He loves JavaScript and front-end web development. Bret is currently in charge of front-end development at Canopy.",
+      "image_src": "bret_little",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/little_bret"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/blittle"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/bretlittle/"
+        }
+      ]
+    },
+    {
+      "first_name": "Daniel",
+      "last_name": "Lereya",
+      "position": "Head of Web Development",
+      "company": "Dapulse",
+      "description": "Daniel is currently Head of Web Development at dapulse and based in Tel Aviv, Israel. Over the last few years, Daniel has been leading Web and Mobile development teams in both startup and corporate environments. Daniel loves coding and is passionate about building customer facing products. He has special interests in leadership and shaping an organizations culture.",
+      "image_src": "daniel_lereya",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/daniellereya"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/daniellereya"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/daniel-lereya-aa487646"
+        }
+      ]
+    },
+    {
+      "first_name": "Boris",
+      "last_name": "Litvinsky",
+      "position": "Frontend Engineer",
+      "company": "Wix",
+      "description": "Boris is a software developer since age 16, and has experience in mobile development, backend systems and for the past 4 years – client side development. During his career, Boris had the chance to work in companies of various sizes – from garage-stage startup to colossal corporate environments. Boris believes that product’s internal code quality has a direct impact on software’s external quality – the business value the product gives the management and the product owner.",
+      "image_src": "boris_litvinsky",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/borislit"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/borislit"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/borislit"
+        }
+      ]
+    },
+    {
+      "first_name": "Kamil",
+      "last_name": "Ejsymont",
+      "position": "Senior Frontend Developer",
+      "company": "Netguru",
+      "description": "I'm a self-taught developer with 5 years of commercial experience. Since my earliest years I am absolutely fascinated with web technologies. Currently, I work at Netguru for 2 years - as a Senior Frontend Developer with 1 year of experience as a Team Leader.",
+      "image_src": "kamil_ejsymont",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/netespl"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/netes"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/kamil-ejsymont-63b76b118/"
+        }
+      ]
+    },
+    {
+      "first_name": "Michael",
+      "last_name": "Geers",
+      "position": " Frontend Engineer",
+      "company": "neuland Büro für Informatik",
+      "description": "Michael Geers loves the open web and enjoys building things. Would describe himself as a full stack developer. At neuland Büro für Informatik he works on taking e-commerce frontends to the next level. Learning new technologies and programming languages inspires him. At home he constructs hardware projects with his kids.",
+      "image_src": "michael_geers",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/naltatis"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/naltatis"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/mgeers/"
+        }
+      ]
+    },
+    {
+      "first_name": "Alex",
+      "last_name": "Wolkov",
+      "position": "Head of Innovation Labs",
+      "company": "Funbox",
+      "description": "Alex is head of innovation labs at Fundbox in San Francisco. In addition to his daily job, he's a creator of numerous side projects like Extensionizr.com and a productivity enthusiast. If there's a way not to use the mouse, he'll find it. He's involved with multiple online communities and a strong believer in open source.",
+      "image_src": "alex_wolkov",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/altryne"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/altryne"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/alexwolkov/"
+        }
+      ]
+    },
+    {
+      "first_name": "Eric",
+      "last_name": "Portis",
+      "position": "Developer Evangelist",
+      "company": "Cloudinary",
+      "description": "Eric is a Developer Evangelist at Cloudinary, where he works to build a better toolset for managing images on the web. He’s also a card-carrying and tee-shirt-wearing member of the Responsive Issues Community Group – a rag-tag band of everyday developers who worked with standards bodies and browser vendors to upgrade the <img> element for the responsive web. He loves learning through teaching and building and lives on an island in the Pacific Northwest.",
+      "image_src": "eric_portis",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/etportis"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/eeeps"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/eric-portis/"
+        }
+      ]
+    },
+    {
+      "first_name": "Ran",
+      "last_name": "Byron",
+      "position": "UI Engineer",
+      "company": "Facebook",
+      "description": "Ran has been around since the crummy old IE6 days. Started his career at Netcraft, lead teams, created communities and events so he could speak at them, did the startup scene and now is all about Facebook TLV. Loves skateboarding, drumming, coffee and cats. Lots and lots of cats.",
+      "image_src": "ran_byron",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ranbena"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/ranbena"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/ranbena/"
+        }
+      ]
+    },
+    {
+      "first_name": "Ido",
+      "last_name": "Rosenthal",
+      "position": "Software Enginner",
+      "company": "Wix",
+      "description": "Ido first fell in love with client-side technologies in 2001. In his role as a Client-Solutions Architect at Wix, he’s been in charge of Flash and then HTML and JavaScript projects since 2010. With a deep burning passion (and red glowing eyes) for visual programming, code editors, and developer tooling, Ido leads the charge for a better styling library in the world of components. When not behind the keyboard, he’s the father of a 1-year-old son, and an avid Settlers of Catan player.",
+      "image_src": "ido_rosenthal",
+      "social_icons": [
+        {
+          "type": "github",
+          "url": "https://github.com/idoros"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/ido-rosenthal-a2b02210"
         }
       ]
     }

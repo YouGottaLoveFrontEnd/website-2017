@@ -1,0 +1,25 @@
+.read-more {
+	
+}
+
+.read-more-container {
+	overflow-y: hidden;
+    transition: height 150ms ease-in;
+    padding-bottom: var(--cell);
+}
+
+.read-more-container p {
+    
+    margin-bottom: var(--cell);
+	transform: translateY(17px);
+
+}
+
+.read-more-wrapper {
+}
+
+.read-more .btn-underline {
+	
+	transform: translateY(-6px);
+
+}

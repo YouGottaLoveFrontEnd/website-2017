@@ -1,4 +1,5 @@
 import React from 'react';
+import './BuyTicketsButton.css';
 
 const BuyTicketsButton = () => {
   const sendBi = () => {
@@ -14,7 +15,7 @@ const BuyTicketsButton = () => {
   return (
     <a
       target="_blank"
-      href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121?aff=websitecta"
+      href="https://www.eventbrite.com/e/you-gotta-love-frontend-2017-tickets-32014463121?aff=websitecta#tickets"
       className="buy-tickets drop-shadow-small"
       rel="noopener noreferrer"
       onClick={sendBi}

@@ -25,12 +25,7 @@ class Intro extends Component {
   componentDidMount() {
     this.canvas = ReactDOM.findDOMNode(this.refs.canvas);
 
-    this.introWrapper = ReactDOM.findDOMNode(this.refs.introWrapper);
     this.introStage = new IntroStage(this.canvas);
-
-    if (this.isMobile) {
-      this.introWrapper.style.height = window.innerHeight + 'px';
-    }
 
     this.resize();
 
@@ -63,7 +58,7 @@ class Intro extends Component {
 
   render() {
     return (
-      <div className="intro" ref="introWrapper">
+      <div className="intro">
         <canvas ref="canvas" />
       </div>
     );

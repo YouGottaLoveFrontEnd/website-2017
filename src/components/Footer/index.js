@@ -10,7 +10,7 @@ class Footer extends Component {
     let icons = [
       {
         type: 'instagram',
-        url: 'https://www.instagram.com/yougottalovefrontend',
+        url: 'https://www.instagram.com/yglfconf',
       },
       {
         type: 'facebook',
@@ -48,6 +48,11 @@ class Footer extends Component {
                 >
                   Tickets
                 </a>
+                <Link to="/about">About</Link>
+                <Link to="/speakers">Speakers</Link>
+                <Link to="/workshops">Workshops</Link>
+                <Link to="/sponsors">Sponsors</Link>
+                <Link to="/schedule">Schedule</Link>
                 <a
                   href="http://2016.yougottalovefrontend.com/"
                   target="_blank"

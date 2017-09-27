@@ -1,0 +1,84 @@
+.sponsors {
+    padding: calc(var(--cell) * 2) 0;
+}
+
+.sponsors-list {
+    padding-top: calc(var(--cell) * 2);
+    padding-left: 240px;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.sponsor-item {
+    min-width: 205px;
+    margin-right: 100px;
+    margin-bottom: var(--cell);
+}
+
+.sponsor-item.wix {
+    transform: translateY(-24px) scale(1.2);
+}
+
+.sponsor-item.autodesk {
+    transform: translateY(16px);
+}
+
+.sponsor-item.fundbox {
+    transform: translateY(14px) scale(1.1);
+}
+
+.sponsor-item.myheritage {
+    transform: translateY(21px) scale(1.1);
+}
+
+.sponsor-item.cloudinary {
+    transform: translateY(4px);
+}
+
+.sponsor-item.at_and_t {
+    transform: translateY(10px);
+}
+
+@media screen and (max-width: 1280px) {
+    .sponsors-list {
+        flex-direction: column;
+    }
+    .sponsor-item {
+        margin-right: 0;
+        margin-bottom: var(--cell);
+    }
+
+    .sponsor-item.fundbox {
+        transform: translateY(5px);
+    }
+
+    .sponsor-item.myheritage {
+        transform: translateY(6px);
+    }
+    .sponsor-item.autodesk {
+        transform: translateY(18px);
+    }
+
+
+    .sponsor-item.cloudinary {
+        transform: translateY(17px);
+    }
+
+    .sponsor-item.at_and_t {
+        transform: translateY(25px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sponsors-list {
+        padding-left: 140px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .sponsors-list {
+        padding-left: 0;
+    }
+}

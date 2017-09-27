@@ -1,0 +1,82 @@
+.header {
+    background-color: var(--yglf-blue);
+    width: 100%;
+    height: 154px;
+}
+
+
+.header-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.header .container-fluid {
+    border-left: 1px solid var(--yglf-green);
+    border-right: 1px solid var(--yglf-green);
+}
+
+.header-title {
+    border-bottom: 1px solid var(--yglf-green);
+    font-size: 22px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    letter-spacing: 0.07px;
+}
+
+.header-title .container-fluid {
+    padding-top: 20px;
+}
+
+.header-title a {
+    color: var(--yglf-white);
+    text-decoration: none;
+    line-height: 44px;
+    position: relative;
+}
+
+.header-title .container {
+    height:var(--cell);
+    padding-top:var(--cell);
+}
+
+.header-description {
+    border-bottom: 1px solid var(--yglf-green);
+    font-weight: 300;
+    line-height:var(--cell);
+    height: 44px;
+    letter-spacing: 0.3px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header-date-location {
+    border-bottom: 1px solid var(--yglf-green);
+    line-height:var(--cell);
+    font-weight: 300;
+    height: 44px;
+    letter-spacing: 0.07px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.header-date-location .buy-tickets {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-date-location strong {
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 764px) {
+    .header {
+        height: var(--cell) !important;
+    }
+    .header-title,
+    .header-description,
+    .header-date-location {
+        display: none;
+    }
+}

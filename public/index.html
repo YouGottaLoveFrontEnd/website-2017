@@ -40,6 +40,7 @@
       --yglf-green: #05CF9D;
       --yglf-grey: #ebebf3;
       --yglf-white: #FFF;
+      --cell: 45px;
     }
   </style>
 
@@ -149,7 +150,7 @@
     }
 
     .container-header-flexbox .container-header-info p.main {
-      margin-bottom: 27px;
+      margin-bottom: 27px !important;
     }
 
     .container-header-flexbox .container-header-info p.address {
@@ -174,6 +175,7 @@
       border-bottom: 1px solid var(--yglf-white);
       text-transform: uppercase;
       cursor: pointer;
+      transform: translateY(-6px);
     }
 
     .container-header-flexbox .container-header-info a.directions:hover {
@@ -238,29 +240,7 @@
       }
     }
 
-    .buy-tickets {
-      display: inline-block;
-      font-family: "sofia-pro";
-      font-weight: 600;
-      line-height: 45px;
-      height: 45px;
-      padding: 0 0;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      background-color: var(--yglf-white);
-      color: var(--yglf-blue);
-      border: 0 none;
-      cursor: pointer;
-      width: 155px;
-      text-align: center;
-      text-decoration: none;
-    }
 
-    .buy-tickets:hover {
-      background-color: var(--yglf-green);
-      color: var(--yglf-white);
-    }
 
     .drop-shadow {
       -webkit-box-shadow: 40px 17px 30px 0px rgba(0, 0, 0, 0.15);
@@ -272,139 +252,6 @@
       -webkit-box-shadow: 15px 9px 20px 0px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 15px 9px 20px 0px rgba(0, 0, 0, 0.15);
       box-shadow: 15px 9px 20px 0px rgba(0, 0, 0, 0.15);
-    }
-  </style>
-  <style>
-    .header {
-      background-color: var(--yglf-blue);
-      width: 100%;
-    }
-
-    .header-wrapper {
-      position: relative;
-      width: 100%;
-    }
-
-    .header .container-fluid {
-      border-left: 1px solid var(--yglf-green);
-      border-right: 1px solid var(--yglf-green);
-    }
-
-    .header-title {
-      border-bottom: 1px solid var(--yglf-green);
-      font-size: 22px;
-      font-weight: 300;
-      -webkit-font-smoothing: antialiased;
-      width: 100%;
-      letter-spacing: 0.07px;
-    }
-
-    .header-title .container-fluid {
-      padding-top: 20px;
-    }
-
-    .header-title a {
-      color: var(--yglf-white);
-      text-decoration: none;
-      line-height: 44px;
-    }
-
-    .header-title .container {
-      height: 45px;
-      padding-top: 45px;
-    }
-
-    .header-description {
-      border-bottom: 1px solid var(--yglf-green);
-      font-weight: 300;
-      line-height: 45px;
-      height: 44px;
-      letter-spacing: 0.3px;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .header-date-location {
-      border-bottom: 1px solid var(--yglf-green);
-      line-height: 45px;
-      font-weight: 300;
-      height: 44px;
-      letter-spacing: 0.07px;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .header-date-location .buy-tickets {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    .header-date-location strong {
-      font-weight: 600;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    @media (max-width:480px) {
-      .header {
-        background-color: transparent;
-        position: absolute;
-        height: 667px;
-        min-height: 667px;
-        width: 100%;
-      }
-      .header .container-fluid {
-        padding-top: 0;
-        border-left: 0 none;
-        border-right: 0 none;
-      }
-      .header-title {
-        position: absolute;
-        bottom: 240px;
-        border-bottom: 0 none;
-        text-align: center;
-      }
-      .header-title a {
-        line-height: 20px !important;
-      }
-      .header-title a span {
-        display: inline-block;
-      }
-
-      .header-date-location .container-fluid,
-      .header-title .container-fluid {
-        width: calc(100% - 30px) !important;
-      }
-
-      .header-date-location {
-        position: absolute;
-        bottom: 180px;
-        width: 100%;
-        border-top: 1px solid var(--yglf-green);
-        text-align: center;
-      }
-      .header-date-location .place {
-        display: none;
-      }
-
-      .header-date-location .buy-tickets {
-        display: block;
-        top: 145px !important;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .header-description {
-        position: absolute;
-        bottom: 120px;
-        width: 100%;
-        text-align: center;
-        line-height: 22px;
-        border-bottom: 0 none;
-      }
-      .header-description .container-fluid {
-        margin-right: 30px !important;
-        margin-left: 30px !important;
-        width: calc(100% - 60px) !important;
-        padding: 0 !important;
-      }
     }
   </style>
 
@@ -459,32 +306,6 @@
 
 <body>
   <div id="root">
-    <header class="header">
-      <div class="header-wrapper">
-        <div class="header-title">
-          <div class="container-fluid" style="padding: 30px 15px 8px 15px;">
-            <span>You Gotta Love</span> <span>Frontend Conference</span>
-            </Link>
-          </div>
-        </div>
-        <div class="header-description">
-          <div class="container-fluid">
-            The largest frontend conference in the Middle East, built by developers for developers
-          </div>
-        </div>
-        <div class="header-date-location">
-          <div class="container-fluid">
-            <span>
-                <strong>30-31 October 2017</strong>,&nbsp;
-                <span class="place">The Cameri Theatre | </span>Tel Aviv, Israel
-            </span>
-            <div class="buy-tickets">
-              Buy Tickets
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
   </div>
   <script src="https://use.typekit.net/ijf7pgu.js"></script>
   <script src="libs/createjs.min.js"></script>

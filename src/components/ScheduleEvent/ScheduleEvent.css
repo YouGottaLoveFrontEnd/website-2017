@@ -1,0 +1,62 @@
+.schedule-event {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: var(--cell);
+	padding-right: var(--cell);
+}
+
+.schedule-event-time {
+	line-height: var(--cell);
+    -webkit-font-smoothing: antialiased;
+	font-weight: 100;
+    transform: translateY(15px);
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    flex: 1;
+}
+.schedule-event-time-hour {
+	letter-spacing: 0.79px;
+	font-size: 15px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.schedule-event-time-minute {
+	letter-spacing: 0.64px;
+	font-size: 12px;
+    transform: translateY(-5px);
+	display: inline-block;
+}
+
+.schedule-event-info {
+    flex: 1;
+	padding-bottom: var(--cell);
+	border-bottom: 1px solid var(--yglf-grey);
+}
+
+.schedule-event-info-title {
+	letter-spacing: 0.79px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+	line-height: var(--cell);
+	margin: 0;
+    transform: translateY(16px);
+}
+
+.schedule-event-info-speaker {
+	font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+	line-height: var(--cell);
+	display: inline-block;
+    opacity: .7;
+}
+
+.schedule-event-info-paragraph {
+	letter-spacing: 0.79px;
+	font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+	font-weight: 100;
+    transform: translateY(11px);
+}

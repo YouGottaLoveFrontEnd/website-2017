@@ -1,7 +1,6 @@
 .about {
   overflow: hidden;
   padding-bottom: 180px;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAVdEVYdENyZWF0aW9uIFRpbWUANi8xMy8xN9IVNcwAAAAYSURBVAiZY/j//z8DEwMDw3Ak2C7MiwQAxisFIyPcW6IAAAAASUVORK5CYII=');
 }
 
 .about .container-header-image {
@@ -40,7 +39,7 @@
     top: 35px !important;
   }
   .about .container-header-info {
-    padding: 60px 0 10px 60px !important;
+    padding: 60px 0 10px 120px !important;
     width: calc(70% - 120px) !important;
   }
 

@@ -1,0 +1,41 @@
+.workshops-page {
+}
+
+
+.workshops-page .container {
+    padding-top: calc(var(--cell) * 2);
+}
+
+.workshops-info {
+    padding-left: 120px;
+}
+
+.workshops-info p {
+    padding-left: 0 !important;
+    min-height: 135px;
+}
+
+.workshops-info .buy-tickets {
+	margin-top: var(--cell);
+}
+
+.workshops-list {
+    padding-left: 120px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .workshops-list {
+        padding-left: 140px !important;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    
+    .workshops-list {
+        padding-left: 0 !important;
+    }
+    
+}

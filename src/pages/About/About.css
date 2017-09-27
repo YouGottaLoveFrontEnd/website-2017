@@ -1,0 +1,212 @@
+.about-page {
+    padding-bottom: var(--cell);
+}
+
+.about-page-header {
+    padding: calc(var(--cell) * 2) 0;
+    display: flex;
+}
+
+.about-page-header-image {
+    width: 50%;
+    position: relative;
+}
+
+.about-page-header-image img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.about-page-header-text {
+    width: 50%;
+    position: relative;
+    padding-top: var(--cell);
+}
+
+.about-page-header-text h1 {
+    font-size: 111px;
+    font-weight: 400;
+    color: #05CF9D;
+    margin-left: -35px;
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(8px);
+}
+
+.about-page-header-text p {
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1.22px;
+    line-height: 56px;
+    width: 450px;
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(-1px);
+    padding-top: var(--cell);
+}
+
+.about-page-header-text p small {
+    font-size: 14px;
+    letter-spacing: 3.93px;
+    display: block;
+    transform: translateY(23px);
+    text-transform: uppercase;
+}
+
+
+.about-page-header-text .buy-tickets {
+    display: none;
+}
+
+.about-page-past {
+    display: flex;
+    padding: var(--cell) 0 var(--cell) 240px;
+}
+
+.about-page-past-section {
+    padding-right: 70px;
+    width: 410px;
+}
+
+.about-page-past-section h3 {
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 3.98px;
+    line-height: var(--cell);
+    font-size: 48px;
+    font-weight: 400;
+    color: #EAEBF3;
+    transform: translateY(2px);
+    margin-bottom: var(--cell);
+}
+
+.about-page-past-section p {
+    font-size: 15px !important;
+    font-weight: 100;
+    font-family: "sofia-pro";
+    line-height: 33px;
+    letter-spacing: 0.9px;
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(23px);
+}
+
+
+.about-page .info-block-image {
+    padding-top: 29px;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-page-header-text {
+        padding-top: calc(var(--cell) * 1)
+    }
+    .about-page-header-text h1 {
+        font-size: 90px;
+        margin-left: -28px;
+        transform: translateY(-13px);
+        letter-spacing: 1.71px;
+    }
+
+    .about-page-header-text p {
+        width: 300px;
+        font-size: 26px;
+        padding-top: 0;
+        transform: translateY(5px);
+    }
+
+    .about-page-header-text p small {
+        transform: translateY(26px);
+    }
+
+    .about-page .container {
+        max-width: 764px;
+    }
+
+    .about-page-past {
+        display: flex;
+        padding: var(--cell) 0 var(--cell) 140px;
+    }
+
+    .about-page-past-section {
+        padding-right: 50px;
+    }
+    .about-page-past-section p {
+        transform: translateY(-22px);
+    }
+
+    .about-page .info-block-image {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 764px) {
+
+    .about-page {
+        padding: 0 50px;
+    }
+
+    .about-page-header {
+        flex-direction: column-reverse;
+        padding: var(--cell) 0;
+    }
+
+    .about-page-header-text {
+        padding-bottom: calc(var(--cell) * 2);
+    }
+
+    .about-page-header-text h1 {
+        font-size: var(--cell);
+        margin-left: 0px;
+        transform: translateY(-7px) !important;
+        height: var(--cell) !important;
+    }
+
+    .about-page-header-text p {
+        font-size: 15px;
+        letter-spacing: 1.05px;
+        line-height: 30px;
+        width: auto;
+        transform: translateY(23px);
+        padding-top: 0;
+        margin-bottom: var(--cell);
+    }
+
+    .about-page-header-text .buy-tickets {
+        display: inline-block;
+    }
+
+    .about-page-header-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .about-page-header-image img {
+        position: static;
+        transform: translateX(-40%);
+        border: 1px solid var(--yglf-green);
+    }
+
+    .about-page-header-text {
+        width: 100%;
+        padding-top: calc(var(--cell));
+        height: 224px;
+    }
+
+    .about-page .info-block {
+        transform: translateY(-6px);
+    }
+
+    .about-page-past {
+        padding: var(--cell) 0;
+        flex-direction: column;
+    }
+
+    .about-page-past-section {
+        padding-right: 0;
+        width: 100%;
+        transform: translateY(-6px);
+        margin-bottom: var(--cell);
+    }
+
+    .about-page-past-section h3 {
+        white-space: nowrap;
+    }
+}

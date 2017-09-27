@@ -1,0 +1,334 @@
+.team-list {
+    padding: var(--cell) 0 calc(var(--cell) * 4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; // height: calc(var(--cell) * 38);
+    // min-height: calc(var(--cell) * 38);
+}
+
+.team-list .team-person:nth-child(3n+2) {
+    padding-top: calc(var(--cell) * 2);
+}
+
+.team-list .team-person:nth-child(3n+3) {}
+
+.team-person {
+    width: calc(100% / 3); //height: calc(var(--cell) * 8);
+}
+
+.team-person.portrait .team-person-wrapper {
+    width: 232px;
+}
+
+.team-person.landscape .team-person-wrapper {
+    width: 300px;
+}
+
+.team-person.portrait:nth-child(3n+2) .team-person-wrapper,
+.team-person.landscape:nth-child(3n+2) .team-person-wrapper {
+    margin: 0 auto;
+}
+
+.team-person.portrait:nth-child(3n+3) .team-person-wrapper,
+.team-person.landscape:nth-child(3n+3) .team-person-wrapper {
+    float: right;
+}
+
+.team-list .team-person-wrapper:nth-child(3n+2) {}
+
+.team-list .team-person-wrapper:nth-child(3n+2) {}
+
+.team-person.landscape {}
+
+.team-person.portrait {}
+
+.team-person.sergey_bolshchikov,
+.team-person.igal_steklov {
+}
+
+.team-person.sergey_bolshchikov .team-person-name,
+.team-person.igal_steklov .team-person-name {
+    transform: translateY(-3px);
+}
+
+.team-person.tom_raviv {
+    transform: translateY(14px);
+}
+.team-person.tom_raviv .team-person-name {
+    transform: translateY(5px);
+}
+
+.team-person.oren_shtang {
+    transform: translateY(-49px);
+}
+
+.team-person.oren_shtang .team-person-name {
+    transform: translateY(14px);
+}
+
+.team-person.anna_fridman {
+    transform: translateY(33px);
+}
+
+.team-person.yogev_ahuvia {
+    transform: translateY(-49px);
+}
+
+.team-person.yogev_ahuvia .team-person-name {
+    transform: translateY(15px);
+}
+
+.team-person.yogev_ahuvia .team-person-wrapper {
+    transform: translateX(-68px);
+}
+
+.team-person.adir_amsalem {
+    transform: translateY(16px);
+}
+
+.team-person.adir_amsalem .team-person-name {
+    transform: translateY(13px);
+}
+
+.team-person.danielle_kanish {
+    transform: translateY(74px);
+}
+
+.team-person.ella_moscovitz {
+    transform: translateY(60px);
+}
+
+.team-person.ella_moscovitz .team-person-name {
+    transform: translateY(7px);
+}
+
+.team-person.mor_gilad {
+    transform: translateY(11px);
+}
+
+.team-person.mor_gilad .team-person-name {
+    transform: translateY(15px);
+}
+
+.team-person.yaron_shavit {
+    transform: translateY(93px);
+}
+
+.team-person img {
+    border: 1px solid var(--yglf-green);
+    margin: 0 auto;
+    transform: translateY(-1px);
+}
+
+.team-person.portrait img {
+    width: 232px;
+    height: 300px;
+}
+
+.team-person.landscape img {
+    width: 300px;
+    height: 232px;
+}
+
+.team-person-name {
+    font-size: 25px;
+    color: var(--yglf-white);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 57px;
+    letter-spacing: 0.28px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.team-person-container {
+    position: relative;
+    width: 100%;
+}
+
+.team-person-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team-person-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: var(--yglf-green);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;  
+    transform: translate(1px, -1px);
+}
+
+.team-person-container:hover .team-person-overlay {
+    width: 100%;
+    left: 0;
+}
+
+.team-person-social {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.team-person-social a {
+    color: var(--yglf-white);
+    transform: scale(1.2);
+    margin: auto;
+}
+
+.team-person-social .social-icons {
+    margin: auto;
+    width: 60%;
+}
+
+.team-person-social a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .team-list {
+        padding: var(--cell) 0;
+    }
+
+    .team-list .team-person:nth-child(3n+2) {
+        padding-top: 0;
+    }
+
+    .team-person {
+        width: calc(100% / 2); //height: calc(var(--cell) * 8);
+        height: calc(var(--cell) * 10);
+    }
+
+    .team-person.landscape {}
+    .team-person.portrait {}
+
+    .team-list .team-person:nth-child(2n) {
+        padding-top: 0;
+    }
+
+    .team-list .team-person:nth-child(2) .team-person-wrapper {
+        float: right;
+    }
+
+    .team-list .team-person:nth-child(2) {}
+
+
+    .team-person.portrait:nth-child(3n+2) .team-person-wrapper,
+    .team-person.landscape:nth-child(3n+2) .team-person-wrapper {
+        margin: 0;
+    }
+
+    .team-list .team-person.portrait .team-person-wrapper {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .sergey_bolshchikov {
+        order: 1;
+        transform: translateY(0) !important;
+    }
+    .sergey_bolshchikov .team-person-name {
+        transform: translateY(-8px) !important;
+    }
+    .tom_raviv {
+        order: 2;
+        transform: translateY(0) !important;
+    }
+    .oren_shtang {
+        order: 3;
+        transform: translateY(0) !important;
+    }
+    .igal_steklov {
+        order: 4;
+        transform: translateY(0) !important;
+    }
+    .anna_fridman {
+        order: 5;
+        transform: translateY(37px) !important;
+    }
+    .yogev_ahuvia {
+        order: 6;
+    }
+    .yogev_ahuvia .team-person-wrapper {
+        transform: translateX(0) !important;
+    }
+    .adir_amsalem {
+        order: 7;
+        transform: translateY(1px) !important;
+    }
+    .ella_moscovitz {
+        order: 8;
+    }
+    .danielle_kanish {
+        order: 10;
+    }
+    .danielle_kanish .team-person-wrapper {
+        float: right;
+    }
+    .mor_gilad {
+        order: 11;
+        transform: translateY(0) !important;
+    }
+    .yaron_shavit {
+        order: 9;
+        transform: translateY(37px) !important;
+    }
+
+    .yogev_ahuvia,
+    .ella_moscovitz {
+        transform: translateY(calc(var(--cell) * 3)) !important;
+    }
+    .danielle_kanish {
+        transform: translateY(calc(var(--cell) * 3 + 14px)) !important;
+    }
+    .igal_steklov {
+        transform: translateY(calc(var(--cell) * 3 + 37px)) !important;
+    }
+
+    .tom_raviv {
+        transform: translateY(calc(var(--cell) * 3 + 14px)) !important;
+    }
+}
+
+
+@media screen and (max-width: 764px) {
+    .team-list {
+        flex-direction: column;
+    }
+    .team-person {
+        width: 100%;
+        height: auto;
+        float: none;
+        transform: translateY(0px) !important;
+        margin-bottom: var(--cell);
+    }
+    .team-person.landscape .team-person-wrapper {
+        width: 100%;
+    }
+    .team-person.landscape img {
+        width: 100%;
+        height: auto;
+    }
+    .team-list .team-person:nth-child(2) .team-person-wrapper {
+        float: none;
+    }
+    .team-person.portrait:nth-child(3n+3) .team-person-wrapper,
+    .team-person.landscape:nth-child(3n+3) .team-person-wrapper {
+        float: none;
+    }
+    .team-list .team-person.portrait .team-person-wrapper {
+        margin-left: 0;
+        margin-right: 0;   
+    }
+    .danielle_kanish .team-person-wrapper {
+        float: none;
+    }
+}

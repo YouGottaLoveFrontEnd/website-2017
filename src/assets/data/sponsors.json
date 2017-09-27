@@ -1,0 +1,32 @@
+[
+    {
+        "company": "WIX",
+        "className": "wix",
+        "image_src": "wixengineering.svg"
+    },
+    {
+        "company": "Fundbox",
+        "className": "fundbox",
+        "image_src": "fundbox.svg"
+    },
+    {
+        "company": "MyHeritage",
+        "className": "myheritage",
+        "image_src": "myheritage.svg"
+    },
+    {
+        "company": "Autodesk",
+        "className": "autodesk",
+        "image_src": "autodesk.svg"
+    },
+    {
+        "company": "Cloudinary",
+        "className": "cloudinary",
+        "image_src": "cloudinary.svg"
+    },
+    {
+        "company": "AT&T",
+        "className": "at_and_t",
+        "image_src": "at_and_t.svg"
+    }
+]

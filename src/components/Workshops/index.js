@@ -1,29 +1,36 @@
 import React, { Component } from 'react';
+import { AutoHeightFix } from '../../utils/ElementManipulation';
+import WorkshopItem from '../../components/WorkshopItem';
+import workshopsData from '../../assets/data/workshops.json';
+import InfoBlock from '../../components/InfoBlock';
+import InfoBlocksData from '../../assets/data/info-blocks.json';
 import './Workshops.css';
 
 class Workshops extends Component {
+  resize() {
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resize.bind(this));
+    this.resize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize.bind(this));
+  }
+
   render() {
+    const workshopsItems = workshopsData.map(workshop =>
+      <WorkshopItem key={workshop.title} workshop={workshop} />
+    );
+
     return (
-      <div className="workshops">
+      <div className="workshops auto-height-fix">
         <div className="container container-fluid">
-          <div className="container-header">
-            <span>
-              2 <i>Exceptional Exercises</i>
-            </span>
-            <h1>Workshops</h1>
-            <div className="container-header-flexbox">
-              <div className="container-header-info">
-                <p className="main">
-                  This year we are introducing one more day for you to enjoy. It
-                  is filled with two 8 hours workshops.
-                </p>
-                <h3>Brian Holt, Netflix</h3>
-                <p>TBD</p>
-                <h3>Richard Feldman, NoRedInk</h3>
-                <p>TBD</p>
-                <p className="main">Stay tuned for more!</p>
-              </div>
-            </div>
+          <InfoBlock data={InfoBlocksData.workshops} />
+          <div className="workshops-items">
+            {workshopsItems}
           </div>
         </div>
       </div>
