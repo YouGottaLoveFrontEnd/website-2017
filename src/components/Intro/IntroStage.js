@@ -52,17 +52,21 @@ class IntroStage {
   }
 
   bind() {
-    let dinamicLine = new DynamicLine(200, 200, 600, 200);
+    // let dinamicLine = new DynamicLine(100, 200, 600, 200);
 
-    dinamicLine.setPoint(0, 100, 300);
-    dinamicLine.setPoint(1, 400, 500);
-    dinamicLine.drawPoints();
+    // dinamicLine.setPoint(0, 100, 200);
+    // dinamicLine.setPoint(1, 200, 300);
+    // dinamicLine.setPoint(2, 400, 500);
+    // dinamicLine.setPoint(3, 500, 500);
+    // dinamicLine.setPoint(3, 600, 200);
 
-    this.stage.addChild(dinamicLine.line);
+    // dinamicLine.drawPoints();
 
-    this.stage.update();
+    // this.stage.addChild(dinamicLine.line);
 
-    return;
+    // this.stage.update();
+
+    // return;
 
     let currentPositionY = 0;
 

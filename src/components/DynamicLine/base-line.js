@@ -23,11 +23,13 @@ class BaseLine {
 
   draw() {
     this.drawStartPoint();
+
     this.drawEndPoint();
   }
 
   clear() {
-    this.graphics.clear();
+    //this.graphics.command = {};
+    this.graphics._activeInstructions = [];
   }
 }
 
