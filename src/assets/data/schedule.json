@@ -317,11 +317,11 @@
 						"hour": "15",
 						"minute": "00"
 					},
-					"title": "",
+					"title": "Real-life tips on how to boost your development team's productivity from within.",
 					"speaker": "Daniel Lereya",
 					"company": "DaPulse",
 					"paragraphs": [
-						""
+						"Individual contributors have great impact on how things gets done in today’s organizations.  Still, many times we feel that it’s hard to drive a change from the bottom up, especially in large companies. In this talk, I will share some real-life examples of Individual contributors which drove both small and great changes, that really made a difference and more importantly, ones that can actually take, to make yourself much happier at work."
 					]
 				},
 				{
@@ -342,7 +342,7 @@
 						"minute": "00"
 					},
 					"title": "Mutation tests - Testing the right things",
-					"speaker": "Danny Vernovsky",
+					"speaker": "Nail Naffar",
 					"company": "AT&T",
 					"paragraphs": [
 						"What is considered a good test anyway? Is it when we covered all the possible scenarios? Maybe it’s when we got 100% coverage?  Or maybe, it’s when we got multiple layers of tests that cover your code?",

@@ -191,24 +191,6 @@
       ]
     },
     {
-      "first_name": "Danny",
-      "last_name": "Vernovsky",
-      "position": "Senior Software Engineer",
-      "company": "AT&T",
-      "description": "Danny is a senior developer, working in AT&T Israel for the past 4 years. When not wreaking havoc in Warframe, Danny is teaching fellow programmers in a number of internal courses. These days, Danny’s main focus is engineering practices, with an emphasis on the JavaScript ecosystem. Danny is leading a concentrated effort in the company to create a fully automated pipeline, to deliver code from requirements to Production – with the highest possible quality and speed.",
-      "image_src": "danny_vernovsky",
-      "social_icons": [
-        {
-          "type": "twitter",
-          "url": "https://twitter.com/dimkinv"
-        },
-        {
-          "type": "linkedin",
-          "url": "https://il.linkedin.com/in/danny-vernovsky-4a35b262"
-        }
-      ]
-    },
-    {
       "first_name": "Bret",
       "last_name": "Little",
       "position": "Web Developer",
