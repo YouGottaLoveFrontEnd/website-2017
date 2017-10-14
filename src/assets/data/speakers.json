@@ -67,28 +67,6 @@
       ]
     },
     {
-      "first_name": "Yoav",
-      "last_name": "Weiss",
-      "position": "Principal Architect",
-      "company": "Akamai",
-      "description": "Yoav Weiss focuses on making the Web platform faster by adding performance-related features to browsers as well as to Akamai’s CDN. Yoav has been working on mobile Web performance for longer than he cares to admit. He takes image bloat on the Web as a personal insult, which is why he joined the Responsive Image Community Group and implemented the various responsive images features in Blink and WebKit. When he’s not writing code, he’s probably slapping his bass, mowing the lawn in the French countryside, or playing board games with his family.",
-      "image_src": "yoav_weiss",
-      "social_icons": [
-        {
-          "type": "twitter",
-          "url": "https://twitter.com/yoavweiss"
-        },
-        {
-          "type": "github",
-          "url": "https://github.com/yoavweiss"
-        },
-        {
-          "type": "linkedin",
-          "url": "https://www.linkedin.com/in/weissyoav/"
-        }
-      ]
-    },
-    {
       "first_name": "Martin",
       "last_name": "Splitt",
       "position": "Head of Engineering",
@@ -107,6 +85,28 @@
         {
           "type": "linkedin",
           "url": "https://www.linkedin.com/in/martinsplitt/"
+        }
+      ]
+    },
+    {
+      "first_name": "Yoav",
+      "last_name": "Weiss",
+      "position": "Principal Architect",
+      "company": "Akamai",
+      "description": "Yoav Weiss focuses on making the Web platform faster by adding performance-related features to browsers as well as to Akamai’s CDN. Yoav has been working on mobile Web performance for longer than he cares to admit. He takes image bloat on the Web as a personal insult, which is why he joined the Responsive Image Community Group and implemented the various responsive images features in Blink and WebKit. When he’s not writing code, he’s probably slapping his bass, mowing the lawn in the French countryside, or playing board games with his family.",
+      "image_src": "yoav_weiss",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/yoavweiss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/yoavweiss"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/weissyoav/"
         }
       ]
     },
@@ -187,6 +187,28 @@
         {
           "type": "linkedin",
           "url": "https://sg.linkedin.com/in/huijingchen"
+        }
+      ]
+    },
+    {
+      "first_name": "Ran",
+      "last_name": "Byron",
+      "position": "UI Engineer",
+      "company": "Facebook",
+      "description": "Ran has been around since the crummy old IE6 days. Started his career at Netcraft, lead teams, created communities and events so he could speak at them, did the startup scene and now is all about Facebook TLV. Loves skateboarding, drumming, coffee and cats. Lots and lots of cats.",
+      "image_src": "ran_byron",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ranbena"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/ranbena"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/ranbena/"
         }
       ]
     },
@@ -345,24 +367,20 @@
       ]
     },
     {
-      "first_name": "Ran",
-      "last_name": "Byron",
-      "position": "UI Engineer",
-      "company": "Facebook",
-      "description": "Ran has been around since the crummy old IE6 days. Started his career at Netcraft, lead teams, created communities and events so he could speak at them, did the startup scene and now is all about Facebook TLV. Loves skateboarding, drumming, coffee and cats. Lots and lots of cats.",
-      "image_src": "ran_byron",
+      "first_name": "Nabil",
+      "last_name": "Naffar",
+      "position": "Senior Front-end Developer",
+      "company": "AT&T",
+      "description": "Nabil is a senior FE developer, working in AT&T Israel for the past 4 years. In addition to his role as a developer, Nabil is teaching fellow programmers in a number of internal courses in the field of FE Development. Nabil is leading a concentrated effort in the company to create a fully automated pipeline, to deliver code from requirements to Production – with the highest possible quality and speed.",
+      "image_src": "nabil_naffar",
       "social_icons": [
         {
-          "type": "twitter",
-          "url": "https://twitter.com/ranbena"
-        },
-        {
           "type": "github",
-          "url": "https://github.com/ranbena"
+          "url": "https://github.com/nabilnaffar"
         },
         {
           "type": "linkedin",
-          "url": "https://www.linkedin.com/in/ranbena/"
+          "url": "https://www.linkedin.com/in/nabil-naffar-b1511671/"
         }
       ]
     },

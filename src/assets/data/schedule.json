@@ -35,12 +35,11 @@
 						"hour": "10",
 						"minute": "15"
 					},
-					"title": "WebGL: Building interactive 3D worlds in the browser",
-					"speaker": "Martin Splitt",
-					"company": "Archilogic AG",
+					"title": "When East meets West, web typography and how it can inspire modern layouts",
+					"speaker": "Chen Hui Jing",
+					"company": "Wismut Labs",
 					"paragraphs": [
-						"Thanks to the wide adoption and availability of WebGL across browsers (including those on mobile) we get control of the full graphics pipeline.",
-						"After we get an introduction to WebGL basics and the render pipeline, we'll learn what Three.js brings to the table and do a live coding demonstration you can code along to in which we’ll build a 3D web app from the ground up with all elements."
+						"This talk traces the parallel history of western and eastern typography from handwriting to the internet age, setting the context for how the web is a brand new medium for typesetting. CSS allows us to implement advanced typographic features and multi-directional layouts, that not only benefits internationalisation, but opens up a myriad of options for creative and interesting layouts in general as well."
 					]
 				},
 				{
@@ -155,11 +154,11 @@
 						"hour": "16",
 						"minute": "00"
 					},
-					"title": "Front-end Engineering - you are holding it wrong!",
-					"speaker": "Boris Litvinsky",
-					"company": "Wix",
+					"title": "SOLID Teamwork - A word about effective cooperation",
+					"speaker": "Kamil Ejsymont",
+					"company": "Netguru",
 					"paragraphs": [
-						"The flood of tools and frameworks in the front-end development world caused both the developers and their employers to lose sight of the things that really matter - software craftsmanship. It’s demand for Angular over TDD, SASS over SOLID. This loss of focus from the essentials is in the long run damaging and sadly - it is all self-inflicted. In this talk we will go over the long-term effects and explore solutions."
+						"Using some well-known programming principles in our daily life may sound a little bit crazy, especially if we put teamwork as a context. But in fact, they are extremely helpful if you want to be a good team player with significant effectiveness. Being SOLID as a teammate is much more than just coding. I'll be glad to introduce you to my 5 rules of thumb which I try to use in all my projects - every day."
 					]
 				},
 				{
@@ -229,11 +228,12 @@
 						"hour": "10",
 						"minute": "15"
 					},
-					"title": "When East meets West, web typography and how it can inspire modern layouts",
-					"speaker": "Chen Hui Jing",
-					"company": "Wismut Labs",
+					"title": "WebGL: Building interactive 3D worlds in the browser",
+					"speaker": "Martin Splitt",
+					"company": "Archilogic AG",
 					"paragraphs": [
-						"This talk traces the parallel history of western and eastern typography from handwriting to the internet age, setting the context for how the web is a brand new medium for typesetting. CSS allows us to implement advanced typographic features and multi-directional layouts, that not only benefits internationalisation, but opens up a myriad of options for creative and interesting layouts in general as well."
+						"Thanks to the wide adoption and availability of WebGL across browsers (including those on mobile) we get control of the full graphics pipeline.",
+						"After we get an introduction to WebGL basics and the render pipeline, we'll learn what Three.js brings to the table and do a live coding demonstration you can code along to in which we’ll build a 3D web app from the ground up with all elements."
 					]
 				},
 				{
@@ -253,11 +253,11 @@
 						"hour": "11",
 						"minute": "30"
 					},
-					"title": "",
+					"title": "Avoiding productivity Mouse Traps",
 					"speaker": "Alex Wolkov",
 					"company": "Fundbox",
 					"paragraphs": [
-						""
+						"Knowing ALL the shortcuts to your editor/tool is not realistic and won't necessarily make you a faster developer. In this talk, Alex will cover a few specific scenarios that if improved, will unlock a path towards faster and more productive workflow."
 					]
 				},
 				{
@@ -342,7 +342,7 @@
 						"minute": "00"
 					},
 					"title": "Mutation tests - Testing the right things",
-					"speaker": "Nail Naffar",
+					"speaker": "Nabil Naffar",
 					"company": "AT&T",
 					"paragraphs": [
 						"What is considered a good test anyway? Is it when we covered all the possible scenarios? Maybe it’s when we got 100% coverage?  Or maybe, it’s when we got multiple layers of tests that cover your code?",
@@ -355,11 +355,11 @@
 						"hour": "16",
 						"minute": "10"
 					},
-					"title": "SOLID Teamwork - A word about effective cooperation",
-					"speaker": "Kamil Ejsymont",
-					"company": "Netguru",
+					"title": "Front-end Engineering - you are holding it wrong!",
+					"speaker": "Boris Litvinsky",
+					"company": "Wix",
 					"paragraphs": [
-						"Using some well-known programming principles in our daily life may sound a little bit crazy, especially if we put teamwork as a context. But in fact, they are extremely helpful if you want to be a good team player with significant effectiveness. Being SOLID as a teammate is much more than just coding. I'll be glad to introduce you to my 5 rules of thumb which I try to use in all my projects - every day."
+						"The flood of tools and frameworks in the front-end development world caused both the developers and their employers to lose sight of the things that really matter - software craftsmanship. It’s demand for Angular over TDD, SASS over SOLID. This loss of focus from the essentials is in the long run damaging and sadly - it is all self-inflicted. In this talk we will go over the long-term effects and explore solutions."
 					]
 				},
 				{
