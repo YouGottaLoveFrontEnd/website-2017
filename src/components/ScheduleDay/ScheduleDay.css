@@ -18,6 +18,7 @@
 
 .schedule-day-timetable {
 	border-top: 1px solid var(--yglf-green);
+    transform: translateY(-1px);
 }
 
 .schedule-day .schedule-day-title {
@@ -39,5 +40,4 @@
     -webkit-font-smoothing: antialiased;
 	line-height: var(--cell);
     font-style: italic;
-	
 }

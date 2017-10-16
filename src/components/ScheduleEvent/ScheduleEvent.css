@@ -30,7 +30,8 @@
 
 .schedule-event-info {
     flex: 1;
-	padding-bottom: var(--cell);
+}
+.schedule-event-info-wrapper {
 	border-bottom: 1px solid var(--yglf-grey);
 }
 

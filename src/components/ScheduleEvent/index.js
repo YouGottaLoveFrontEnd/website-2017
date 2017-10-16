@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
+import ReadMore from '../ReadMore';
+import FontLoader from '../../utils/FontLoader';
 
 import './ScheduleEvent.css';
 
@@ -11,6 +13,13 @@ class ScheduleEvent extends Component {
   resize() {
     AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
     AutoHeightFix(document.getElementsByClassName('auto-height-fix-title'));
+
+    setTimeout(() => {
+      AutoHeightFix(
+        document.getElementsByClassName('auto-height-fix-wrapper'),
+        -1
+      );
+    });
   }
 
   componentWillUnmount() {
@@ -20,17 +29,21 @@ class ScheduleEvent extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
 
-    this.resize();
+    if (FontLoader.loaded) {
+      this.resize();
+    } else {
+      FontLoader.addLoadCallback(this.resize.bind(this));
+    }
 
     window.addEventListener('resize', this.resize.bind(this));
   }
 
   render() {
-    const paragraphs = this.props.event.paragraphs.map(paragraph =>
-      <p key={paragraph} className="schedule-event-info-paragraph">
-        {paragraph}
-      </p>
-    );
+    // const paragraphs = this.props.event.paragraphs.map(paragraph =>
+    //   <p key={paragraph} className="schedule-event-info-paragraph">
+    //     {paragraph}
+    //   </p>
+    // );
 
     return (
       <div className="schedule-event">
@@ -42,16 +55,20 @@ class ScheduleEvent extends Component {
             {this.props.event.time.minute}
           </span>
         </div>
-        <div className="schedule-event-info auto-height-fix">
-          <h4 className="schedule-event-info-title">
-            {this.props.event.title}
-          </h4>
-          {this.props.event.speaker
-            ? <strong className="schedule-event-info-speaker">
-                {this.props.event.speaker} ({this.props.event.company})
-              </strong>
-            : ''}
-          {paragraphs}
+        <div className="schedule-event-info">
+          <div className="schedule-event-info-wrapper">
+            <h4 className="schedule-event-info-title">
+              {this.props.event.title}
+            </h4>
+            {this.props.event.speaker
+              ? <strong className="schedule-event-info-speaker">
+                  {this.props.event.speaker} ({this.props.event.company})
+                </strong>
+              : ''}
+            <div className="schedule-event-info-paragraph">
+              <ReadMore paragraphs={this.props.event.paragraphs} cells={1} />
+            </div>
+          </div>
         </div>
       </div>
     );

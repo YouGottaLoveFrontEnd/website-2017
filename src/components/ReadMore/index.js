@@ -16,10 +16,7 @@ class ReadMore extends Component {
 
   resize() {
     AutoHeightFix(document.getElementsByClassName('auto-height-fix'));
-
-    setTimeout(() => {
-      AutoHeightFix(document.getElementsByClassName('auto-height-fix-wrapper'));
-    });
+    AutoHeightFix(document.getElementsByClassName('auto-height-fix-wrapper'));
   }
 
   componentDidMount() {
@@ -29,8 +26,6 @@ class ReadMore extends Component {
 
     this.openHeight = this.wrapper.clientHeight;
     this.closeHeight = this.state.cells * 45;
-
-    console.log('FontLoader.loaded', FontLoader.loaded);
 
     if (FontLoader.loaded) {
       this.toggle(this.state.isOpen);
