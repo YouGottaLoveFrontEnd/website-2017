@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { AutoHeightFix } from '../../utils/ElementManipulation';
+import FontLoader from '../../utils/FontLoader';
 import './ReadMore.css';
 
 class ReadMore extends Component {
@@ -24,15 +25,22 @@ class ReadMore extends Component {
   componentDidMount() {
     this.container = ReactDOM.findDOMNode(this.refs.readMoreContainer);
     this.wrapper = ReactDOM.findDOMNode(this.refs.readMoreWrapper);
+    this.bg = ReactDOM.findDOMNode(this.refs.readMoreBg);
 
     this.openHeight = this.wrapper.clientHeight;
     this.closeHeight = this.state.cells * 45;
 
-    this.toggle(this.state.isOpen);
+    console.log('FontLoader.loaded', FontLoader.loaded);
+
+    if (FontLoader.loaded) {
+      this.toggle(this.state.isOpen);
+    } else {
+      FontLoader.addLoadCallback(this.toggle.bind(this));
+    }
   }
 
   toggle(isOpen) {
-    this.resize();
+    isOpen = isOpen || false;
 
     this.setState({
       isOpen: isOpen,
@@ -40,6 +48,8 @@ class ReadMore extends Component {
 
     this.container.style.height =
       (isOpen ? this.openHeight : this.closeHeight) + 'px';
+
+    this.bg.style.height = (isOpen ? this.openHeight : this.closeHeight) + 'px';
   }
 
   close() {
@@ -55,7 +65,7 @@ class ReadMore extends Component {
 
     if (this.props.paragraphs.length > 0) {
       paragraphs = this.props.paragraphs.map(paragraph =>
-        <p className="auto-height-fix">
+        <p className="auto-height-fix" key={paragraph}>
           {paragraph}
         </p>
       );
@@ -68,6 +78,7 @@ class ReadMore extends Component {
             className="read-more-wrapper auto-height-fix-wrapper"
             ref="readMoreWrapper"
           >
+            <div className="read-more-bg" ref="readMoreBg" />
             {paragraphs}
           </div>
         </div>
