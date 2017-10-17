@@ -31,7 +31,11 @@ class ScheduleDay extends Component {
     const scheduleDayClass = `schedule-day ${isActive ? '' : 'non-active'}`;
 
     return (
-      <div className={scheduleDayClass} onClick={onSelect}>
+      <div
+        className={scheduleDayClass}
+        onClick={onSelect}
+        onMouseOver={onSelect}
+      >
         <h2 className="schedule-day-title auto-height-fix-title">
           {this.props.day.title}
         </h2>

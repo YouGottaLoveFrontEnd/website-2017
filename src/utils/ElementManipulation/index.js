@@ -11,9 +11,9 @@ export const SetElementHeight = (element, height) => {
   return (element.style.height = Math.round(height) + 'px');
 };
 
-export const AutoHeightFix = elements => {
+export const AutoHeightFix = (elements, extra) => {
   if (!elements) return;
   for (let i = 0; i < elements.length; i++) {
-    SetElementHeight(elements[i], GetElementHeight(elements[i]));
+    SetElementHeight(elements[i], GetElementHeight(elements[i]) + (extra || 0));
   }
 };
