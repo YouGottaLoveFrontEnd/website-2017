@@ -23,6 +23,7 @@ class ReadMore extends Component {
     this.container = ReactDOM.findDOMNode(this.refs.readMoreContainer);
     this.wrapper = ReactDOM.findDOMNode(this.refs.readMoreWrapper);
     this.bg = ReactDOM.findDOMNode(this.refs.readMoreBg);
+    this.button = ReactDOM.findDOMNode(this.refs.readMoreButton);
 
     this.openHeight = this.wrapper.clientHeight;
     this.closeHeight = this.state.cells * 45;
@@ -31,6 +32,12 @@ class ReadMore extends Component {
       this.toggle(this.state.isOpen);
     } else {
       FontLoader.addLoadCallback(this.toggle.bind(this));
+    }
+
+    if (this.openHeight <= this.closeHeight) {
+      this.button.style.display = this.bg.style.display = 'none';
+    } else {
+      this.button.style.display = this.bg.style.display = 'block';
     }
   }
 
@@ -77,13 +84,15 @@ class ReadMore extends Component {
             {paragraphs}
           </div>
         </div>
-        {this.state.isOpen
-          ? <a className="btn-underline" onClick={this.close.bind(this)}>
-              Read less
-            </a>
-          : <a className="btn-underline" onClick={this.open.bind(this)}>
-              Read more
-            </a>}
+        <div className="read-more-button" ref="readMoreButton">
+          {this.state.isOpen
+            ? <a className="btn-underline" onClick={this.close.bind(this)}>
+                Read less
+              </a>
+            : <a className="btn-underline" onClick={this.open.bind(this)}>
+                Read more
+              </a>}
+        </div>
       </div>
     );
   }
