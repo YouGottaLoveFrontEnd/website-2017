@@ -28,5 +28,30 @@
         "company": "AT&T",
         "className": "at_and_t",
         "image_src": "at_and_t.svg"
+    },
+    {
+        "company": "DaPulse",
+        "className": "dapulse",
+        "image_src": "dapulse.png"
+    },
+    {
+        "company": "Facebook",
+        "className": "facebook",
+        "image_src": "facebook.png"
+    },
+    {
+        "company": "Tailor Brand",
+        "className": "tailor_brand",
+        "image_src": "tailor_brand.png"
+    },
+    {
+        "company": "Neuland",
+        "className": "neuland",
+        "image_src": "neuland.svg"
+    },
+    {
+        "company": "Taboola",
+        "className": "taboola",
+        "image_src": "taboola.png"
     }
 ]

@@ -40,6 +40,25 @@
 .sponsor-item.at_and_t {
     transform: translateY(10px);
 }
+.sponsor-item.dapulse {
+    margin-top: 20px;
+}
+.sponsor-item.facebook {
+    margin-top: 1px;
+    transform: translateX(-13px);
+}
+.sponsor-item.tailor_brand {
+    margin-top: 13px;
+    transform: translateX(-4px);
+}
+.sponsor-item.neuland img {
+    width: 143px;
+    margin-top: -7px;
+}
+.sponsor-item.taboola img {
+    margin-top: -15px;
+    width: 143px;
+}
 
 @media screen and (max-width: 1280px) {
     .sponsors-list {
@@ -60,7 +79,6 @@
     .sponsor-item.autodesk {
         transform: translateY(18px);
     }
-
 
     .sponsor-item.cloudinary {
         transform: translateY(17px);
