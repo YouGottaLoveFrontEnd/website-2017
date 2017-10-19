@@ -387,7 +387,7 @@
     {
       "first_name": "Ido",
       "last_name": "Rosenthal",
-      "position": "Software Enginner",
+      "position": "Software Engineer",
       "company": "Wix",
       "description": "Ido first fell in love with client-side technologies in 2001. In his role as a Client-Solutions Architect at Wix, he’s been in charge of Flash and then HTML and JavaScript projects since 2010. With a deep burning passion (and red glowing eyes) for visual programming, code editors, and developer tooling, Ido leads the charge for a better styling library in the world of components. When not behind the keyboard, he’s the father of a 1-year-old son, and an avid Settlers of Catan player.",
       "image_src": "ido_rosenthal",
@@ -399,6 +399,46 @@
         {
           "type": "linkedin",
           "url": "https://www.linkedin.com/in/ido-rosenthal-a2b02210"
+        }
+      ]
+    },
+    {
+      "first_name": "Noam",
+      "last_name": "Elboim",
+      "position": "Tech Lead & Web Developer",
+      "company": "MyHeritage",
+      "description": "Noam Elboim is a Tech Lead & Web Developer at MyHeritage. He had integrated various new technologies to be used by the company over the years, like React & Redux, WebGL, Rollup, PostCSS, Microservices with Node.js, Yeoman and much more.",
+      "image_src": "noam_elboim",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/elnoam"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/NoamELB"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/noamel/"
+        }
+      ]
+    },
+    {
+      "first_name": "Tzook",
+      "last_name": "Shaked",
+      "position": "Web Team Lead",
+      "company": "MyHeritage",
+      "description": "Tzook Shaked is a Web Team Lead at MyHeritage. He implemented advanced technologies in MyHeritage such as Server Rendering, Micro Applications, Node.js Microservices and more. He is an expert in several web stacks including AngularJS, React and even Slim.js.",
+      "image_src": "tzook_shaked",
+      "social_icons": [
+        {
+          "type": "github",
+          "url": "https://github.com/Tzook"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/tzook/"
         }
       ]
     }
