@@ -22,11 +22,13 @@
 						"hour": "09",
 						"minute": "30"
 					},
-					"title": "Strolling down the Metaverse",
-					"speaker": "Diego Gonzales",
-					"company": "Samsung",
+					"title": "Crafting Faster in the Dark",
+					"speaker": "Richard Feldman",
+					"company": "RedInk",
 					"paragraphs": [
-						"In this presentation we will take a *virtual* stroll around the web. We will understand what are the key elements that make WebVR a crucial technology in the path to make VR a democratic and accessible medium. We will see the concepts behind it, some experiences out there, and will get know about the community that drives it so passionately. Most importantly, everyone is invited, all you need is the web."
+						"When I got into Elm as a React developer in 2014, I thought I was signing up to learn a functional programming language. Nobody told me I would end up embracing a programming flow I didn't even know existed back then—a flow where I could spend hours productively writing front-end code without slowing down to open a browser and visually check my progress.",
+						"What kind of bizarro front-end development world is that? What is it about Elm's design that makes this kind of flow possible, and what assumptions does it challenge about the most effective ways to write front-end code? Does it take a whole different programming language to pull this off, or are there ways to combine existing JavaScript tools to get the same benefits?",
+						"We'll explore all of these questions and more in this talk. Come find out!"
 					]
 				},
 				{
@@ -45,8 +47,8 @@
 				{
 					"id": "day_one_event_4",
 					"time": {
-						"hour": "11",
-						"minute": "00"
+						"hour": "10",
+						"minute": "45"
 					},
 					"title": "Coffee Break",
 					"paragraphs": [
@@ -57,7 +59,7 @@
 					"id": "day_one_event_5",
 					"time": {
 						"hour": "11",
-						"minute": "30"
+						"minute": "15"
 					},
 					"title": "CSS in a Components World",
 					"speaker": "Ido Rosenthal",
@@ -70,8 +72,8 @@
 				{
 					"id": "day_one_event_6",
 					"time": {
-						"hour": "12",
-						"minute": "00"
+						"hour": "11",
+						"minute": "45"
 					},
 					"title": "Caches All The Way Down!",
 					"speaker": "Yoav Weiss",
@@ -85,16 +87,29 @@
 					"id": "day_one_event_7",
 					"time": {
 						"hour": "12",
-						"minute": "30"
+						"minute": "15"
 					},
-					"title": "Lunch",
+					"title": "Real-life tips on how to boost your development team's productivity from within.",
+					"speaker": "Daniel Lereya",
+					"company": "DaPulse",
 					"paragraphs": [
-						"Enjoy great asado meat, hamburgers. As well taco bar.",
-						"Don't forget to stop by beer garden to have several bottles of Israeli boutique beer."
+						"Individual contributors have great impact on how things gets done in today’s organizations.  Still, many times we feel that it’s hard to drive a change from the bottom up, especially in large companies. In this talk, I will share some real-life examples of Individual contributors which drove both small and great changes, that really made a difference and more importantly, ones that can actually take, to make yourself much happier at work."
 					]
 				},
 				{
 					"id": "day_one_event_8",
+					"time": {
+						"hour": "12",
+						"minute": "45"
+					},
+					"title": "Lunch",
+					"paragraphs": [
+						"Enjoy great asado meat, hamburgers together with a taco bar.",
+						"Don't forget to stop by a beer garden to grab several bottles of Israeli boutique beer."
+					]
+				},
+				{
+					"id": "day_one_event_9",
 					"time": {
 						"hour": "14",
 						"minute": "00"
@@ -108,24 +123,10 @@
 					]
 				},
 				{
-					"id": "day_one_event_9",
-					"time": {
-						"hour": "14",
-						"minute": "30"
-					},
-					"title": "Micro Frontends: Break up you web app!",
-					"speaker": "Michael Geers",
-					"company": "Neuland - Büro für Informatik",
-					"paragraphs": [
-						"JavaScript frameworks are on the rise. More and more companies employ specialized frontend teams which are building client side web applications. As projects grow, things start to get more complicated. Building a feature requires coordination between frontend and backend teams. In my talk I present an alternative organizational model where teams have end-to-end ownership. Each team focusses on one specific use-case and not a technology. Building a site with independent cross-functional teams has major advantages. It reduces communication and make shipping features fun again.",
-						"But maintaining a consistent and performant user interface comes with a few technical challenges."
-					]
-				},
-				{
 					"id": "day_one_event_10",
 					"time": {
-						"hour": "15",
-						"minute": "00"
+						"hour": "14",
+						"minute": "45"
 					},
 					"title": "Components: Fast & Furious",
 					"speaker": "Noam Elboim & Tzook Shaked",
@@ -141,7 +142,7 @@
 					"id": "day_one_event_11",
 					"time": {
 						"hour": "15",
-						"minute": "30"
+						"minute": "15"
 					},
 					"title": "Coffee Break",
 					"paragraphs": [
@@ -151,21 +152,21 @@
 				{
 					"id": "day_one_event_12",
 					"time": {
-						"hour": "16",
-						"minute": "00"
+						"hour": "15",
+						"minute": "45"
 					},
-					"title": "SOLID Teamwork - A word about effective cooperation",
-					"speaker": "Kamil Ejsymont",
-					"company": "Netguru",
+					"title": "Front-end Engineering - you are holding it wrong!",
+					"speaker": "Boris Litvinsky",
+					"company": "Wix",
 					"paragraphs": [
-						"Using some well-known programming principles in our daily life may sound a little bit crazy, especially if we put teamwork as a context. But in fact, they are extremely helpful if you want to be a good team player with significant effectiveness. Being SOLID as a teammate is much more than just coding. I'll be glad to introduce you to my 5 rules of thumb which I try to use in all my projects - every day."
+						"The flood of tools and frameworks in the front-end development world caused both the developers and their employers to lose sight of the things that really matter - software craftsmanship. It’s demand for Angular over TDD, SASS over SOLID. This loss of focus from the essentials is in the long run damaging and sadly - it is all self-inflicted. In this talk we will go over the long-term effects and explore solutions."
 					]
 				},
 				{
 					"id": "day_one_event_13",
 					"time": {
 						"hour": "16",
-						"minute": "10"
+						"minute": "00"
 					},
 					"title": "Space Cram: Optimizing the Space Jam website",
 					"speaker": "Eric Portis",
@@ -179,15 +180,14 @@
 					"id": "day_one_event_14",
 					"time": {
 						"hour": "16",
-						"minute": "20"
+						"minute": "15"
 					},
-					"title": "Crafting Faster in the Dark",
-					"speaker": "Richard Feldman",
-					"company": "RedInk",
+					"title": "Animating Vue",
+					"speaker": "Sarah Dresner",
+					"company": "Microsoft",
 					"paragraphs": [
-						"When I got into Elm as a React developer in 2014, I thought I was signing up to learn a functional programming language. Nobody told me I would end up embracing a programming flow I didn't even know existed back then—a flow where I could spend hours productively writing front-end code without slowing down to open a browser and visually check my progress.",
-						"What kind of bizarro front-end development world is that? What is it about Elm's design that makes this kind of flow possible, and what assumptions does it challenge about the most effective ways to write front-end code? Does it take a whole different programming language to pull this off, or are there ways to combine existing JavaScript tools to get the same benefits?",
-						"We'll explore all of these questions and more in this talk. Come find out!"
+						"As superfluous as something like animation may initially seem, you can tell a lot about framework by the way that it handles the concept of time. Idiosyncrasies and race conditions in rendering reveal themselves, pauses in DOM and virtual DOM diffing can be exposed.",
+						"This is one of the ways Vue shows itself to be uniquely capable and elegant as a framework. In this session, we'll cover how to use the <transition> component and some of its offerings to create fluid effects in the browser. We'll move on to watchers and transitioning state. Finally, we'll talk about lifecycle methods, asynchronous updates, and pushing our animations to the next level."
 					]
 				}
 			]
@@ -214,12 +214,11 @@
 						"hour": "09",
 						"minute": "30"
 					},
-					"title": "Animating Vue",
-					"speaker": "Sarah Dresner",
-					"company": "Microsoft",
+					"title": "Strolling down the Metaverse",
+					"speaker": "Diego Gonzales",
+					"company": "Samsung",
 					"paragraphs": [
-						"As superfluous as something like animation may initially seem, you can tell a lot about framework by the way that it handles the concept of time. Idiosyncrasies and race conditions in rendering reveal themselves, pauses in DOM and virtual DOM diffing can be exposed.",
-						"This is one of the ways Vue shows itself to be uniquely capable and elegant as a framework. In this session, we'll cover how to use the <transition> component and some of its offerings to create fluid effects in the browser. We'll move on to watchers and transitioning state. Finally, we'll talk about lifecycle methods, asynchronous updates, and pushing our animations to the next level."
+						"In this presentation we will take a *virtual* stroll around the web. We will understand what are the key elements that make WebVR a crucial technology in the path to make VR a democratic and accessible medium. We will see the concepts behind it, some experiences out there, and will get know about the community that drives it so passionately. Most importantly, everyone is invited, all you need is the web."
 					]
 				},
 				{
@@ -239,8 +238,8 @@
 				{
 					"id": "day_two_event_4",
 					"time": {
-						"hour": "11",
-						"minute": "00"
+						"hour": "10",
+						"minute": "45"
 					},
 					"title": "Coffee Break",
 					"paragraphs": [
@@ -251,7 +250,21 @@
 					"id": "day_two_event_5",
 					"time": {
 						"hour": "11",
-						"minute": "30"
+						"minute": "15"
+					},
+					"title": "www.yougottalovefrontend.com",
+					"speaker": "Uri Shaked",
+					"company": "Blackberry",
+					"paragraphs": [
+						"When you open your browser and type www.yougottalovefrontend.com in the address bar, there is an amazing amount of things that happen in just a split of a second. Thousands of IP packets are being exchanged by your browser and remote servers involving many protocols such as HTTP, TCP, DNS and SSL to ensure fast, smooth and secure experience. There is so much going on behind the scenes, things such as routing, NAT, retransmissions, Nagle's algorithm, ack piggybacking just to name a few. In this session, we are going to do a deep network surgery and cut through the different protocol layers as we use the browser."
+					]
+					
+				},
+				{
+					"id": "day_two_event_6",
+					"time": {
+						"hour": "11",
+						"minute": "45"
 					},
 					"title": "Avoiding productivity Mouse Traps",
 					"speaker": "Alex Wolkov",
@@ -261,32 +274,32 @@
 					]
 				},
 				{
-					"id": "day_two_event_6",
-					"time": {
-						"hour": "12",
-						"minute": "00"
-					},
-					"title": "www.yougottalovefrontend.com",
-					"speaker": "Uri Shaked",
-					"company": "Blackberry",
-					"paragraphs": [
-						"When you open your browser and type www.yougottalovefrontend.com in the address bar, there is an amazing amount of things that happen in just a split of a second. Thousands of IP packets are being exchanged by your browser and remote servers involving many protocols such as HTTP, TCP, DNS and SSL to ensure fast, smooth and secure experience. There is so much going on behind the scenes, things such as routing, NAT, retransmissions, Nagle's algorithm, ack piggybacking just to name a few. In this session, we are going to do a deep network surgery and cut through the different protocol layers as we use the browser."
-					]
-				},
-				{
 					"id": "day_two_event_7",
 					"time": {
 						"hour": "12",
-						"minute": "30"
+						"minute": "15"
 					},
-					"title": "Lunch",
+					"title": "10 Things I Love about Engineering at Facebook",
+					"speaker": "Ran Byron",
+					"company": "Facebook",
 					"paragraphs": [
-						"Enjoy great asado meat, hamburgers. As well as caribbean bar.",
-						"Don't forget to stop by beer garden to have several bottles of Israeli boutique beer."
+						"Despite joining Facebook as an experienced developer, I was nowhere near ready for what awaited me. Still learning, still flabbergasted and I got 30 mins to share as much as I can with you - from tools and processes to smart approaches and forcing functions."
 					]
 				},
 				{
 					"id": "day_two_event_8",
+					"time": {
+						"hour": "12",
+						"minute": "45"
+					},
+					"title": "Lunch",
+					"paragraphs": [
+						"Enjoy great asado meat, hamburgers again together with a caribbean bar.",
+						"Don't forget to stop by beer garden to grab several bottles of Israeli boutique beer."
+					]
+				},
+				{
+					"id": "day_two_event_9",
 					"time": {
 						"hour": "14",
 						"minute": "00"
@@ -299,36 +312,39 @@
 					]
 				},
 				{
-					"id": "day_two_event_9",
+					"id": "day_two_event_10",
 					"time": {
 						"hour": "14",
 						"minute": "30"
 					},
-					"title": "10 Things I Love about Engineering at Facebook",
-					"speaker": "Ran Byron",
-					"company": "Facebook",
+					"title": "Stencil: The Time for Vanilla Web Components Arrived ",
+					"speaker": "Gil Fink",
+					"company": "Taboola",
 					"paragraphs": [
-						"Despite joining Facebook as an experienced developer, I was nowhere near ready for what awaited me. Still learning, still flabbergasted and I got 30 mins to share as much as I can with you - from tools and processes to smart approaches and forcing functions."
-					]
-				},
-				{
-					"id": "day_two_event_10",
-					"time": {
-						"hour": "15",
-						"minute": "00"
-					},
-					"title": "Real-life tips on how to boost your development team's productivity from within.",
-					"speaker": "Daniel Lereya",
-					"company": "DaPulse",
-					"paragraphs": [
-						"Individual contributors have great impact on how things gets done in today’s organizations.  Still, many times we feel that it’s hard to drive a change from the bottom up, especially in large companies. In this talk, I will share some real-life examples of Individual contributors which drove both small and great changes, that really made a difference and more importantly, ones that can actually take, to make yourself much happier at work."
+						"Web development changed dramatically during the last years. With the enormous amount of JavaScript libraries and the new HTML5 standard, today it is much easier to create web apps. When building a web app, you will probably want to reuse some of the web components you built. But how you can do that with the current state of HTML?",
+						"One of the new and emerging web standards is Web Components. The Web Components standard enables you to create reusable web components that include HTML, CSS and JavaScript.On the other hand, crafting raw components can be cumbersome. This is were Stencil comes into place.",
+						"In this short session you will get familiar with Stencil, a compiler that generates standard-complaint Web Components."
 					]
 				},
 				{
 					"id": "day_two_event_11",
 					"time": {
+						"hour": "14",
+						"minute": "45"
+					},
+					"title": "Micro Frontends: Break up you web app!",
+					"speaker": "Michael Geers",
+					"company": "Neuland - Büro für Informatik",
+					"paragraphs": [
+						"JavaScript frameworks are on the rise. More and more companies employ specialized frontend teams which are building client side web applications. As projects grow, things start to get more complicated. Building a feature requires coordination between frontend and backend teams. In my talk I present an alternative organizational model where teams have end-to-end ownership. Each team focusses on one specific use-case and not a technology. Building a site with independent cross-functional teams has major advantages. It reduces communication and make shipping features fun again.",
+						"But maintaining a consistent and performant user interface comes with a few technical challenges."
+					]
+				},
+				{
+					"id": "day_two_event_12",
+					"time": {
 						"hour": "15",
-						"minute": "30"
+						"minute": "15"
 					},
 					"title": "Coffee Break",
 					"paragraphs": [
@@ -336,10 +352,10 @@
 					]
 				},
 				{
-					"id": "day_two_event_12",
+					"id": "day_two_event_13",
 					"time": {
-						"hour": "16",
-						"minute": "00"
+						"hour": "15",
+						"minute": "45"
 					},
 					"title": "Mutation tests - Testing the right things",
 					"speaker": "Nabil Naffar",
@@ -350,23 +366,23 @@
 					]
 				},
 				{
-					"id": "day_two_event_13",
-					"time": {
-						"hour": "16",
-						"minute": "10"
-					},
-					"title": "Front-end Engineering - you are holding it wrong!",
-					"speaker": "Boris Litvinsky",
-					"company": "Wix",
-					"paragraphs": [
-						"The flood of tools and frameworks in the front-end development world caused both the developers and their employers to lose sight of the things that really matter - software craftsmanship. It’s demand for Angular over TDD, SASS over SOLID. This loss of focus from the essentials is in the long run damaging and sadly - it is all self-inflicted. In this talk we will go over the long-term effects and explore solutions."
-					]
-				},
-				{
 					"id": "day_two_event_14",
 					"time": {
 						"hour": "16",
-						"minute": "20"
+						"minute": "00"
+					},
+					"title": "SOLID Teamwork - A word about effective cooperation",
+					"speaker": "Kamil Ejsymont",
+					"company": "Netguru",
+					"paragraphs": [
+						"Using some well-known programming principles in our daily life may sound a little bit crazy, especially if we put teamwork as a context. But in fact, they are extremely helpful if you want to be a good team player with significant effectiveness. Being SOLID as a teammate is much more than just coding. I'll be glad to introduce you to my 5 rules of thumb which I try to use in all my projects - every day."
+					]
+				},
+				{
+					"id": "day_two_event_15",
+					"time": {
+						"hour": "16",
+						"minute": "15"
 					},
 					"title": "Big Bang Redesign: Smashing Magazine’s 2017 Relaunch, a Case Study",
 					"speaker": "Vitaly Friedman",

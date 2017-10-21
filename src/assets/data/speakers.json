@@ -441,6 +441,28 @@
           "url": "https://www.linkedin.com/in/tzook/"
         }
       ]
+    },
+    {
+      "first_name": "Gil",
+      "last_name": "Fink",
+      "position": "",
+      "company": "Taboola",
+      "description": "Gil Fink is a web development expert, Microsoft MVP and sparXys CEO. He is currently consulting for various enterprises and companies, where he helps to develop web based solutions. He is also co-author of several Microsoft Official Courses (MOCs) and training kits, co-author of 'Pro Single Page Application Development' book (Apress), co-organizer of GDG Rishon Meetup and AngularUP conference.",
+      "image_src": "gil_fink",
+      "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/gilfink"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/gilf"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://il.linkedin.com/in/gilfink"
+        }
+      ]
     }
   ]
 }
