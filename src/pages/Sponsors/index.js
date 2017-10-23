@@ -17,7 +17,7 @@ class Sponsors extends Component {
 
     return (
       <div className="sponsors bg">
-        <div className="container container-fluid">
+        <div className="container">
           <InfoBlock data={InfoBlocksData.sponsorsPage} />
           <div className="sponsors-list">
             {sponsors}

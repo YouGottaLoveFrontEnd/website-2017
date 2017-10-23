@@ -96,7 +96,8 @@
 
 @media screen and (max-width: 1024px) {
     .about-page-header-text {
-        padding-top: calc(var(--cell) * 1)
+        padding-top: calc(var(--cell) * 1);
+        margin-bottom: var(--cell);
     }
     .about-page-header-text h1 {
         font-size: 90px;

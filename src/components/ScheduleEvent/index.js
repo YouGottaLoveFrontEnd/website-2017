@@ -39,12 +39,6 @@ class ScheduleEvent extends Component {
   }
 
   render() {
-    // const paragraphs = this.props.event.paragraphs.map(paragraph =>
-    //   <p key={paragraph} className="schedule-event-info-paragraph">
-    //     {paragraph}
-    //   </p>
-    // );
-
     return (
       <div className="schedule-event">
         <div className="schedule-event-time">
@@ -57,7 +51,7 @@ class ScheduleEvent extends Component {
         </div>
         <div className="schedule-event-info">
           <div className="schedule-event-info-wrapper">
-            <h4 className="schedule-event-info-title">
+            <h4 className="schedule-event-info-title auto-height-fix-title">
               {this.props.event.title}
             </h4>
             {this.props.event.speaker
