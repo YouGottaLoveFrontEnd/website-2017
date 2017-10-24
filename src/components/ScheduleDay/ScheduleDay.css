@@ -1,43 +1,52 @@
 .schedule-day {
-	width: 50%;
-	flex: 1 auto;
+    width: 50%;
+    flex: 1 auto;
 }
 
 .schedule-day.non-active {
-	opacity: 0.6;
-	color: #D8D8D8;
+    opacity: 0.6;
+    color: #D8D8D8;
 }
 
 .schedule-day.non-active h2 {
-	color: #D8D8D8;
+    color: #D8D8D8;
 }
 
 .schedule-day.non-active p {
-	color: #D8D8D8;
+    color: #D8D8D8;
 }
 
 .schedule-day-timetable {
-	border-top: 1px solid var(--yglf-green);
+    border-top: 1px solid var(--yglf-green);
     transform: translateY(-1px);
 }
 
 .schedule-day .schedule-day-title {
-	font-style: 28px;
-	letter-spacing: 2.73;
-	color: var(--yglf-green);
-	text-transform: uppercase;
-	font-weight: 100;
-	line-height: var(--cell);
+    font-style: 28px;
+    letter-spacing: 2.73;
+    color: var(--yglf-green);
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: var(--cell);
     -webkit-font-smoothing: antialiased;
     transform: translateY(12px);
 }
+
 .schedule-day .schedule-day-date {
-	font-family: "Libre Baskerville";
-	font-style: 12px;
-	letter-spacing: 2.25;
-	color: var(--yglf-green);
-	font-weight: 100;
+    font-family: "Libre Baskerville";
+    font-style: 12px;
+    letter-spacing: 2.25;
+    color: var(--yglf-green);
+    font-weight: 100;
     -webkit-font-smoothing: antialiased;
-	line-height: var(--cell);
+    line-height: var(--cell);
     font-style: italic;
+}
+
+
+
+@media screen and (max-width: 764px) {
+    .schedule-day {
+        width: 100%;
+    }
 }

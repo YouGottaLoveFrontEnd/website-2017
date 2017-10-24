@@ -19,6 +19,10 @@ class ScheduleEvent extends Component {
         document.getElementsByClassName('auto-height-fix-wrapper'),
         -1
       );
+      AutoHeightFix(
+        document.getElementsByClassName('auto-height-fix-time'),
+        -45
+      );
     });
   }
 
@@ -39,15 +43,9 @@ class ScheduleEvent extends Component {
   }
 
   render() {
-    // const paragraphs = this.props.event.paragraphs.map(paragraph =>
-    //   <p key={paragraph} className="schedule-event-info-paragraph">
-    //     {paragraph}
-    //   </p>
-    // );
-
     return (
       <div className="schedule-event">
-        <div className="schedule-event-time">
+        <div className="schedule-event-time auto-height-fix-time">
           <span className="schedule-event-time-hour">
             {this.props.event.time.hour}
           </span>
@@ -57,11 +55,11 @@ class ScheduleEvent extends Component {
         </div>
         <div className="schedule-event-info">
           <div className="schedule-event-info-wrapper">
-            <h4 className="schedule-event-info-title">
+            <h4 className="schedule-event-info-title auto-height-fix-title">
               {this.props.event.title}
             </h4>
             {this.props.event.speaker
-              ? <strong className="schedule-event-info-speaker">
+              ? <strong className="schedule-event-info-speaker auto-height-fix-title">
                   {this.props.event.speaker} ({this.props.event.company})
                 </strong>
               : ''}

@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 764px) {
+    .sponsors {
+        padding: calc(var(--cell) * 2) 50px;
+    }
+
     .sponsors-list {
         padding-left: 0;
     }
