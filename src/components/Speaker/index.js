@@ -14,9 +14,6 @@ class Speaker extends Component {
         height: 0,
       },
     };
-
-    window.addEventListener('resize', this.setImageSize.bind(this));
-    window.addEventListener('orientationchange', this.setImageSize.bind(this));
   }
 
   setImageSize() {
@@ -42,6 +39,16 @@ class Speaker extends Component {
 
   componentDidMount() {
     this.setImageSize();
+    window.addEventListener('resize', this.setImageSize.bind(this));
+    window.addEventListener('orientationchange', this.setImageSize.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.setImageSize.bind(this));
+    window.removeEventListener(
+      'orientationchange',
+      this.setImageSize.bind(this)
+    );
   }
 
   render() {

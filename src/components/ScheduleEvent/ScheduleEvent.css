@@ -83,6 +83,8 @@
 @media screen and (max-width: 764px) {
     .schedule-event {
         padding-right: 0;
+        flex-direction: column;
+        margin-bottom: 0;
     }
 
     .schedule-event-time {
@@ -93,7 +95,6 @@
     .schedule-event-info-title {
         line-height: calc(var(--cell) / 2);
         transform: translateY(27px);
-        margin-bottom: var(--cell);
     }
     .schedule-event-info-speaker {
         line-height: calc(var(--cell) / 2);
