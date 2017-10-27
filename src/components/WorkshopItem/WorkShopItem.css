@@ -21,12 +21,12 @@
 }
 
 .workshop-container .workshop-description {
-    letter-spacing: .53px;
-	font-size: 17px;
-	font-weight: 100;
-    -webkit-font-smoothing: antialiased;
-    line-height: 30px;
     padding-right:  var(--cell);
     transform: translateY(22px);
+    font-size: 15px !important;
+    font-weight: 100;
+    font-family: "sofia-pro";
+    line-height: 33px;
+    letter-spacing: 0.9px;
+    -webkit-font-smoothing: antialiased;
 }
-

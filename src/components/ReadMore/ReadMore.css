@@ -9,12 +9,11 @@
 
 
 .read-more-container p {
-    margin-bottom: var(--cell);
-    transform: translateY(17px);
 }
 
 .read-more-wrapper {
 	position: relative;
+    transform: translateY(1px);
 }
 .read-more-bg {
 	position: absolute;

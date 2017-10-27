@@ -4,7 +4,7 @@
 }
 
 .codeofconduct section {
-    padding: 61px 0px !important;
+    padding: 61px 0px 45px 120px !important;
 }
 
 .codeofconduct h1 {
@@ -35,7 +35,7 @@
     line-height: 33px;
     letter-spacing: 0.9px;
     margin-bottom: 10px;
-    max-width: 75%;
+    max-width: 45%;
     -webkit-font-smoothing: antialiased;
 }
 

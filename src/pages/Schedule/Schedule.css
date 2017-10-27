@@ -7,14 +7,13 @@
 }
 
 .schedule-days {
-    padding: calc(var(--cell) * 2) 0;
     display: flex;
     flex-direction: row;
 }
 
 @media screen and (max-width: 764px) {
     .schedule {
-        padding: 90px 50px;
+        padding: 90px 30px;
     }
     .schedule-days {
     	flex-direction: column;

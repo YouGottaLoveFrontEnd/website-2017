@@ -1,10 +1,11 @@
 .schedule-day {
     width: 50%;
     flex: 1 auto;
+    transition: opacity 250ms; 
 }
 
 .schedule-day.non-active {
-    opacity: 0.6;
+    opacity: 0.35;
     color: #D8D8D8;
 }
 
@@ -42,8 +43,6 @@
     line-height: var(--cell);
     font-style: italic;
 }
-
-
 
 @media screen and (max-width: 764px) {
     .schedule-day {
