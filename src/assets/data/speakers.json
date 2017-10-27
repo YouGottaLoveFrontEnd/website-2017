@@ -389,9 +389,13 @@
       "last_name": "Rosenthal",
       "position": "Software Engineer",
       "company": "Wix",
-      "description": "Ido first fell in love with client-side technologies in 2001. In his role as a Client-Solutions Architect at Wix, he’s been in charge of Flash and then HTML and JavaScript projects since 2010. With a deep burning passion (and red glowing eyes) for visual programming, code editors, and developer tooling, Ido leads the charge for a better styling library in the world of components. When not behind the keyboard, he’s the father of a 1-year-old son, and an avid Settlers of Catan player.",
+      "description": "Ido first fell in love with client-side technologies in 2001. In his role as a Client-Solutions Architect at Wix, he’s been in charge of HTML and JavaScript projects since 2010. With a deep burning passion (and red glowing eyes) for visual programming, code editors, and developer tooling, Ido leads the charge for a better styling library in the world of components. When not behind the keyboard, he’s the father of a 1-year-old son, and an avid Settlers of Catan player.",
       "image_src": "ido_rosenthal",
       "social_icons": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/idoros"
+        },
         {
           "type": "github",
           "url": "https://github.com/idoros"
