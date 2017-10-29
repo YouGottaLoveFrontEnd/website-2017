@@ -1,7 +1,7 @@
 .schedule-day {
     width: 50%;
     flex: 1 auto;
-    transition: opacity 250ms; 
+    transition: opacity 250ms;
 }
 
 .schedule-day.non-active {
@@ -47,5 +47,9 @@
 @media screen and (max-width: 764px) {
     .schedule-day {
         width: 100%;
+    }
+
+    .schedule-day.non-active {
+        opacity: 1;
     }
 }
