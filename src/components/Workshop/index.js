@@ -14,7 +14,7 @@ class Workshop extends Component {
     const imageExtension = isChrome() ? 'webp' : 'jpg';
 
     return (
-      <div className="workshop">
+      <div className="workshop-item">
         <div className="workshop-image">
           <img
             src={`/workshop/${workshop.image_src}.${imageExtension}`}

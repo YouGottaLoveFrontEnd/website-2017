@@ -4,7 +4,6 @@
 
 .speakers .info-block {
     margin-bottom: calc(var(--cell) * 2);
-    margin-bottom: calc(var(--cell) * 2);
 }
 
 .speakers .buy-tickets {
@@ -40,5 +39,9 @@
 
     .speakers .buy-tickets {
         margin: var(--cell) 0;
+    }
+
+    .speakers .info-block {
+        margin-bottom: var(--cell);
     }
 }

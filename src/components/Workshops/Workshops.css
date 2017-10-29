@@ -1,5 +1,5 @@
 .workshops {
-    padding-bottom: calc(var(--cell) * 2);
+    padding-bottom: var(--cell);
 }
 
 .workshops .workshops-items {

@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 764px) {
     .sponsors {
-        padding: calc(var(--cell) * 2) 50px;
+        padding: calc(var(--cell) * 2) 30px;
     }
 
     .sponsors-list {

@@ -1,62 +1,79 @@
-.workshop {
+.workshop-item {
 	padding-top: var(--cell);
     display: flex;
     flex-direction: row;
-    margin-bottom: calc(var(--cell) * 2);
+    padding-bottom: calc(var(--cell) * 2);
 }
 
 
-.workshop .workshop-image {}
+.workshop-item .workshop-image {
+
+}
 
 
-.workshop .workshop-image img {
+.workshop-item .workshop-image img {
     border: 1px solid var(--yglf-green);
     transform: translateY(-1px);
 }
 
 
-.workshop .workshop-info {
+.workshop-item .workshop-info {
     -webkit-font-smoothing: antialiased;
     padding-left: calc(var(--cell) * 2);
 }
 
 
-.workshop .workshop-info p:not(.workshop-author) {
-	font-size: 17px;
+.workshop-item .workshop-info p:not(.workshop-author) {
 	line-height: 30px;
     max-width: 450px;
+    font-size: 15px !important;
+    font-weight: 100;
+    font-family: "sofia-pro";
+    line-height: 33px;
+    letter-spacing: 0.9px;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 30px;
 }
 
-.workshop .workshop-author {
+.workshop-item .workshop-author {
     text-transform: uppercase;
     letter-spacing: 2.47px;
     font-size: 15px;
     line-height: var(--cell);
     padding: 0;
     margin: 0;
+    transform: translateY(16px);
 }
 
-.workshop .workshop-title {
+.workshop-item .workshop-title {
     line-height: var(--cell);
     padding: 0;
     margin: 0;
+    transform: translateY(12px);
+    letter-spacing: 0.53px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
-.workshop .workshop-paragraphs {
+.workshop-item .workshop-paragraphs {
     transform: translateY(5px);
 }
 
 
 @media screen and (max-width: 1024px) {
-    .workshop .workshops-info {
+    .workshop-item .workshops-info {
         padding-left: 140px !important;
     }
 }
 
 @media screen and (max-width: 764px) {
-    
-    .workshop .workshops-info {
+    .workshop-item {
+        flex-direction: column;
+        padding-bottom: 36px;
+    }
+    .workshop-item .workshop-info {
         padding-left: 0 !important;
+        transform: translateY(-11px);
     }
     
 }

@@ -23,7 +23,7 @@ class Workshops extends Component {
           <div>
             <InfoBlock data={InfoBlocksData.workshopsPage}>
               <div className="workshops-info">
-                <p>
+                <p className="auto-height-fix">
                   The workshops will take place on the 1st of November, 2017, in
                   the Tel-Aviv port and will be limited up to 25 participants
                   each. Additional details will be sent at a later date.

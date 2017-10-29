@@ -42,12 +42,7 @@ class Schedule extends Component {
     return (
       <div className="schedule bg">
         <div className="container">
-          <InfoBlock data={InfoBlocksData.schedule}>
-            <p className="auto-height-fix">
-              Of course, a wealthy lunch, refreshing coffee breaks and quality
-              beers are served throughout the day to make it extra fun!
-            </p>
-          </InfoBlock>
+          <InfoBlock data={InfoBlocksData.schedule} />
           <div className="schedule-days">
             {scheduleDays}
           </div>

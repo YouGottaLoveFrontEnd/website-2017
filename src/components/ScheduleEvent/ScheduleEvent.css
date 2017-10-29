@@ -40,19 +40,21 @@
     letter-spacing: 0.79px;
     font-size: 15px;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 600;
     -webkit-font-smoothing: antialiased;
-    line-height: var(--cell);
+    line-height: 26px;
     margin: 0;
-    transform: translateY(16px);
+    transform: translateY(25px);
+    margin-bottom: 25px;
 }
 
 .schedule-event-info-speaker {
-    font-weight: 100;
+    font-weight: 400;
+    font-size: 14px;
     -webkit-font-smoothing: antialiased;
-    line-height: var(--cell);
     display: inline-block;
     opacity: .7;
+    letter-spacing: 0.74px;
 }
 
 .schedule-event-info-paragraph {
@@ -60,6 +62,10 @@
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
+    line-height: 33px;
+}
+.schedule-event-info-paragraph .read-more-container p {
+    transform: translateY(11px);
 }
 
 .schedule-event-info-paragraph .read-more {
@@ -76,7 +82,7 @@
 }
 
 .schedule-event-info-paragraph .read-more-wrapper {
-    transform: translateY(11px);
+    transform: translateY(-3px);
 }
 
 
@@ -93,11 +99,7 @@
         max-width: 60px;
     }
     .schedule-event-info-title {
-        line-height: calc(var(--cell) / 2);
-        transform: translateY(27px);
     }
     .schedule-event-info-speaker {
-        line-height: calc(var(--cell) / 2);
-        transform: translateY(27px);
     }
 }

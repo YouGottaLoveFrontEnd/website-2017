@@ -1,72 +1,68 @@
 .about {
-  overflow: hidden;
-  padding-bottom: 180px;
+    overflow: hidden;
+    padding-bottom: calc(var(--cell) * 3);
 }
 
 .about .container-header-image {
-  position: relative;
+    position: relative;
 }
 
 .about .container-header-image-wrapper {
-  position: absolute;
-  top: -50px;
-  overflow: hidden;
+    position: absolute;
+    top: -50px;
+    overflow: hidden;
 }
+
 .about .container-header-image-wrapper img {
-  border: 1px solid var(--yglf-green);
-  width: 100%;
+    border: 1px solid var(--yglf-green);
+    width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) {}
 
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 768px) { 
-    
+@media (min-width: 1024px) {
 
-}
-
-@media (min-width: 1024px) { 
-    
-  .about .container-header-info  {
-
-  }
-
+    .about .container-header-info {}
 }
 
 @media (min-width: 992px) {
-  .about .container-header-image-wrapper {
-    top: 35px !important;
-  }
-  .about .container-header-info {
-    padding: 60px 0 10px 120px !important;
-    width: calc(70% - 120px) !important;
-  }
-
+    .about .container-header-image-wrapper {
+        top: 35px !important;
+    }
+    .about .container-header-info {
+        padding: 60px 0 10px 120px !important;
+        width: calc(70% - 120px) !important;
+    }
 }
 
 @media (max-width:480px) {
-  .about .container-header-flexbox {
-    flex-direction: column-reverse;
-  }
-  .about .container-fluid {
-    width: calc(100% - 90px);
-  }
-  .about .container-header-image {
-    padding-top: 39px;
-    position: static;
-    width: calc(100% + 92px) !important;
-    margin-left: -46px;
-    flex: 0;
-  }
-  .about .container-header-image-wrapper {
-    height: auto !important;
-  }
-  .about .container-header-image img {
-    width: 100%;
-  }
+    .about {
+        padding-bottom: var(--cell);
+    }
 
-  .about .container-header-image-wrapper {
-    position: static;
-  }
+    .about .container-header-flexbox {
+        flex-direction: column-reverse;
+    }
+    .about .container-fluid {
+        width: calc(100% - 90px);
+    }
+    .about .container-header-image {
+        padding-top: 39px;
+        position: static;
+        width: calc(100% + 92px) !important;
+        margin-left: -46px;
+        flex: 0;
+    }
+    .about .container-header-image-wrapper {
+        height: auto !important;
+    }
+    .about .container-header-image img {
+        width: 100%;
+    }
+
+    .about .container-header-image-wrapper {
+        position: static;
+    }
 }

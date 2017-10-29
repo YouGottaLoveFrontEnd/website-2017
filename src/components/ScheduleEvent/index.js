@@ -55,14 +55,16 @@ class ScheduleEvent extends Component {
         </div>
         <div className="schedule-event-info">
           <div className="schedule-event-info-wrapper">
-            <h4 className="schedule-event-info-title auto-height-fix-title">
-              {this.props.event.title}
-            </h4>
-            {this.props.event.speaker
-              ? <strong className="schedule-event-info-speaker auto-height-fix-title">
-                  {this.props.event.speaker} ({this.props.event.company})
-                </strong>
-              : ''}
+            <div className="schedule-event-info-title-wrapper auto-height-fix-title">
+              <h4 className="schedule-event-info-title">
+                {this.props.event.title}
+              </h4>
+              {this.props.event.speaker
+                ? <strong className="schedule-event-info-speaker">
+                    {this.props.event.speaker} ({this.props.event.company})
+                  </strong>
+                : ''}
+            </div>
             <div className="schedule-event-info-paragraph">
               <ReadMore paragraphs={this.props.event.paragraphs} cells={1} />
             </div>

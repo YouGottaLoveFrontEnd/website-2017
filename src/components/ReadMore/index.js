@@ -67,7 +67,7 @@ class ReadMore extends Component {
 
     if (this.props.paragraphs.length > 0) {
       paragraphs = this.props.paragraphs.map(paragraph =>
-        <p className="auto-height-fix" key={paragraph}>
+        <p key={paragraph}>
           {paragraph}
         </p>
       );
@@ -76,10 +76,7 @@ class ReadMore extends Component {
     return (
       <div className="read-more">
         <div className="read-more-container" ref="readMoreContainer">
-          <div
-            className="read-more-wrapper auto-height-fix-wrapper"
-            ref="readMoreWrapper"
-          >
+          <div className="read-more-wrapper" ref="readMoreWrapper">
             <div className="read-more-bg" ref="readMoreBg" />
             {paragraphs}
           </div>
