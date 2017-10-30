@@ -48,7 +48,6 @@
     .schedule-day {
         width: 100%;
     }
-
     .schedule-day.non-active {
         opacity: 1;
     }
