@@ -25,6 +25,11 @@
     background-position: left bottom;
 }
 
+.read-more-bg.open {
+    background-image: none;
+}
+
+
 .read-more .btn-underline {
     transform: translateY(-6px);
 }

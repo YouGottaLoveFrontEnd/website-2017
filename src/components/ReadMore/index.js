@@ -77,7 +77,12 @@ class ReadMore extends Component {
       <div className="read-more">
         <div className="read-more-container" ref="readMoreContainer">
           <div className="read-more-wrapper" ref="readMoreWrapper">
-            <div className="read-more-bg" ref="readMoreBg" />
+            <div
+              className={
+                this.state.isOpen ? 'read-more-bg open' : 'read-more-bg'
+              }
+              ref="readMoreBg"
+            />
             {paragraphs}
           </div>
         </div>

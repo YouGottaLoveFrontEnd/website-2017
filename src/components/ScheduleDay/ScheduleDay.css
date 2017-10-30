@@ -47,6 +47,7 @@
 @media screen and (max-width: 764px) {
     .schedule-day {
         width: 100%;
+        margin-bottom: calc(var(--cell) * 3);
     }
     .schedule-day.non-active {
         opacity: 1;
