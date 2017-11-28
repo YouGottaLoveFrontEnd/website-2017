@@ -33,7 +33,7 @@ class Footer extends Component {
             <div>
               <strong>Subscribe</strong>
               <p>
-                Exciting things ahead,<br />  stay tuned for more information.
+                Exciting things ahead,<br /> stay tuned for more information.
               </p>
               <Subscribe />
             </div>
